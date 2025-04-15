@@ -105,7 +105,3 @@ print(f'Done, the answer is\n{response}')
 
 with open(output_dir / f'{mistral_model_name}_chat.txt', 'w') as fw:
     fw.write(response)
-
-from markdown_to_png.convertor import markdown_to_png
-# Save output
-markdown_to_png(markdown_path=str(output_dir / f'{mistral_model_name}_chat.txt'), output_path = output_dir / f'{mistral_model_name}_response.png') #, dimensions=(1920, 1080))
