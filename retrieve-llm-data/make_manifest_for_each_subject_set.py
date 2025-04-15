@@ -3,7 +3,7 @@ from pathlib import Path
 import sqlite3
 
 # PARAMETERS
-input_dir = Path('prompt_6')
+input_dir = Path('../outputs/prompt_6')
 prompt_id = 6
 temperature = 0 # For duck.ai it appears to be 0
 llm_provider = 'duck.ai'
@@ -20,7 +20,7 @@ manifest_header = ['response_id','prompt_id','prompt_image','response_image_1','
 rows_in_manifest = list()
 
 import sqlite3
-conn = sqlite3.connect('records.db')
+conn = sqlite3.connect('../records.db')
 conn.execute(
     'CREATE TABLE IF NOT EXISTS responses (id INTEGER PRIMARY KEY AUTOINCREMENT, prompt_id INTEGER NOT NULL, response_text NVARCHAR(15000) NOT NULL, cot_text NVARCHAR(15000) NULL,  image_path NVARCHAR(500) NOT NULL)')
 
