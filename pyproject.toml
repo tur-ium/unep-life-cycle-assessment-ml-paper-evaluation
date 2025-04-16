@@ -17,5 +17,6 @@ dependencies = [
     "sentence-transformers>=4.0.2",
     "tqdm>=4.67.1",
     "transformers>=4.51.3",
+    "typer>=0.15.2",
     "wkhtmltopdf>=0.2",
 ]

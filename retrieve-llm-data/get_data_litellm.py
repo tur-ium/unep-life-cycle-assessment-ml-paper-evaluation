@@ -1,0 +1,251 @@
+"""
+Retrieve data from various models using litellm
+
+Be sure to update:
+ 1. the parameters in this file
+ 2. The .env file
+"""
+import json
+import logging
+import os
+import sqlite3
+from pathlib import Path
+from sqlite3 import Connection
+import typing
+import dotenv
+import httpx
+from litellm import completion
+
+from litellm.types.utils import ModelResponse
+
+# PARAMETERS
+sql_db_name = '../records3.db' # Used to store the ids of prompts and responses
+root_input_prompt_dir = Path('../prompts') # Top level directory with sub-directories for each prompt
+prompt_id: int = 101
+root_output_dir = Path('../outputs')
+temperature=0.7
+number_of_responses_per_prompt = 3
+
+# input_list_of_processes = '../lookup_strings_list.csv'
+# model = "mistral/mistral-large-latest"
+model = "ollama_chat/llama3.2:latest"
+
+dotenv.load_dotenv('../.env')
+api_base = os.getenv("OLLAMA_API_BASE")
+
+embedding_model = "mistral/mistral-embed"
+rate_limit = 0.4 #  requests per second max
+k_matches_from_embedding = 5
+max_tokens_response =  2048
+# END PARAMETERS
+
+# TODO: Make the context to the models parameterizable (e.g. load all csv files in the same directory as the prompt)
+# TODO: Use the sqlite database to store path to required data
+
+from database_utils import init_db_schema, insert_prompt_to_db, insert_response_to_db
+
+
+output_dir = root_output_dir / f'prompt_{prompt_id}'
+output_dir.mkdir(exist_ok=True,parents=True)
+
+poppler_path = os.getenv('POPPLER_PATH') # For rendering markdown to image
+
+clients = []
+
+
+def get_prompt(top_prompt_dir: Path | str, prompt_id: int, conn: Connection) -> str:
+    """Finds the prompt text file within a given input directory and returns it as a string"""
+    input_dir = Path(top_prompt_dir) / f'prompt_{prompt_id}' if not isinstance(top_prompt_dir, Path) else top_prompt_dir / f'prompt_{prompt_id}'
+    assert input_dir.is_dir()
+    assert isinstance(prompt_id,int)
+    assert prompt_id > 0
+
+    candidate_files = [x for x in input_dir.glob('prompt_*.txt')]
+    if len(candidate_files)>1:
+        raise ValueError(f'More than one prompt found in {input_dir}')
+
+    with open(candidate_files[0],encoding='utf-8',mode='r') as f:
+        prompt_txt = f.read()
+    try:
+        insert_prompt_to_db(conn=conn, prompt_text=prompt_txt, prompt_id=prompt_id)
+    except ValueError:
+        logging.warning(f'Prompt id={prompt_id} is already in the database')
+
+    return prompt_txt
+
+logging.basicConfig(filename='log.log',filemode='w',encoding='utf-8',level=logging.DEBUG)
+logging.getLogger()
+
+
+def run_prompt_from_dir(root_input_prompt_dir: str | Path, prompt_id: int, model: str, output_dir: str | Path,
+                        temperature: float, number_of_responses_per_prompt: int, conn: Connection, naming_system:typing.Literal['response_id','descriptive']='response_id') -> None:
+    """
+
+    :param api_base:
+    :param root_input_prompt_dir:
+    :param prompt_id:
+    :param model:
+    :param output_dir:
+    :param temperature:
+    :param number_of_responses_per_prompt: Maximum 10
+    """
+    assert isinstance(prompt_id,int)
+    assert isinstance(temperature,float)
+    assert 0<temperature<1
+    assert isinstance(number_of_responses_per_prompt,int)
+    assert 0 < number_of_responses_per_prompt < 10
+    assert isinstance(model,str)
+    model_name_part = model.split('/')[-1]
+    provider_name = model.split('/')[0] #
+    required_api_key = os.getenv(f'{provider_name.upper()}_API_KEY')
+    if required_api_key is None:
+        raise ValueError(f'Required api key {required_api_key} is null')
+
+    logging.info('Loading prompt from')
+    prompt_txt = get_prompt(root_input_prompt_dir, prompt_id=prompt_id,conn=conn)
+    logging.info('Loaded prompt')
+    logging.info(prompt_txt)
+
+    if temperature == 0 and number_of_responses_per_prompt > 1:
+        logging.warning(
+            'The temperature parameter is set to 0, but the number of responses per prompt is more than 1. Setting the number of response to 1, because response will always be the same (if no tools are used)')
+        number_of_responses_per_prompt = 1
+
+    for n in range(number_of_responses_per_prompt):
+        if provider_name.lower() == 'ollama_chat':
+            response = completion(model=model,
+                                  messages=[{'role': 'user', 'content': prompt_txt}],
+                                  temperature=temperature,
+                                  max_tokens=max_tokens_response,
+                                  stream=False)
+            if not isinstance(response, ModelResponse):
+                # LiteLLM returns also an id tuple
+                raise Exception('Unexpected response. Should be a ModelResponse')
+            response_text = response.choices[0].message.content
+            logging.info(response)
+
+        else:
+            response = completion(model=model,
+                                  messages=[{'role': 'user', 'content': prompt_txt}],
+                                  temperature=temperature,
+                                  max_tokens=max_tokens_response)
+            if not isinstance(response, ModelResponse):
+                # LiteLLM returns also an id tuple
+                raise Exception('Unexpected response. Should be a ModelResponse')
+            response_text = response.choices[0].message.content
+            logging.info(response)
+
+        response_id = insert_response_to_db(conn=conn,response_text=response_text,prompt_id=prompt_id,model_name=model,temperature=temperature,tools='',image_path='')
+        if naming_system == 'response_id':
+            filename = f'response_{response_id}_chat.txt'
+        elif naming_system == 'descriptive':
+            model_name_part_for_filename = model_name_part.replace(':','').replace('/','').replace('\\','')
+            filename = f'prompt_{prompt_id}_run_{n}_temp_{temperature}_model_{model_name_part_for_filename}_chat.txt'
+        else:
+            raise NotImplementedError(f'naming_system={naming_system} is not implemented. Double check it is one of the options in the type hint')
+        with open(output_dir / filename, encoding='utf-8', mode='w') as fw:
+            fw.write(response_text)
+    logging.info('Done.')
+
+try:
+    with sqlite3.connect(sql_db_name) as conn:
+        init_db_schema(conn)
+
+        run_prompt_from_dir(root_input_prompt_dir, prompt_id, model, output_dir, temperature, number_of_responses_per_prompt,
+                        conn=conn,api_base=api_base)
+finally:
+    conn.close()
+# mistral_client = Mistral()
+
+# def get_text_embedding_mistral(input, embedding_model):
+#     response_litellm = embedding(
+#         model=embedding_model,
+#         input=input,
+#     )
+#     logging.info(response_litellm)
+#     response_mistral_client = mistral_client.chat.completions.create(
+#         model=embedding_model,
+#         messages=[
+#             {"role": "user",
+#              "content": f"Generate an embedding for '{input}' using {embedding_model}. Include only the embedding vector in JSON format."}
+#         ]
+#     )
+#     return response_mistral_client.choices[0].message.content
+# #
+# #
+# # # Create an embedding for each process-product lookup
+# # text_embeddings = []
+# # wait_time_embedding_requests = 1. / rate_limit
+# #
+# # logging.info(f'Embedding LCA model lookups (rate limit: {rate_limit} requests/s)')
+# # progbar_embed = tqdm.tqdm(lca_model_lookup_list)
+# for chunk in progbar_embed:
+#     prompt = f"""
+#     Context information is below.
+#     ---------------------
+#     {chunk}
+#     ---------------------
+#     Given the context information and not prior knowledge, answer the query.
+#     Query: {question}
+#     Answer:
+#     """
+#
+#     # Use Mistral for embeddings if available
+#     try:
+#         get_text_embedding_mistral(chunk,embedding_model)
+#     except Exception as e:
+#         logging.info(f"Error generating embedding for {chunk}: {e}")
+#         continue
+#
+# text_embeddings = np.array(text_embeddings).reshape(-1, 1) if text_embeddings else []
+# d = text_embeddings.shape[1] if text_embeddings else 0
+# logging.info(f'Got {text_embeddings.shape[0]} text embeddings with dimension {d}')
+#
+# # Create or use existing index
+# index = faiss.IndexFlatL2(d)
+# if text_embeddings:
+#     index.add(text_embeddings)
+#
+# question = """Your task is to match items in a bill of materials to the best matching description of the item from a list of available models of the production of products in the excel file attached.
+# The look up string, in the column 'lookup_string' in the excel, consists of four parts – the reference product, the region from which the product is supplied, the manufacturing activity that produces it, and a suffix 'Cut-off, U', that does not change in this database. There can be different models for different geographical regions, where most are ISO 2-letter code e.g. 'AT' for Austria. If the region is not known the region 'GLO' standing for 'Global', or 'RoW', standing for 'Rest of the World' is used. In this database a unique 'lookup string' is created following the pattern '<product name> {<2-letter ISO Code for region>} | <activity name> | Cut-off, U'. Give your answer in json format {'best_lookup_string': <lookup_string>}. If there is no suitable match, return {'best_lookup_string: null}. Provide an explanation
+# Example 1: 'raw bauxite ore' -> {'best_lookup_string': 'bauxite {GLO}| bauxite mine operation | Cut-off, U'}
+# Example 2: 'shelled cashews' -> {'best_lookup_string': 'cashew {IN}| cashew production | Cut-off, U'}
+# Following these examples match the following dataset: 'Maize starch, citric acid' sourced from China.
+# """
+# logging.info('Embedding the question')
+# question_embeddings = np.array([get_text_embedding_mistral(question, embedding_model)])
+# logging.info('Done embedding the question')
+#
+# # Query the index using Faiss
+# D, I = index.search(question_embeddings, k=k_matches_from_embedding)
+# retrieved_chunk = [lca_model_lookup_list[i] for i in I.tolist()[0]]
+#
+# if retrieved_chunk:
+#     prompt = f"""
+#     {prompt_template}
+#     Chunk: {retrieved_chunk[0]}
+#     """
+#     response = client.chat.completions.create(
+#         model=Anthropic(temperature=0),
+#         messages=[
+#             {"role": "system", "content": """You are a helpful assistant that answers questions based on contextual information provided to you. Use the context information to provide a detailed and accurate answer to each question.
+#             Your responses should be in JSON format with a single key-value pair: 'best_lookup_string'.
+#             If there is no suitable match, return {'best_lookup_string': null}.
+#             Always refer to the lookup strings created from your training data."""},
+#             {"role": "user", "content": user_message}
+#         ]
+#     )
+#     logging.info(response.choices[0].message.content)
+# else:
+#     # Fallback to OpenAI if Anthropic fails
+#     response = client.chat.completions.create(
+#         model=OpenAI(temperature=0),
+#         messages=[
+#             {"role": "system", "content": """You are a helpful assistant that answers questions based on contextual information provided to you. Use the context information to provide a detailed and accurate answer to each question.
+#             Your responses should be in JSON format with a single key-value pair: 'best_lookup_string'.
+#             If there is no suitable match, return {'best_lookup_string': null}.
+#             Always refer to the lookup strings created from your training data."""},
+#             {"role": "user", "content": user_message}
+#         ]
+#     )
+#     logging.info(response.choices[0].message.content)

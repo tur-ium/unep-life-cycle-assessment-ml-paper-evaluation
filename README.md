@@ -3,9 +3,9 @@ The focus of this repository is preparing responses from a ML model for use in t
 
 
 # Setup
-1. Install using uv
-2. Get `poppler` and unzip
-3. Set environment variables in `.env`
+1. Install requirements using `uv sync`
+2. Get `poppler` from [here](https://github.com/oschwartz10612/poppler-windows/releases) and unzip to suitable location
+3. Set environment variables in `.env`. The POPPLER_PATH should point to the `\Library\bin` sub-directory of extracted poppler file
 
 # How to use:
 1. Ensure the setup steps above are complete, including the poppler and api tokens
@@ -13,8 +13,10 @@ The focus of this repository is preparing responses from a ML model for use in t
 3. Run `make_manifest_for_each_subject_set.py`, configuring the parameters in the script file to the folder containing the images and prompt texts from the RAG script
 
 # Outputs
-1. A folder containing the images and a .csv manifest file necessary for the Zooniverse project
-2. A SQLite database containing the prompts and metadata for tracing the prompt and image ids to the original ML model and prompt
+1. A folder containing the chat txt
+2. Png renders of the prompt and response from each model
+3. A .csv manifest file necessary for the Zooniverse project
+4. A SQLite database containing the prompts and metadata for tracing the prompt and image ids to the original ML model and prompt
 
 # Notes
 To compile markdown text (output by LLMs) to an image, we use fpdf and pdf2image to create an HTML document, 
