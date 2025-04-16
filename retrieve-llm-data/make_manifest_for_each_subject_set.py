@@ -2,6 +2,8 @@ import csv
 from pathlib import Path
 import sqlite3
 
+from utils import save_text_as_img_markdown
+
 # PARAMETERS
 input_dir = Path('../outputs/prompt_6')
 prompt_id = 6
@@ -12,50 +14,66 @@ prompt_txt = 'prompt.txt'
 prompt_run_by = 'artur'
 start_response_line_no = 8
 
-if f'{prompt_id}' not in input_dir.name:
-    raise ValueError('Are you sure you have the right prompt id?')
+def prepare_images_from_markdown(output_dir: Path,model_name):
+    with open(output_dir / f'{model_name}_chat.md', 'w') as fw:
+        fw.write(response)
+    save_text_as_img_markdown(prompt, output_dir / f'prompt.png', poppler_path=poppler_path)
 
-# END PARAMETERS
-manifest_header = ['response_id','prompt_id','prompt_image','response_image_1','response_image_2','#llm_model','#temperature','#date_run','#llm_provider','#prompt_run_by']
-rows_in_manifest = list()
 
-import sqlite3
-conn = sqlite3.connect('../records.db')
-conn.execute(
-    'CREATE TABLE IF NOT EXISTS responses (id INTEGER PRIMARY KEY AUTOINCREMENT, prompt_id INTEGER NOT NULL, response_text NVARCHAR(15000) NOT NULL, cot_text NVARCHAR(15000) NULL,  image_path NVARCHAR(500) NOT NULL)')
+def make_zooniverse_manifest_file_for_subject_set(input_dir:Path, prompt_id:int, prompt_filename:str, prompt_run_by, start_line_no:int):
+    """
 
-rows_in_manifest.append(manifest_header)
+    :param input_dir: The path to the directory containing the responses to a given prompt.
+    :param prompt_id: An integer id for the prompt, used for storing in a sqlite database
+    :param prompt_filename: The name of the file containing the prompt used to generate the responses
+    :param prompt_run_by:
+    :param start_line_no:
+    :return:
+    """
+    if f'{prompt_id}' not in input_dir.name:
+        raise ValueError('Are you sure you have the right prompt id?')
 
-allowed_models = ['claude_3_haiku', 'gpt_o3_mini', 'gpt_o4_mini','llama_3.3_70b','mistral_small_3']
+    # END PARAMETERS
+    manifest_header = ['response_id','prompt_id','prompt_image','response_image_1','response_image_2','#llm_model','#temperature','#date_run','#llm_provider','#prompt_run_by']
+    rows_in_manifest = list()
 
-files_in_input_dir = [x for x in input_dir.iterdir()]
-print(files_in_input_dir)
-prompt_text = input_dir / 'prompt.txt'
+    import sqlite3
+    conn = sqlite3.connect('../records.db')
+    conn.execute(
+        'CREATE TABLE IF NOT EXISTS responses (id INTEGER PRIMARY KEY AUTOINCREMENT, prompt_id INTEGER NOT NULL, response_text NVARCHAR(15000) NOT NULL, cot_text NVARCHAR(15000) NULL,  image_path NVARCHAR(500) NOT NULL)')
 
-for i, model in enumerate(allowed_models):
-    print(model)
-    filename = f'{model}_response.png'
-    chat_filename = f'{model}_chat.txt'
-    expected_filepath = input_dir / filename
-    expected_filepath_chat = input_dir / chat_filename
-    print(expected_filepath)
-    response = ''
-    if expected_filepath not in files_in_input_dir:
-        raise ValueError(f'Could not find response for {model} in {input_dir}')
-    if expected_filepath_chat not in files_in_input_dir:
-        print(f'Could not find chat for {model} in {files_in_input_dir}')
-    else:
-        chat = open(expected_filepath_chat,'r',encoding='utf-8').readlines()
-        response = '\n'.join(chat[start_response_line_no:])
-        print(f'Found response = {response[:50]}...')
-    sqlite_insert_response = conn.execute(f"INSERT INTO responses (prompt_id,response_text,image_path) VALUES ({prompt_id},?,?)",(response,filename))
-    conn.commit()
-    response_id_sqlite_response = conn.execute(f"select max(id) from responses where prompt_id={prompt_id}").fetchone()
-    response_id = response_id_sqlite_response[0]
-    print(response_id)
-    rows_in_manifest.append([response_id,prompt_id,'prompt.png',filename,'',model,temperature,run_date,llm_provider,prompt_run_by])
+    rows_in_manifest.append(manifest_header)
 
-with open(input_dir / 'manifest.csv', 'w', newline='') as fw:
-    csv_writer = csv.writer(fw,delimiter=',')
-    csv_writer.writerows(rows_in_manifest)
-print('done')
+    allowed_models = ['claude_3_haiku', 'gpt_o3_mini', 'gpt_o4_mini','llama_3.3_70b','mistral_small_3']
+
+    files_in_input_dir = [x for x in input_dir.iterdir()]
+    print(files_in_input_dir)
+    prompt_text = input_dir / 'prompt.txt'
+
+    for i, model in enumerate(allowed_models):
+        print(model)
+        filename = f'{model}_response.png'
+        chat_filename = f'{model}_chat.txt'
+        expected_filepath = input_dir / filename
+        expected_filepath_chat = input_dir / chat_filename
+        print(expected_filepath)
+        response = ''
+        if expected_filepath not in files_in_input_dir:
+            raise ValueError(f'Could not find response for {model} in {input_dir}')
+        if expected_filepath_chat not in files_in_input_dir:
+            print(f'Could not find chat for {model} in {files_in_input_dir}')
+        else:
+            chat = open(expected_filepath_chat,'r',encoding='utf-8').readlines()
+            response = '\n'.join(chat[start_response_line_no:])
+            print(f'Found response = {response[:50]}...')
+        conn.execute(f"INSERT INTO responses (prompt_id,response_text,image_path) VALUES ({prompt_id},?,?)",(response,filename))
+        conn.commit()
+        response_id_sqlite_response = conn.execute(f"select max(id) from responses where prompt_id={prompt_id}").fetchone()
+        response_id = response_id_sqlite_response[0]
+        print(response_id)
+        rows_in_manifest.append([response_id,prompt_id,'prompt.png',filename,'',model,temperature,run_date,llm_provider,prompt_run_by])
+
+    with open(input_dir / 'manifest.csv', 'w', newline='') as fw:
+        csv_writer = csv.writer(fw,delimiter=',')
+        csv_writer.writerows(rows_in_manifest)
+    print('done')

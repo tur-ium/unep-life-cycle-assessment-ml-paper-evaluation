@@ -53,7 +53,7 @@ poppler_path = os.getenv('POPPLER_PATH') # For rendering markdown to image
 clients = []
 
 
-def get_prompt(top_prompt_dir: Path | str, prompt_id: int, conn: Connection) -> str:
+def get_prompt(top_prompt_dir: str, prompt_id: int, conn: Connection) -> str:
     """Finds the prompt text file within a given input directory and returns it as a string"""
     input_dir = Path(top_prompt_dir) / f'prompt_{prompt_id}' if not isinstance(top_prompt_dir, Path) else top_prompt_dir / f'prompt_{prompt_id}'
     assert input_dir.is_dir()
@@ -76,8 +76,23 @@ def get_prompt(top_prompt_dir: Path | str, prompt_id: int, conn: Connection) -> 
 logging.basicConfig(filename='log.log',filemode='w',encoding='utf-8',level=logging.DEBUG)
 logging.getLogger()
 
+def run_prompt_from_dir_cli(root_input_prompt_dir: str, prompt_id: int, model: str, output_dir: str,
+                        temperature: float, number_of_responses_per_prompt: int, sql_db_name:str, naming_system:str='response_id') -> None:
+    root_input_prompt_dir = Path(root_input_prompt_dir)
+    output_dir = Path(output_dir)
+    try:
+        temperature=float(temperature)
+        prompt_id=int(prompt_id)
+        with sqlite3.connect(sql_db_name) as conn:
+            init_db_schema(conn)
+        run_prompt_from_dir(root_input_prompt_dir, prompt_id, model, output_dir,
+                        temperature, number_of_responses_per_prompt, conn, naming_system)
 
-def run_prompt_from_dir(root_input_prompt_dir: str | Path, prompt_id: int, model: str, output_dir: str | Path,
+    finally:
+        conn.close()
+
+
+def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, output_dir: str,
                         temperature: float, number_of_responses_per_prompt: int, conn: Connection, naming_system:typing.Literal['response_id','descriptive']='response_id') -> None:
     """
 
@@ -91,10 +106,14 @@ def run_prompt_from_dir(root_input_prompt_dir: str | Path, prompt_id: int, model
     """
     assert isinstance(prompt_id,int)
     assert isinstance(temperature,float)
-    assert 0<temperature<1
+    assert 0<=temperature<=1
     assert isinstance(number_of_responses_per_prompt,int)
     assert 0 < number_of_responses_per_prompt < 10
     assert isinstance(model,str)
+
+    root_input_prompt_dir = Path(root_input_prompt_dir) if not isinstance(root_input_prompt_dir, Path) else root_input_prompt_dir
+    output_dir = Path(output_dir) if not isinstance(output_dir,Path) else output_dir
+
     model_name_part = model.split('/')[-1]
     provider_name = model.split('/')[0] #
     required_api_key = os.getenv(f'{provider_name.upper()}_API_KEY')
@@ -147,15 +166,18 @@ def run_prompt_from_dir(root_input_prompt_dir: str | Path, prompt_id: int, model
             fw.write(response_text)
     logging.info('Done.')
 
-try:
-    with sqlite3.connect(sql_db_name) as conn:
-        init_db_schema(conn)
+if __name__ == '__main__':
+    try:
+        with sqlite3.connect(sql_db_name) as conn:
+            init_db_schema(conn)
 
-        run_prompt_from_dir(root_input_prompt_dir, prompt_id, model, output_dir, temperature, number_of_responses_per_prompt,
-                        conn=conn,api_base=api_base)
-finally:
-    conn.close()
+            run_prompt_from_dir(root_input_prompt_dir, prompt_id, model, output_dir, temperature, number_of_responses_per_prompt,
+                            conn=conn)
+    finally:
+        conn.close()
+
 # mistral_client = Mistral()
+
 
 # def get_text_embedding_mistral(input, embedding_model):
 #     response_litellm = embedding(

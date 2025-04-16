@@ -9,6 +9,7 @@ def init_db_schema(conn):
     )
     conn.execute(
         'CREATE TABLE IF NOT EXISTS responses (id INTEGER PRIMARY KEY AUTOINCREMENT, prompt_id INTEGER NOT NULL, response_text NVARCHAR(15000) NOT NULL, model_name TEXT NOT NULL, execution_datestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP, cot_text NVARCHAR(15000) NULL, temperature REAL NULL DEFAULT 0, tools NVARCHAR(1000) NULL, image_path NVARCHAR(500) NULL, FOREIGN KEY(prompt_id) REFERENCES prompts(id));')
+    conn.commit()
 
 def insert_prompt_to_db(conn:sqlite3.Connection, prompt_text:str, prompt_id:int=None, context_filepath:str=None):
     assert isinstance(conn, sqlite3.Connection)
