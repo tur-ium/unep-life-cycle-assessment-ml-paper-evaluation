@@ -1,11 +1,12 @@
 """
 Retrieve data from various models using litellm
 
-Be sure to update:
+A better way to run this code is via the CLI. See the README.md
+
+If running directly, be sure to update:
  1. the parameters in this file
  2. The .env file
 """
-import json
 import logging
 import os
 import sqlite3
@@ -13,10 +14,14 @@ from pathlib import Path
 from sqlite3 import Connection
 import typing
 import dotenv
-import httpx
-from litellm import completion
 
+from litellm import completion
 from litellm.types.utils import ModelResponse
+
+from database_utils import init_db_schema, insert_prompt_to_db, insert_response_to_db
+
+logging.basicConfig(filename='log.log',filemode='w',encoding='utf-8',level=logging.DEBUG)
+logging.getLogger()
 
 # PARAMETERS
 sql_db_name = '../records3.db' # Used to store the ids of prompts and responses
@@ -30,27 +35,12 @@ number_of_responses_per_prompt = 3
 # model = "mistral/mistral-large-latest"
 model = "ollama_chat/llama3.2:latest"
 
-dotenv.load_dotenv('../.env')
-api_base = os.getenv("OLLAMA_API_BASE")
 
 embedding_model = "mistral/mistral-embed"
 rate_limit = 0.4 #  requests per second max
 k_matches_from_embedding = 5
 max_tokens_response =  2048
 # END PARAMETERS
-
-# TODO: Make the context to the models parameterizable (e.g. load all csv files in the same directory as the prompt)
-# TODO: Use the sqlite database to store path to required data
-
-from database_utils import init_db_schema, insert_prompt_to_db, insert_response_to_db
-
-
-output_dir = root_output_dir / f'prompt_{prompt_id}'
-output_dir.mkdir(exist_ok=True,parents=True)
-
-poppler_path = os.getenv('POPPLER_PATH') # For rendering markdown to image
-
-clients = []
 
 
 def get_prompt(top_prompt_dir: str, prompt_id: int, conn: Connection) -> str:
@@ -73,8 +63,6 @@ def get_prompt(top_prompt_dir: str, prompt_id: int, conn: Connection) -> str:
 
     return prompt_txt
 
-logging.basicConfig(filename='log.log',filemode='w',encoding='utf-8',level=logging.DEBUG)
-logging.getLogger()
 
 def run_prompt_from_dir_cli(root_input_prompt_dir: str, prompt_id: int, model: str, output_dir: str,
                         temperature: float, number_of_responses_per_prompt: int, sql_db_name:str, naming_system:str='response_id') -> None:
@@ -113,6 +101,7 @@ def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, 
 
     root_input_prompt_dir = Path(root_input_prompt_dir) if not isinstance(root_input_prompt_dir, Path) else root_input_prompt_dir
     output_dir = Path(output_dir) if not isinstance(output_dir,Path) else output_dir
+    output_dir.mkdir(exist_ok=True,parents=True)
 
     model_name_part = model.split('/')[-1]
     provider_name = model.split('/')[0] #
@@ -122,9 +111,13 @@ def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, 
 
     logging.info('Loading prompt from')
     prompt_txt = get_prompt(root_input_prompt_dir, prompt_id=prompt_id,conn=conn)
+
     logging.info('Loaded prompt')
     logging.info(prompt_txt)
-
+    logging.info('Writing prompt to output dir')
+    with open(output_dir / f'prompt_{prompt_id}.txt', 'w', encoding='utf-8') as fw:
+        fw.write(prompt_txt)
+    logging.info('Written prompt to output dir')
     if temperature == 0 and number_of_responses_per_prompt > 1:
         logging.warning(
             'The temperature parameter is set to 0, but the number of responses per prompt is more than 1. Setting the number of response to 1, because response will always be the same (if no tools are used)')
@@ -154,7 +147,7 @@ def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, 
             response_text = response.choices[0].message.content
             logging.info(response)
 
-        response_id = insert_response_to_db(conn=conn,response_text=response_text,prompt_id=prompt_id,model_name=model,temperature=temperature,tools='',image_path='')
+        response_id = insert_response_to_db(conn=conn,response_text=response_text,prompt_id=prompt_id,model_name=model,temperature=temperature,tools='',image_path='',llm_provider=provider_name)
         if naming_system == 'response_id':
             filename = f'response_{response_id}_chat.txt'
         elif naming_system == 'descriptive':
@@ -168,6 +161,12 @@ def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, 
 
 if __name__ == '__main__':
     try:
+        output_dir = root_output_dir / f'prompt_{prompt_id}'
+        output_dir.mkdir(exist_ok=True, parents=True)
+
+        dotenv.load_dotenv('../.env')
+        api_base = os.getenv("OLLAMA_API_BASE")
+
         with sqlite3.connect(sql_db_name) as conn:
             init_db_schema(conn)
 

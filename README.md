@@ -29,7 +29,7 @@ python .\retrieve-llm-data\cli.py .\prompts\ <prompt_id> mistral/mistral-large-l
 3. Records in a sqlite database
 
 ## How to use to collate results for Zooniverse
-Run `make_manifest_for_each_subject_set.py`, configuring the parameters in the script file to the folder containing the images and prompt texts from the RAG script
+Run `make_zooniverse.py`, configuring the parameters in the script file to the folder containing the images and prompt texts from the RAG script
 
 ###  Outputs
 2. Png renders of the prompt and response from each model
