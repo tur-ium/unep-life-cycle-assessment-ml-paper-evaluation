@@ -20,6 +20,7 @@ mistral_model_name = "mistral-large-latest"
 k_matches_from_embedding = 5
 prompt_id: int = 10
 root_output_dir = Path('../outputs')
+search_dataset_name = "'Maize starch, citric acid' sourced from China"
 # END PARAMETERS
 
 output_dir = root_output_dir / f'prompt_{prompt_id}'
@@ -65,8 +66,7 @@ question = """Your task is to match items in a bill of materials to the best mat
 The look up string, in the column 'lookup_string' in the excel, consists of four parts – the reference product, the region from which the product is supplied, the manufacturing activity that produces it, and a suffix 'Cut-off, U', that does not change in this database. There can be different models for different geographical regions, where most are ISO 2-letter code e.g. 'AT' for Austria. If the region is not known the region 'GLO' standing for 'Global', or 'RoW', standing for 'Rest of the World' is used. In this database a unique 'lookup string' is created following the pattern '<product name> {<2-letter ISO Code for region>} | <activity name> | Cut-off, U'. Give your answer in json format {'best_lookup_string': <lookup_string>}. If there is no suitable match, return {'best_lookup_string: null}. Provide an explanation
 Example 1: 'raw bauxite ore' -> {'best_lookup_string': 'bauxite {GLO}| bauxite mine operation | Cut-off, U'}
 Example 2: 'shelled cashews' -> {'best_lookup_string': 'cashew {IN}| cashew production | Cut-off, U'}
-Following these examples match the following dataset: 'Maize starch, citric acid' sourced from China.
-"""
+Following these examples match the following dataset:"""+search_dataset_name
 print('Embedding the question')
 question_embeddings = np.array([get_text_embedding(question,embedding_model=embedding_model)])
 print('Done embedding the question')
