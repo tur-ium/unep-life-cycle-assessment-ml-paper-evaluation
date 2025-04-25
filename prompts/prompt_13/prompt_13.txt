@@ -1,0 +1,61 @@
+### Instructions ###
+You are a Life Cycle Assessment expert and is performing a process-based Life Cycle Assessment (LCA).
+I will give you an 'item description' and a list of 'reference_product's.
+Find a maximum of 5 highest matched 'reference_product's from the given list and report them in the order of match (highest match first) in a Python list of dictionaries.
+For each entry in the dictionary, you must provide the 'justification' field, 'reference_product' and the 'index' of the 'reference_product'.
+
+### Detailed Instructions ###
+- Definition of match: Given an item description, a reference product is considered a match if it is either an exact match of the reference product (e.g. 'tomato' in an exact match for item "red tomato") or one of the components of the item description (e.g. given 'chili bean sauce' as the item, and 'bean' and 'chilli' as reference products, both are considered matches). Note that this definition is optimized for recall (i.e. to capture as many reference products as possible in the top 5 list).
+- Write the 'justification' field following this chain of thoughts: (a) break down the "Item description" into its components if it has multiple components (b) go through each reference product in the list and see if any of them are either an exact match of the item or one of its components.
+- Similar reference products are not considered as a match. Example: For the item description 'rapini', the reference product 'spinach' is not a match; they are similar vegetables but not the same.
+- ALL 'index' and 'reference_product's that you return as an output MUST be in the reference_product's input data. DO NOT generate or hallucinate an 'index' or a 'reference_product' that is not in the input.
+- If any of the reference product is not a match, do not report that entry. It is better to report fewer entries than to report unmatched entries, but report at least 1 entry if possible.
+- If none of reference products is a match, return one entry with 'reference_product': '', 'index': ''. DO NOT return this entry once there is at least one match.
+- If the given list contains duplicate reference products, only report the first occurrence of the reference product.
+- Always give a higher ranking to reference products that cover the most volume (thereby contributes to more CO2 emission) of the item. e.g. given 'chili bean sauce' as the item, and 'bean' and 'chilli' as reference products, you have to rank 'bean' higher than 'chilli' as 'chili bean sauce' is made from beans.
+- Return a python list of dictionaries, each dictionary should contain the fields 'index', 'justification' and 'reference_product'. Output nothing else before and after this list of dictionary.
+- The format of response must match the following example: [{{'justification': '', 'reference_product': '', 'index':}},{{'justification': '', 'reference_product': '', 'index':}}]. Do not include any additional text or explanation in your response. DO NOT break this rule.
+- Be sure to properly escape any special characters in the 'justification' field so that your response can be parsed with a python code interpreter.
+- DO NOT return sentences like 'Here are the top 5 highest matched reference products for the item'. Just return the python list of dictionary and nothing else.
+- Return a Python List of dictionaries and nothing else.
+- Your response will be parsed using ast.literal_eval(response) command, so you MUST return a Python list of dictionaries to avoid errors.
+
+### Example Input ###
+item description: "Ingredient    popped popcorn"
+Reference products:
+ [
+ {{'index': 0, 'reference_product': 'sweet corn'}},
+ {{'index': 1, 'reference_product': 'chopping, maize'}},
+ {{'index': 2, 'reference_product': 'maize chop'}},
+ {{'index': 3, 'reference_product': 'palm kernel meal'}},
+ {{'index': 4, 'reference_product': 'maize grain, organic'}},
+ {{'index': 5, 'reference_product': 'lime, packed'}},
+ {{'index': 6, 'reference_product': 'flax husks'}},
+ {{'index': 7, 'reference_product': 'maize grain'}},
+ {{'index': 8, 'reference_product': 'wood chips and particles, willow'}},
+ {{'index': 9, 'reference_product': 'maize grain, feed'}},
+ {{'index': 10, 'reference_product': 'lime, hydrated, packed'}},
+ {{'index': 11, 'reference_product': 'maize seed, at farm'}},
+ {{'index': 12, 'reference_product': 'tomato, fresh grade'}},
+ {{'index': 13, 'reference_product': 'quicklime, milled, packed'}},
+ {{'index': 14, 'reference_product': 'bottom ash, MSWI[F]-WWT, WW from maize starch production'}},
+ {{'index': 15, 'reference_product': 'maize grain, feed, organic'}},
+ {{'index': 16, 'reference_product': 'frozen fish sticks, hake'}},
+ {{'index': 17, 'reference_product': 'sweet sorghum grain'}},
+ {{'index': 18, 'reference_product': 'operation, reefer, freezing'}},
+ {{'index': 19, 'reference_product': 'orange, fresh grade'}}
+ ]
+
+### Example Output ###
+[
+{{"justification": 'Popcorn is made from maize/corn kernels, so "maize grain" is the most relevant reference product.',"reference_product": "maize grain","index": 7}},
+{{"justification": '"Maize grain, organic" is also highly relevant as popcorn is made from maize/corn.',"reference_product": "maize grain, organic","index": 4}},
+{{"justification": '"Maize grain, feed" is relevant as it refers to maize/corn which is used to make popcorn.',"reference_product": "maize grain, feed","index": 9}},
+{{"justification": '"Maize seed, at farm" is relevant as it refers to the source of maize/corn used for popcorn.',"reference_product": "maize seed, at farm","index": 11}},
+{{"justification": '"Maize grain, feed, organic" is somewhat relevant as it refers to organic maize/corn which could be used for popcorn.',"reference_product": "maize grain, feed, organic","index": 15}},
+]
+
+
+### Input ###
+Information on item: {}
+Reference products: {}
