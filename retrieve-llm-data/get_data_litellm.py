@@ -24,18 +24,19 @@ logging.basicConfig(filename='log.log',filemode='w',encoding='utf-8',level=loggi
 logging.getLogger()
 
 # PARAMETERS
-sql_db_name = '../records3.db' # Used to store the ids of prompts and responses
+sql_db_name = '../records_catejan.db' # Used to store the ids of prompts and responses
 root_input_prompt_dir = Path('../prompts') # Top level directory with sub-directories for each prompt
 prompt_id: int = 13
 root_output_dir = Path('../outputs')
-temperature=0.7
-number_of_responses_per_prompt = 3
+temperature = 0.7
+number_of_responses_per_prompt = 1
 
 # input_list_of_processes = '../lookup_strings_list.csv'
-model = "mistral/mistral-large-latest"
+# model = "mistral/mistral-large-latest"
 # model = "ollama_chat/llama3.2:latest"
 # model = "anthropic/claude-3-5-sonnet-20240620"
 # model = "gemini/gemini-2.5-pro-exp-03-25"
+model = "openai/gpt-4.1-nano"
 
 embedding_model = "mistral/mistral-embed" # For mistral models
 # embedding_model = "gemini/text-embedding-004" # For Gemini
