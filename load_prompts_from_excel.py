@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import pandas as pd
+from retrievellmdata.utils import save_text_as_img_markdown
 
 # INPUT PARAMETERS
 prompt_excel_path = '20250428_Prompts.xlsx'
@@ -26,5 +27,5 @@ for index, prompt in prompt_dict.items():
     prompt_text = prompt['Prompt']
     with open(output_prompt_path, encoding='utf-8',mode='w') as fw:
         fw.write(prompt_text)
-
+    save_text_as_img_markdown(prompt_text, output_path=output_prompt_dir / f'prompt_{prompt_id}.png')
 print('Done.')

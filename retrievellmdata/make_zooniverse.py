@@ -81,7 +81,7 @@ def make_zooniverse_files(prompt_dir,db_name:str,poppler_path:str=None):
         logging.warning(f'prompt text could not be found for prompt {prompt_id}. Skipping...')
     else:
         logging.info('Saving prompt image ...')
-        save_text_as_img_markdown(prompt_text[0],output_path=prompt_dir / 'prompt.png')
+        save_text_as_img_markdown(prompt_text[0],output_path=prompt_dir / f'prompt_{prompt_id}.png')
         logging.info('Done saving prompt image')
     with open(prompt_dir / 'manifest.csv', 'w', newline='') as fw:
         csv_writer = csv.writer(fw,delimiter=',')
