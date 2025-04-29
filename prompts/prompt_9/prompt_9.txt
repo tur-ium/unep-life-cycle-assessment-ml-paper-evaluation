@@ -1,7 +1,0 @@
-Two independent LCAs of plant-based meat substitutes yield conflicting conclusions: one study claims substantial environmental advantages over traditional beef, while the other argues limited or negligible benefit. Provide a concise analytical framework (under 400 words) detailing how you'd systematically compare these studies to resolve the discrepancy. Your framework should clearly address:
-
-- Potential methodological reasons for differences (data sources, boundaries, functional units, LCIA methods).
-- Steps you would take to harmonize findings or determine which conclusions are more reliable.
-- Recommendations on how future LCAs can avoid similar discrepancies.
-
-Explain your answer, giving citations in author-year format

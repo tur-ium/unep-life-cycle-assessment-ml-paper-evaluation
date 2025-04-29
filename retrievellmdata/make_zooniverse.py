@@ -13,7 +13,7 @@ logging.basicConfig(filename='make_zooniverse.log',filemode='w',encoding='utf-8'
 logging.getLogger()
 
 # PARAMETERS
-input_dir = Path('../outputs/prompt_6')
+input_dir = Path('../outputs/pre_20250429/prompt_6')
 prompt_id = 6
 temperature = 0 # For duck.ai it appears to be 0
 llm_provider = 'duck.ai'
@@ -150,4 +150,4 @@ def make_zooniverse_files(prompt_dir,db_name:str,poppler_path:str=None):
 #     print('done')
 
 if __name__ == '__main__':
-    make_zooniverse_files(r'C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\outputs\prompt_102','records5.db')
+    make_zooniverse_files(r'/outputs/pre_20250429/prompt_102', 'records5.db')

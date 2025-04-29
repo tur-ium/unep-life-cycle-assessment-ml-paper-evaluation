@@ -1,5 +1,4 @@
 import logging
-import os
 import sqlite3
 from pathlib import Path
 from typing import List
@@ -9,11 +8,12 @@ import dotenv
 from database_utils import init_db_schema
 from get_data_litellm import run_prompt_from_dir
 
+
 logging.basicConfig(filename='log.log',filemode='w',encoding='utf-8',level=logging.DEBUG)
 logging.getLogger()
 
 # PARAMETERS
-sql_db_name = '../records_catejan.db' # Used to store the ids of prompts and responses
+sql_db_name = '../records_cajetan.db' # Used to store the ids of prompts and responses
 root_input_prompt_dir = Path('../prompts') # Top level directory with sub-directories for each prompt
 prompt_id: int = 13
 root_output_dir = Path('../outputs')

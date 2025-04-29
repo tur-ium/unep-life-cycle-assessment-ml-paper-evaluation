@@ -1,17 +1,19 @@
 from pathlib import Path
-
 import pandas as pd
+
 from retrievellmdata.utils import save_text_as_img_markdown
 
 # INPUT PARAMETERS
-prompt_excel_path = '20250428_Prompts.xlsx'
+prompt_excel_path = '20250429_Prompts.xlsx'
 sheet_name = 'prompt_list'
 prompts_dir = 'prompts'
+
 # END INPUT PARAMETERS
-expected_columns = ['LCA stage','Task_type','Problem_type','Prompt','Answer','Explanation']
+expected_columns = ['LCA stage','Task_type','Problem_type','Prompt','Answer','Explanation','Extra_remarks']
 df = pd.read_excel(prompt_excel_path, sheet_name=sheet_name, engine='openpyxl')
 
 prompts_dir = Path(prompts_dir)
+
 # Check that the columns are exactly the same (could be different orders)
 assert all([c in expected_columns for c in df.columns])
 assert all([c in df.columns for c in expected_columns])
