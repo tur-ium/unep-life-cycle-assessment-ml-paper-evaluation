@@ -14,7 +14,7 @@ logging.basicConfig(filename='log.log', filemode='w', encoding='utf-8', level=lo
 logging.getLogger()
 
 # PARAMETERS
-sql_db_name = '../records_mistral.db'  # Used to store the ids of prompts and responses
+sql_db_name = '../records_4.db'  # Used to store the ids of prompts and responses
 root_input_prompt_dir = Path('../prompts')  # Top level directory with sub-directories for each prompt
 root_output_dir = Path('../outputs')
 temperature = 0.

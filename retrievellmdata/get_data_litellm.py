@@ -18,7 +18,7 @@ import dotenv
 from litellm import completion, InternalServerError
 from litellm.types.utils import ModelResponse
 
-from database_utils import init_db_schema, insert_prompt_to_db, insert_response_to_db
+from database_utils import init_db_schema, insert_prompt_to_db, insert_response_to_db, update_response_filename
 
 logging.basicConfig(filename='log.log',filemode='w',encoding='utf-8',level=logging.DEBUG)
 logging.getLogger()
@@ -85,7 +85,8 @@ def run_prompt_from_dir_cli(root_input_prompt_dir: str, prompt_id: int, model: s
 
 
 def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, output_dir: str,
-                        temperature: float, number_of_responses_per_prompt: int, conn: Connection, naming_system:typing.Literal['response_id','descriptive']='response_id',
+                        temperature: float, number_of_responses_per_prompt: int, conn: Connection, naming_system:
+                        typing.Optional[typing.Literal['response_id', 'descriptive']]=None,
                         max_tries = 2) -> None:
     """
 
@@ -103,6 +104,10 @@ def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, 
     assert isinstance(number_of_responses_per_prompt,int)
     assert 0 < number_of_responses_per_prompt < 10
     assert isinstance(model,str)
+
+    if naming_system is None:
+        naming_system = os.getenv('DEFAULT_RESPONSE_NAMING_SYSTEM')
+    assert naming_system in ['descriptive','response_id']
 
     root_input_prompt_dir = Path(root_input_prompt_dir) if not isinstance(root_input_prompt_dir, Path) else root_input_prompt_dir
     output_dir = Path(output_dir) if not isinstance(output_dir,Path) else output_dir
@@ -181,6 +186,7 @@ def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, 
             raise NotImplementedError(f'naming_system={naming_system} is not implemented. Double check it is one of the options in the type hint')
         with open(output_dir / filename, encoding='utf-8', mode='w') as fw:
             fw.write(response_text)
+        update_response_filename(conn,response_id,filename)
     logging.info('Done.')
 
 if __name__ == '__main__':
