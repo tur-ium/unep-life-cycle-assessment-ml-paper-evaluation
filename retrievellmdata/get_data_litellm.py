@@ -15,7 +15,7 @@ from sqlite3 import Connection
 import typing
 import dotenv
 
-from litellm import completion
+from litellm import completion, InternalServerError
 from litellm.types.utils import ModelResponse
 
 from database_utils import init_db_schema, insert_prompt_to_db, insert_response_to_db
@@ -24,19 +24,19 @@ logging.basicConfig(filename='log.log',filemode='w',encoding='utf-8',level=loggi
 logging.getLogger()
 
 # PARAMETERS
-sql_db_name = '../records_catejan.db' # Used to store the ids of prompts and responses
+sql_db_name = '../records_mistral.db' # Used to store the ids of prompts and responses
 root_input_prompt_dir = Path('../prompts') # Top level directory with sub-directories for each prompt
-prompt_id: int = 13
+prompt_id: int = 10
 root_output_dir = Path('../outputs')
 temperature = 0.7
 number_of_responses_per_prompt = 1
 
 # input_list_of_processes = '../lookup_strings_list.csv'
-# model = "mistral/mistral-large-latest"
+model = "mistral/mistral-large-latest"
 # model = "ollama_chat/llama3.2:latest"
 # model = "anthropic/claude-3-5-sonnet-20240620"
 # model = "gemini/gemini-2.5-pro-exp-03-25"
-model = "openai/gpt-4.1-nano"
+# model = "openai/gpt-4.1-nano"
 
 embedding_model = "mistral/mistral-embed" # For mistral models
 # embedding_model = "gemini/text-embedding-004" # For Gemini
@@ -85,7 +85,8 @@ def run_prompt_from_dir_cli(root_input_prompt_dir: str, prompt_id: int, model: s
 
 
 def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, output_dir: str,
-                        temperature: float, number_of_responses_per_prompt: int, conn: Connection, naming_system:typing.Literal['response_id','descriptive']='response_id') -> None:
+                        temperature: float, number_of_responses_per_prompt: int, conn: Connection, naming_system:typing.Literal['response_id','descriptive']='response_id',
+                        max_tries = 2) -> None:
     """
 
     :param api_base:
@@ -126,30 +127,49 @@ def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, 
         logging.warning(
             'The temperature parameter is set to 0, but the number of responses per prompt is more than 1. Setting the number of response to 1, because response will always be the same (if no tools are used)')
         number_of_responses_per_prompt = 1
-
+    tries=0
     for n in range(number_of_responses_per_prompt):
-        if provider_name.lower() == 'ollama_chat':
-            response = completion(model=model,
-                                  messages=[{'role': 'user', 'content': prompt_txt}],
-                                  temperature=temperature,
-                                  max_tokens=max_tokens_response,
-                                  stream=False)
-            if not isinstance(response, ModelResponse):
-                # LiteLLM returns also an id tuple
-                raise Exception('Unexpected response. Should be a ModelResponse')
-            response_text = response.choices[0].message.content
-            logging.info(response)
+        while tries < max_tries:
+            try:
+                if provider_name.lower() == 'ollama_chat':
+                    response = completion(model=model,
+                                          messages=[{'role': 'user', 'content': prompt_txt}],
+                                          temperature=temperature,
+                                          max_tokens=max_tokens_response,
+                                          stream=False)
+                    tries += 1
 
-        else:
-            response = completion(model=model,
-                                  messages=[{'role': 'user', 'content': prompt_txt}],
-                                  temperature=temperature,
-                                  max_tokens=max_tokens_response)
-            if not isinstance(response, ModelResponse):
-                # LiteLLM returns also an id tuple
-                raise Exception('Unexpected response. Should be a ModelResponse')
-            response_text = response.choices[0].message.content
-            logging.info(response)
+                elif provider_name.lower() == 'gemini':
+                    response = completion(model=model,
+                                          messages=[{'role': 'user', 'content': prompt_txt}],
+                                          temperature=temperature,
+                                          max_tokens=max_tokens_response,
+                                          stream=False) # Include a parameter
+                    tries += 1
+                else:
+                    response = completion(model=model,
+                                          messages=[{'role': 'user', 'content': prompt_txt}],
+                                          temperature=temperature,
+                                          max_tokens=max_tokens_response)
+                    tries += 1
+            except InternalServerError as e:
+                if e.status_code == 500:
+                    rate_limit_env_var = f'{provider_name.upper()}_RATE_LIMIT'
+                    rate_limit = os.getenv(rate_limit_env_var)
+                    if rate_limit is None or not isinstance(rate_limit,float):
+                        raise Exception(f"OS ENV VARIABLE {rate_limit_env_var} is not set, or is not a valid floating point number. Please update .env file")
+                    sleep_time = 1./rate_limit
+                    time.sleep(sleep_time)
+                    continue
+                    tries+=1
+                else:
+                    break
+
+        if not isinstance(response, ModelResponse):
+            # LiteLLM returns also an id tuple
+            raise Exception('Unexpected response. Should be a ModelResponse')
+        response_text = response.choices[0].message.content
+        logging.info(response)
 
         response_id = insert_response_to_db(conn=conn,response_text=response_text,prompt_id=prompt_id,model_name=model,temperature=temperature,tools='',image_path='',llm_provider=provider_name)
         if naming_system == 'response_id':
