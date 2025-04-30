@@ -1,0 +1,19 @@
+As an LCA practitioner assessing a crop from a regenerative farm, key data to collect include:
+
+1. **Farm Inputs:** Quantities and types of fertilizers (organic/inorganic), soil amendments, pesticides, herbicides, and water used. Details on seed varieties and planting materials are also essential.
+
+2. **Farming Practices:** Tillage methods, crop rotation schedules, cover cropping, composting, mulching, and other regenerative techniques employed. Information on pest and weed management strategies is important.
+
+3. **Land Management:** Land area, duration of cultivation, and any land restoration activities. Data on soil health indicators (organic matter, microbial activity) and biodiversity levels.
+
+4. **Energy Use:** Energy inputs for machinery, irrigation, and infrastructure, including renewable energy sources if applicable.
+
+5. **Inputs Production:** Data on the embodied impacts of producing inputs (fertilizers, seeds, equipment manufacturing), ideally specific to local or regional production systems.
+
+6. **Harvesting and Post-Harvest:** Transportation, storage, processing, and packaging methods, including associated energy and material use.
+
+7. **Outputs and Yields:** Crop yields, residues, and by-products, to assess productivity and resource use efficiency.
+
+8. **Soil and Ecosystem Benefits:** Data on carbon sequestration, soil carbon changes, water retention, and biodiversity enhancements resulting from regenerative practices.
+
+Collecting comprehensive, site-specific data ensures an accurate LCA that reflects the environmental benefits of regenerative farming systems.

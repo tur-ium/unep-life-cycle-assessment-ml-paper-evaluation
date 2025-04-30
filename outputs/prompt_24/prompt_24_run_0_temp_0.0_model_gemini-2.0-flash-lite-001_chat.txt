@@ -1,0 +1,11 @@
+As an LCA practitioner for a regenerative farm crop, I need to collect data across the entire life cycle, from "cradle to gate" (farm gate). Key data categories include:
+
+*   **Inputs:** Seeds, fertilizers (organic amendments, compost), pesticides (if any), water for irrigation, fuel and electricity for machinery and irrigation. Quantify amounts, origin, and transportation distances.
+*   **On-farm activities:** Tillage practices (frequency, depth), planting, harvesting, and any other field operations. Record fuel/electricity consumption, labor hours, and machinery use.
+*   **Soil management:** Cover cropping, no-till practices, and other regenerative practices. Document the type, frequency, and area covered.
+*   **Outputs:** Crop yield, co-products (e.g., straw), and waste generated. Measure the quantity and destination of each.
+*   **Transportation:** Distances and modes of transport for inputs and outputs (e.g., to processing, storage, or market).
+*   **Emissions:** Data on greenhouse gas emissions (GHGs) from soil (N2O, CO2), machinery, and fertilizer use.
+*   **Land use:** Changes in land use and land management practices.
+
+I'll need to gather this data through farm records, interviews, and potentially on-site measurements.

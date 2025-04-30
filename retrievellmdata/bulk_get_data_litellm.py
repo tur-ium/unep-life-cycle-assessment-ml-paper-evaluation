@@ -1,4 +1,5 @@
 import logging
+import os
 import re
 import sqlite3
 import time
@@ -21,12 +22,10 @@ temperature = 0.
 number_of_responses_per_prompt = 1
 
 models = [
-    # "mistral/mistral-large-latest",
-    # "ollama_chat/llama3.2:latest",
+    "mistral/mistral-large-latest",
     # "anthropic/claude-3-5-sonnet-20240620",
-    "gemini/gemini-2.0-flash-lite-001",
-    # 2025-04-03 Having issues accessing gemini-2.0-flash-001. Error 503, model overloaded
-    # "openai/gpt-4.1-nano"
+    "gemini/gemini-2.0-flash-lite-001", # 2025-04-03 Having issues accessing gemini-2.0-flash-001. Error 503, model overloaded
+    "openai/gpt-4.1-nano"
 ]
 
 
@@ -51,7 +50,8 @@ def bulk_run_models_on_prompt(prompt_id: int, root_input_prompt_dir:str|Path, mo
 
 
 def bulk_run_all(sql_db_name, root_input_prompt_dir:str|Path, root_output_dir:str|Path, models:List[str], temperature, number_of_responses_per_prompt,
-                 sleep_time_between_batches=3):
+                 sleep_time_between_batches:float=3):
+    assert isinstance(sleep_time_between_batches,(float,int))
     root_input_prompt_dir = Path(root_input_prompt_dir) if not isinstance(root_input_prompt_dir,
                                                                           Path) else root_input_prompt_dir
     root_output_dir = Path(root_output_dir) if not isinstance(root_output_dir,
@@ -85,5 +85,8 @@ def bulk_run_all(sql_db_name, root_input_prompt_dir:str|Path, root_output_dir:st
 
 
 if __name__ == '__main__':
+    sleep_time = float(os.getenv("SLEEP_TIME_BETWEEN_BATCHES"))
     # bulk_run_models_on_prompt(10,Path(r'C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\prompts'),models)
-    bulk_run_all(sql_db_name, root_input_prompt_dir=root_input_prompt_dir, root_output_dir=root_output_dir, models=models,temperature= temperature,number_of_responses_per_prompt= number_of_responses_per_prompt)
+    bulk_run_all(sql_db_name, root_input_prompt_dir=root_input_prompt_dir, root_output_dir=root_output_dir, models=models,temperature= temperature,
+                 number_of_responses_per_prompt= number_of_responses_per_prompt,
+                 sleep_time_between_batches=sleep_time)

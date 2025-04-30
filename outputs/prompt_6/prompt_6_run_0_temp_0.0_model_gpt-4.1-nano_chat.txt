@@ -1,0 +1,1 @@
+The functional unit of a product system in life cycle assessment is a quantified description of the service or function provided by the product, serving as a reference to which all inputs and outputs are normalized. It ensures comparability of results by defining the specific function, performance, and conditions under which the product system is evaluated.

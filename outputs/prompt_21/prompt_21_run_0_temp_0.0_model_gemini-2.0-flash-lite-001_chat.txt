@@ -1,0 +1,5 @@
+Comparing your product's Life Cycle Assessment (LCA) to an industry average presents several limitations. Firstly, the "industry average" is a broad simplification, potentially masking significant variations within the industry. It might not accurately reflect the specific practices of your competitors or the diverse product designs available.
+
+Secondly, the data used to calculate the industry average can be outdated or incomplete, leading to inaccurate comparisons. The scope of the LCA itself is crucial; if the industry average LCA uses a different system boundary (e.g., cradle-to-gate vs. cradle-to-grave), the comparison becomes skewed.
+
+Finally, the industry average often lacks transparency. The underlying assumptions and data sources may not be readily available, making it difficult to understand the basis of the comparison and assess its reliability. Therefore, while useful for a general overview, relying solely on an industry average comparison can be misleading and should be supplemented with more specific and detailed analyses.

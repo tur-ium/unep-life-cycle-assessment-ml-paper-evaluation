@@ -1,0 +1,30 @@
+Sure, let's match the items in the bill of materials to the best matching description from the list of available models.
+
+### Bill of Materials
+1. raw bauxite ore
+2. shelled cashews
+3. citric acid from China
+4. maize starch from Europe
+5. protein feed from North America
+6. energy feed from China
+
+### Matching Results
+
+| Item                    | best_lookup_string                                      | explanation                                                                 |
+|--------------------------|----------------------------------------------------------|-----------------------------------------------------------------------------|
+| raw bauxite ore          | bauxite {GLO}| bauxite mine operation | Cut-off, U      | The product 'raw bauxite ore' matches 'bauxite' with a global region.      |
+| shelled cashews          | cashew {RoW}| cashew production | Cut-off, U      | The product 'shelled cashews' matches 'cashew' with a region of 'RoW'.     |
+| citric acid from China   | Citric acid {CN}| production | Cut-off, U      | The product 'citric acid from China' matches 'Citric acid' with region 'CN'.|
+| maize starch from Europe | Maize starch {RER}| citric acid production | Cut-off, U | The product 'maize starch from Europe' matches 'Maize starch' with region 'RER'. |
+| protein feed from North America | protein feed, 100% crude {RNA}| citric acid production | Cut-off, U | The product 'protein feed from North America' matches 'protein feed, 100% crude' with region 'RNA'. |
+| energy feed from China  | energy feed, gross {CN}| citric acid production | Cut-off, U | The product 'energy feed from China' matches 'energy feed, gross' with region 'CN'. |
+
+### Explanation:
+1. **raw bauxite ore**: The closest match is 'bauxite {GLO}| bauxite mine operation | Cut-off, U' because 'raw bauxite ore' is a form of bauxite and the region is not specified, so 'GLO' is appropriate.
+2. **shelled cashews**: The closest match is 'cashew {RoW}| cashew production | Cut-off, U' because 'shelled cashews' is a form of cashew and the region is not specified, so 'RoW' is appropriate.
+3. **citric acid from China**: The closest match is 'Citric acid {CN}| production | Cut-off, U' because 'citric acid from China' directly matches 'Citric acid' with the region 'CN'.
+4. **maize starch from Europe**: The closest match is 'Maize starch {RER}| citric acid production | Cut-off, U' because 'maize starch from Europe' directly matches 'Maize starch' with the region 'RER' (which stands for Europe).
+5. **protein feed from North America**: The closest match is 'protein feed, 100% crude {RNA}| citric acid production | Cut-off, U' because 'protein feed from North America' directly matches 'protein feed, 100% crude' with the region 'RNA' (which stands for North America).
+6. **energy feed from China**: The closest match is 'energy feed, gross {CN}| citric acid production | Cut-off, U' because 'energy feed from China' directly matches 'energy feed, gross' with the region 'CN'.
+
+If there are any other items or specific cases you need to match, please provide them, and I can assist further.

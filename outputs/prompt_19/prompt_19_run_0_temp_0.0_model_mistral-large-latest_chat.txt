@@ -1,0 +1,9 @@
+In a slaughter process, the **By-Product Allocation** method should be used for multi-output allocation. This method allocates costs based on the relative value of the main products (e.g., meat cuts) and by-products (e.g., hides, offal). Here's why:
+
+1. **Economic Value**: By-products can have significant economic value, so allocating costs solely based on weight or another physical measure may not reflect the true economic contribution of each output.
+
+2. **Accurate Costing**: By-Product Allocation ensures that the costs of the process are accurately assigned to all outputs, preventing over- or under-costing of the main products.
+
+3. **Informed Decision Making**: This method provides insights into the profitability of each output, aiding in pricing decisions and focus areas for improving process efficiency.
+
+To implement, determine the relative value of each output as a percentage of the total value, and allocate costs accordingly. This approach aligns costs with the revenue-generating capacity of each output.

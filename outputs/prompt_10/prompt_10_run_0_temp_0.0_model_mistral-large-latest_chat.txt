@@ -1,0 +1,74 @@
+### Goal and Scope Definition for Life Cycle Assessment (LCA)
+
+#### Goal Definition
+The goal of this LCA is to compare the environmental impacts of three different land-use scenarios in a small, rural community:
+1. Converting agricultural land into a solar farm.
+2. Maintaining the current agricultural use.
+3. Implementing an agrivoltaic system that combines solar power generation with agricultural production.
+
+The primary objective is to provide a comprehensive environmental assessment to inform decision-making by the community and stakeholders. The assessment will focus on greenhouse gas emissions, land use, and other relevant environmental impacts to determine the most sustainable option.
+
+#### Scope Definition
+
+1. **Functional Unit**:
+   - The functional unit will be the environmental impact per hectare of land over a 25-year period. This timeframe is chosen to reflect the typical lifespan of a solar farm and to allow for a meaningful comparison with agricultural activities over a similar duration.
+
+2. **System Boundaries**:
+   - **Solar Farm Scenario**:
+     - Include the construction, operation, and decommissioning phases of the solar farm.
+     - Consider the production and transportation of solar panels, inverters, and other necessary equipment.
+     - Include the maintenance and end-of-life disposal or recycling of solar farm components.
+   - **Agricultural Scenario**:
+     - Include the cultivation, harvesting, and transportation of agricultural products.
+     - Consider the use of fertilizers, pesticides, and agricultural machinery.
+     - Include the emissions from livestock and soil management practices.
+   - **Agrivoltaic Scenario**:
+     - Include the construction, operation, and decommissioning phases of the agrivoltaic system.
+     - Consider the production and transportation of solar panels, inverters, and agricultural equipment.
+     - Include the maintenance and end-of-life disposal or recycling of agrivoltaic components.
+     - Consider the cultivation, harvesting, and transportation of agricultural products under the agrivoltaic system.
+
+3. **Impact Categories**:
+   - **Greenhouse Gas Emissions**:
+     - Carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O) emissions.
+   - **Land Use**:
+     - Changes in land use and land cover.
+   - **Water Use**:
+     - Water consumption for agricultural activities and solar farm maintenance.
+   - **Biodiversity**:
+     - Impact on local flora and fauna.
+   - **Energy Use**:
+     - Energy consumption for agricultural activities, solar farm operation, and agrivoltaic system.
+
+4. **Stakeholders**:
+   - Community members.
+   - Solar developer.
+   - Local farmers.
+   - Local government and decision-makers.
+   - Environmental organizations.
+
+5. **Data Sources**:
+   - Primary data from the solar developer and local farmers.
+   - Secondary data from scientific literature, government reports, and industry databases.
+   - Life cycle inventory (LCI) databases such as Ecoinvent, GaBi, and USLCI.
+
+6. **Assumptions and Limitations**:
+   - Assume that the solar farm and agrivoltaic system will operate at optimal efficiency.
+   - Assume that agricultural practices will remain consistent over the 25-year period.
+   - Limitations include the availability and accuracy of data, especially for the agrivoltaic scenario, which may be less well-documented.
+
+### Justification
+
+1. **Comprehensive Comparison**:
+   - The goal and scope are designed to provide a comprehensive comparison of the three scenarios, ensuring that all relevant environmental impacts are considered.
+
+2. **Stakeholder Involvement**:
+   - The inclusion of various stakeholders ensures that the LCA addresses the diverse concerns and goals of the community, including job creation, tax revenue, and environmental sustainability.
+
+3. **Scientific Rigor**:
+   - The use of a 25-year timeframe and detailed impact categories ensures that the LCA is scientifically rigorous and provides a robust basis for decision-making.
+
+4. **Practical Application**:
+   - The LCA will provide practical insights and evidence to support the community's decision-making process, helping to achieve consensus on the most sustainable pathway.
+
+By defining the goal and scope in this manner, the LCA will serve as a valuable tool for the community to make an informed decision that balances environmental sustainability with economic and social benefits.

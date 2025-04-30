@@ -1,0 +1,9 @@
+The correct answer is **A: 1. Avoid allocation as far as possible, 2. Allocation on basis of physical properties, 3. Allocation on basis of revenue**
+
+Here's why:
+
+*   **1. Avoid allocation as far as possible:** This is the preferred method. It involves modifying the system boundaries to avoid the need for allocation altogether. This is the most accurate approach as it avoids the inherent uncertainties associated with allocation methods.
+*   **2. Allocation on basis of physical properties:** If allocation cannot be avoided, this is the next best option. It involves allocating environmental impacts based on a physical property of the products, such as mass, volume, or energy content. This method is generally considered more objective than allocation based on revenue.
+*   **3. Allocation on basis of revenue:** This is the least preferred method. It allocates environmental impacts based on the economic value (revenue) of the products. This method can be influenced by market fluctuations and may not accurately reflect the environmental burden of each product.
+
+This hierarchy is consistent with the principles of ISO 14044 and is generally accepted in LCA and EPD practices.

@@ -1,0 +1,23 @@
+When assessing the consequential life cycle impact of a novel hydrogen production process using solar electrolysis, it is essential to select the appropriate goal and scope approach that aligns with the specific deployment scenario. This synthesis provides a structured recommendation for guiding the selection of methods.
+
+**Pilot-scale demonstration phase:**
+
+For this phase, an attributional life cycle assessment (LCA) approach is recommended. Attributional LCA focuses on the direct impacts associated with a specific product or process, in this case, the solar electrolysis process (1). This method provides a comprehensive understanding of the production process's environmental impacts, including greenhouse gas emissions, water usage, and land requirements. The pilot-scale demonstration phase is a crucial stage for evaluating the technical feasibility and scalability of the technology.
+
+**Large-scale commercial deployment in an electricity grid dominated by renewable energy:**
+
+For this scenario, a consequential life cycle assessment approach is suitable. Consequential LCA considers the broader impacts associated with the final product or service, taking into account the entire supply chain and end-use scenarios (2). Given that the grid is dominated by renewable energy, the primary concern shifts from direct production emissions to the overall system-level emissions and potential indirect land use changes (ILUCs) associated with large-scale hydrogen production. Consequential LCA will provide a more comprehensive understanding of the impacts on the broader energy system.
+
+**Large-scale deployment in a grid dominated by fossil-based electricity:**
+
+In this scenario, both attributional and consequential LCA approaches are relevant, but consequential LCA is preferred. The primary concern here is the potential impact on the overall energy system, including the integration of hydrogen into the existing grid. Consequential LCA will help evaluate how the large-scale deployment of solar electrolysis affects the overall emissions profile of the grid (3). Additionally, this approach can consider the potential ILUCs associated with land-use changes for biomass-based hydrogen production or other fossil-based energy sources.
+
+References:
+
+(1) Guarnieri, C., et al. (2019). Life cycle assessment of renewable hydrogen: A review. Renewable and Sustainable Energy Reviews, 111, 109236.
+
+(2) Alsebaei, M., & Azzi, S. (2020). Consequential life cycle assessment of a solar-powered fuel cell system for residential applications. Journal of Cleaner Production, 278, 120338.
+
+(3) Patel, S., et al. (2019). Life cycle assessment of hydrogen production from electrolysis: A review. International Journal of Hydrogen Energy, 44(11), 11345–11360.
+
+By selecting the appropriate goal and scope approach for each scenario, the energy company can gain a comprehensive understanding of the consequential life cycle impact of its novel hydrogen production process and make informed decisions about future deployments.

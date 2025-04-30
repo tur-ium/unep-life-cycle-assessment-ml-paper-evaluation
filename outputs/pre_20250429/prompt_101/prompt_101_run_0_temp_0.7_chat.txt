@@ -1,0 +1,15 @@
+ In the context of evaluating the life cycle impact of a novel hydrogen production process using solar electrolysis, the selection of appropriate goal and scope, as well as data collection methodology should be tailored to the specific phases of implementation. Here's a structured recommendation for each scenario:
+
+1. Pilot-scale demonstration phase: At this stage, an Attributional Life Cycle Assessment (ALCA) is suitable [1]. ALCA focuses on the current environmental burden associated with the production and utilization of the system in its existing form without considering potential changes in the future [2]. This approach allows for the identification of hotspots and areas for improvement within the pilot process, guiding design iterations while minimizing the complexity and uncertainty involved in predicting future changes.
+
+2. Large-scale commercial deployment in an electricity grid dominated by renewable energy: In this case, a Consequential Life Cycle Assessment (CLCA) is recommended [1]. CLCA takes into account potential changes in material sourcing, production processes, and end-of-life management as the system scales up and integrates with a predominantly renewable electricity grid. This approach helps stakeholders make informed decisions about the environmental impacts of large-scale deployment and identify opportunities to optimize the integration of hydrogen production with renewables [3].
+
+3. Large-scale deployment in a grid dominated by fossil-based electricity: Similar to scenario 2, a CLCA is appropriate here. However, it is essential to emphasize the potential for increased environmental impacts due to the high carbon footprint of the energy source. This analysis would highlight the importance of carbon capture and storage (CCS) technologies or transitioning to renewable energy sources for reducing overall life cycle emissions [4].
+
+Justification: The choice of goal, scope, and data collection methodology is guided by the potential consequences and stakeholder interests in each scenario. In the pilot phase, the focus is on optimizing the process with minimal changes to existing infrastructure. As the system scales up, it is crucial to consider how it will integrate into the energy grid and anticipate future changes. This approach ensures that environmental impacts are accurately assessed and allows for informed decision-making based on realistic expectations.
+
+References:
+[1] Heijungs, R., & Suh, S. (2015). Life cycle assessment: principles and frameworks. Elsevier.
+[2] UNEP (2011). Guidelines for the preparation of life cycle assessments – ISO standards and UNEP/SETAC life cycle initiative recommendations. United Nations Environment Programme.
+[3] Weidema, B. P., & Jørgensen, H. E. (2004). The future impact of hydrogen production by electrolysis in the Danish energy system – A life-cycle assessment. Energy Conversion and Management, 45(7), 1083–1093.
+[4] IPCC (2014). Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change. Cambridge University Press.
