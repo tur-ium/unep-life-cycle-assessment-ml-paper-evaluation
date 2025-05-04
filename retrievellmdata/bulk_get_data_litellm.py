@@ -18,8 +18,8 @@ logging.getLogger()
 # PARAMETERS
 sql_db_name = '../records_artur_20250504.db'  # Used to store the ids of prompts and responses
 root_input_prompt_dir = Path('../prompts')  # Top level directory with sub-directories for each prompt
-root_output_dir = Path('../outputs/artur_20250504')
-temperature = 1. # For OpenAI o-series models the only permitted temperature is fixed to 1 https://community.openai.com/t/why-is-the-temperature-and-top-p-of-o1-models-fixed-to-1-not-0/938922/4
+root_output_dir = Path('../outputs/artur_20250504_temp1.0')
+temperature = 0.0 # For OpenAI o-series models the only permitted temperature is fixed to 1 https://community.openai.com/t/why-is-the-temperature-and-top-p-of-o1-models-fixed-to-1-not-0/938922/4
 number_of_responses_per_prompt = 1
 
 models = [

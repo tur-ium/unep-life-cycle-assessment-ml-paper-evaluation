@@ -10,7 +10,12 @@ import dotenv
 from retrievellmdata.bulk_get_data_litellm_gemini_openai_mistral import root_output_dir
 from utils import save_text_as_img_markdown
 
-logging.basicConfig(filename='make_zooniverse.log', filemode='w', encoding='utf-8', level=logging.DEBUG)
+from datetime import datetime
+
+current_date = datetime.now()
+formatted_date = current_date.strftime('%Y-%m-%d')
+
+logging.basicConfig(filename=f'make_zooniverse_{formatted_date}', filemode='w', encoding='utf-8', level=logging.DEBUG)
 logging.getLogger()
 
 
@@ -149,7 +154,10 @@ def make_zooniverse_subject_set_per_db(db_name: str, root_prompt_dir: str | Path
         temperature = response_info[temperature_idx]
         file = root_prompt_dir / f'prompt_{prompt_id}' / Path(file_name)
         if not file.exists():
-            raise Exception(f'Could not response text in {file}. Check root_output_dir and filename in database')
+            warning_msg = f'Could not response text in {file}. Check root_output_dir and filename in database. Continuing to check other records in the database ...'
+            print(warning_msg)
+            logging.warning(warning_msg)
+            continue
         prompt_txt_filepath = root_prompt_dir / f'prompt_{prompt_id}' / f'prompt_{prompt_id}.txt'
         prompt_image_filename = f'prompt_{prompt_id}.png'
         with open(prompt_txt_filepath,'r',encoding='utf-8') as f:
@@ -178,8 +186,8 @@ if __name__ == '__main__':
     #     r'C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\outputs\artur_20250430\prompt_1',
     #     r"C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\records_artur_20250430.db")
 
-    input_root_dir = r'C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\outputs\artur_20250430'
-    output_dir = '../outputs/zooniverse_subject_set_artur_20250430'
+    input_root_dir = r'C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\outputs\artur_20250504_temp1.0'
+    output_dir = '../outputs/zooniverse_subject_set_artur_20250504_temp1.0'
     dotenv.load_dotenv('../.env')
     poppler_path = os.getenv('POPPLER_PATH')
-    make_zooniverse_subject_set_per_db(r"../records_artur_20250430.db",root_prompt_dir=input_root_dir, zooniverse_output_dir=output_dir)
+    make_zooniverse_subject_set_per_db(r"../records_artur_20250504.db",root_prompt_dir=input_root_dir, zooniverse_output_dir=output_dir)
