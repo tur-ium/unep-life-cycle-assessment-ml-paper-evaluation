@@ -7,28 +7,21 @@ import sqlite3
 
 import dotenv
 
+from retrievellmdata.bulk_get_data_litellm_gemini_openai_mistral import root_output_dir
 from utils import save_text_as_img_markdown
 
-logging.basicConfig(filename='make_zooniverse.log',filemode='w',encoding='utf-8',level=logging.DEBUG)
+logging.basicConfig(filename='make_zooniverse.log', filemode='w', encoding='utf-8', level=logging.DEBUG)
 logging.getLogger()
 
-# PARAMETERS
-input_dir = Path('../outputs/pre_20250429/prompt_6')
-prompt_id = 6
-temperature = 0 # For duck.ai it appears to be 0
-llm_provider = 'duck.ai'
-run_date = '2025-04-13' # In this case the date the prompt was run is this date. Update if running in the future.
-prompt_txt = 'prompt.txt'
-prompt_run_by = 'artur'
-start_response_line_no = 8
 
-def make_zooniverse_files(prompt_dir,db_name:str,poppler_path:str=None):
+
+def make_zooniverse_subject_set_from_directory(prompt_dir, db_name: str, poppler_path: str = None):
     if not poppler_path:
         dotenv.load_dotenv()
         poppler_path = os.getenv('POPPLER_PATH')
     assert poppler_path is not None
     assert poppler_path != ''
-    prompt_dir = Path(prompt_dir) if not isinstance(prompt_dir,Path) else prompt_dir
+    prompt_dir = Path(prompt_dir) if not isinstance(prompt_dir, Path) else prompt_dir
     assert prompt_dir.is_dir()
 
     logging.info(f'Start making zooniverse files for {prompt_dir}')
@@ -44,9 +37,13 @@ def make_zooniverse_files(prompt_dir,db_name:str,poppler_path:str=None):
     logging.info('Looking for files ending with _chat.txt')
     for file in prompt_dir.glob('*_chat.txt'):
         logging.info(f'Reading file {file.name}')
-        re_match_descriptive = re.match('prompt_?<prompt_id>([0-9]{1,10})_run_?<n>([0-9]{1,3})_temp_?<temp>(([0-9][.])?[0-9]+)_model_?<model>(.{1,100})_chat.txt',file.name,re.I)
-        re_match_response_id_pattern = re.match(r'response_([0-9]{1,3})_chat.txt',file.name,re.I)
-        re_match_descriptive = re.match(r'prompt_(?P<prompt_id>[0-9]{1,3})_run_(?P<n>[0-9]{1,3})_temp_(?P<temp>([0-9][.])?[0-9]+)_model_(?P<model>.{1,100})_chat.txt',file.name,re.I)
+        re_match_descriptive = re.match(
+            'prompt_?<prompt_id>([0-9]{1,10})_run_?<n>([0-9]{1,3})_temp_?<temp>(([0-9][.])?[0-9]+)_model_?<model>(.{1,100})_chat.txt',
+            file.name, re.I)
+        re_match_response_id_pattern = re.match(r'response_([0-9]{1,3})_chat.txt', file.name, re.I)
+        re_match_descriptive = re.match(
+            r'prompt_(?P<prompt_id>[0-9]{1,3})_run_(?P<n>[0-9]{1,3})_temp_(?P<temp>([0-9][.])?[0-9]+)_model_(?P<model>.{1,100})_chat.txt',
+            file.name, re.I)
         if re_match_response_id_pattern:
             response_id = re_match_response_id_pattern.groups()[0]
             try:
@@ -54,19 +51,23 @@ def make_zooniverse_files(prompt_dir,db_name:str,poppler_path:str=None):
             except ValueError as e:
                 raise e
         elif re_match_descriptive:
-            response_id_cursor = conn.execute("""select id from responses where response_filename = ?""",[file.name])
+            response_id_cursor = conn.execute("""select id from responses where response_filename = ?""", [file.name])
             response_id = response_id_cursor.fetchone()
             if response_id is None:
-                raise Exception(f'Could not find response filename {file.name} in the database {db_name}. Double check db name')
-            if isinstance(response_id,tuple):
+                raise Exception(
+                    f'Could not find response filename {file.name} in the database {db_name}. Double check db name')
+            if isinstance(response_id, tuple):
                 response_id = response_id[0]
         else:
             raise NotImplementedError('Can only take in files with the response id in them')
-        with open(file,'r',encoding='utf-8') as f:
+        with open(file, 'r', encoding='utf-8') as f:
             md_text = f.read()
-            save_text_as_img_markdown(md_text,output_path=prompt_dir/ file.name.replace(file.suffix,".png"),poppler_path=poppler_path)
+            save_text_as_img_markdown(md_text, output_path=prompt_dir / file.name.replace(file.suffix, ".png"),
+                                      poppler_path=poppler_path)
 
-        select_model_name = conn.execute('SELECT model_name,temperature,tools,execution_datestamp,llm_provider,prompt_run_by,prompt_id from responses where id=?',[response_id])
+        select_model_name = conn.execute(
+            'SELECT model_name,temperature,tools,execution_datestamp,llm_provider,prompt_run_by,prompt_id from responses where id=?',
+            [response_id])
         db_data_for_response_id = select_model_name.fetchone()
         if not db_data_for_response_id:
             raise ValueError(f'Could not find response id {response_id} in the database {db_name}')
@@ -81,20 +82,104 @@ def make_zooniverse_files(prompt_dir,db_name:str,poppler_path:str=None):
         prompt_id = db_data_for_response_id[6]
 
         rows_in_manifest.append(
-        [response_id, prompt_id, 'prompt.png', file.name, '', model_name, temperature, execution_date, llm_provider, prompt_run_by])
+            [response_id, prompt_id, 'prompt.png', file.name, '', model_name, temperature, execution_date, llm_provider,
+             prompt_run_by])
 
-    select_prompt_text = conn.execute('select prompt_text from prompts where id = ?',[prompt_id])
+    select_prompt_text = conn.execute('select prompt_text from prompts where id = ?', [prompt_id])
     prompt_text = select_prompt_text.fetchone()
     if not prompt_text:
         logging.warning(f'prompt text could not be found for prompt {prompt_id}. Skipping...')
     else:
         logging.info('Saving prompt image ...')
-        save_text_as_img_markdown(prompt_text[0],output_path=prompt_dir / f'prompt_{prompt_id}.png')
+        save_text_as_img_markdown(prompt_text[0], output_path=prompt_dir / f'prompt_{prompt_id}.png',poppler_path=poppler_path)
         logging.info('Done saving prompt image')
     with open(prompt_dir / 'manifest.csv', 'w', newline='') as fw:
-        csv_writer = csv.writer(fw,delimiter=',')
+        csv_writer = csv.writer(fw, delimiter=',')
         csv_writer.writerows(rows_in_manifest)
-    logging.info(f'Done creating files for prompt {prompt_id} for Zooniverse. Saved in prompt dir folder {prompt_dir.absolute()}')
+    logging.info(
+        f'Done creating files for prompt {prompt_id} for Zooniverse. Saved in prompt dir folder {prompt_dir.absolute()}')
+
+
+def make_zooniverse_subject_set_per_db(db_name: str, root_prompt_dir: str | Path, zooniverse_output_dir: str|Path, poppler_path: str = None):
+    if not poppler_path:
+        dotenv.load_dotenv()
+        poppler_path = os.getenv('POPPLER_PATH')
+    assert poppler_path is not None
+    assert poppler_path != ''
+    root_prompt_dir = Path(root_prompt_dir) if not isinstance(root_prompt_dir, Path) else root_prompt_dir
+    assert root_prompt_dir.is_dir()
+
+    zooniverse_output_dir = Path(zooniverse_output_dir) if not isinstance(zooniverse_output_dir, Path) else zooniverse_output_dir
+    zooniverse_output_dir.mkdir(parents=True)
+
+    logging.info(f'root prompt dir = {root_prompt_dir} found and is a directory')
+    logging.info(f'Start making zooniverse files for {root_prompt_dir}')
+    logging.info(f'Initiating connection to db {db_name}')
+    conn = sqlite3.connect(db_name)
+    logging.info(f'Connected to {db_name}')
+    manifest_header = ['response_id', 'prompt_id', 'prompt_image', 'response_image_1', 'response_image_2', '#llm_model',
+                       '#temperature', '#date_run', '#llm_provider', '#prompt_run_by']
+
+    rows_in_manifest = []
+    rows_in_manifest.append(manifest_header)
+    
+    responses_table_columns = ['id','model_name','temperature','tools','execution_datestamp','llm_provider','prompt_run_by','prompt_id','response_filename']
+    select_responses = conn.execute(
+        'SELECT id,model_name,temperature,tools,execution_datestamp,llm_provider,prompt_run_by,prompt_id,response_filename from responses')
+    responses_list = select_responses.fetchall()
+    logging.info(f'Loaded {len(responses_list)} response records from database {db_name}')
+
+    filename_idx = responses_table_columns.index('response_filename')
+    response_idx = responses_table_columns.index('id')
+    model_name_idx = responses_table_columns.index('model_name')
+    execution_date_idx = responses_table_columns.index('execution_datestamp')
+    llm_provider_idx = responses_table_columns.index('llm_provider')
+    prompt_id_idx = responses_table_columns.index('prompt_id')
+    prompt_run_by_idx = responses_table_columns.index('prompt_run_by')
+    temperature_idx = responses_table_columns.index('temperature')
+    for response_info in responses_list:
+        logging.info(response_info)
+        file_name = response_info[filename_idx]
+        response_id = response_info[response_idx]
+        model_name = response_info[model_name_idx]
+        execution_date = response_info[execution_date_idx]
+        llm_provider = response_info[llm_provider_idx]
+        prompt_id = response_info[prompt_id_idx]
+        prompt_run_by = response_info[prompt_run_by_idx]
+        temperature = response_info[temperature_idx]
+        file = root_prompt_dir / f'prompt_{prompt_id}' / Path(file_name)
+        if not file.exists():
+            raise Exception(f'Could not response text in {file}. Check root_output_dir and filename in database')
+        prompt_txt_filepath = root_prompt_dir / f'prompt_{prompt_id}' / f'prompt_{prompt_id}.txt'
+        prompt_image_filename = f'prompt_{prompt_id}.png'
+        with open(prompt_txt_filepath,'r',encoding='utf-8') as f:
+            prompt_txt = f.read()
+            save_text_as_img_markdown(prompt_txt, output_path=zooniverse_output_dir / prompt_image_filename,poppler_path=poppler_path)
+
+        with open(file, 'r', encoding='utf-8') as f:
+            md_text = f.read()
+            # TODO: if the response text is longer, split it up
+            response_filename1 = file_name.replace(file.suffix, ".png")
+            save_text_as_img_markdown(md_text, output_path=zooniverse_output_dir / response_filename1,
+                                      poppler_path=poppler_path)
+        rows_in_manifest.append(
+            [response_id, prompt_id, prompt_image_filename, response_filename1, '', model_name, temperature, execution_date, llm_provider,
+             prompt_run_by])
+    with open(zooniverse_output_dir / 'manifest.csv', 'w', newline='') as fw:
+        csv_writer = csv.writer(fw, delimiter=',')
+        csv_writer.writerows(rows_in_manifest)
+    logging.info(
+        f'Done creating files for subject set. Saved in prompt dir folder {zooniverse_output_dir.absolute()}')
 
 if __name__ == '__main__':
-    make_zooniverse_files(r'C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\outputs\artur_20250430\prompt_1', r"C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\records_artur_20250430.db")
+    # PARAMETERS
+
+    # make_zooniverse_subject_set_from_directory(
+    #     r'C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\outputs\artur_20250430\prompt_1',
+    #     r"C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\records_artur_20250430.db")
+
+    input_root_dir = r'C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\outputs\artur_20250430'
+    output_dir = '../outputs/zooniverse_subject_set_artur_20250430'
+    dotenv.load_dotenv('../.env')
+    poppler_path = os.getenv('POPPLER_PATH')
+    make_zooniverse_subject_set_per_db(r"../records_artur_20250430.db",root_prompt_dir=input_root_dir, zooniverse_output_dir=output_dir)
