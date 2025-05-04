@@ -4,7 +4,7 @@ import pandas as pd
 from retrievellmdata.utils import save_text_as_img_markdown
 
 # INPUT PARAMETERS
-prompt_excel_path = '20250429_Prompts.xlsx'
+prompt_excel_path = '20250504_Prompts.xlsx'
 sheet_name = 'prompt_list'
 prompts_dir = 'prompts'
 
@@ -25,9 +25,9 @@ for index, prompt in prompt_dict.items():
     print(f'{prompt_id}/{len(prompt_dict)}')
     output_prompt_dir = prompts_dir / f'prompt_{prompt_id}'
     output_prompt_path = output_prompt_dir / f'prompt_{prompt_id}.txt'
-    output_prompt_dir.mkdir(exist_ok=False)
+    output_prompt_dir.mkdir(exist_ok=True)
     prompt_text = prompt['Prompt']
     with open(output_prompt_path, encoding='utf-8',mode='w') as fw:
         fw.write(prompt_text)
-    save_text_as_img_markdown(prompt_text, output_path=output_prompt_dir / f'prompt_{prompt_id}.png')
+    # save_text_as_img_markdown(prompt_text, output_path=output_prompt_dir / f'prompt_{prompt_id}.png')
 print('Done.')

@@ -1,0 +1,4 @@
+# Populate the prompts directory
+Download the excel file from: https://unitednations.sharepoint.com/:x:/r/sites/UNEP-IED-AILCA/_layouts/15/Doc.aspx?sourcedoc=%7B7CBA92EB-4FE1-4DBA-B5AA-346E7DD7177E%7D&file=Prompts.xlsx&action=default&mobileredirect=true 
+Run load_prompts_from_excel.py
+Disable saving to image as Poppler is not installed

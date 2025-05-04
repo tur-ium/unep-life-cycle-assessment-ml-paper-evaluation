@@ -19,9 +19,9 @@ def insert_prompt_to_db(conn:sqlite3.Connection, prompt_text:str, prompt_id:int=
     if prompt_id:
         assert isinstance(prompt_id,int)
         assert prompt_id > 0
-        id_already_in_db = conn.execute("""select * from prompts where id=?""", prompt_id)
-        id_already_in_db.fetchall()
-        if len(id_already_in_db) > 0:
+        id_already_in_db = conn.execute("""select * from prompts where id=?""", (prompt_id,))
+        results = id_already_in_db.fetchall()
+        if len(results) > 0:
             raise ValueError(f'prompt id {id_already_in_db} is already in the database')
     if context_filepath:
         assert isinstance(context_filepath,str)
