@@ -1,0 +1,8 @@
+An energy company plans to assess the consequential life cycle impact of a novel hydrogen production process using electrolysis but faces methodological uncertainty between attributional and consequential life cycle assessment approaches. The energy company would like to find what the quantitative impacts of hydrogen production for use in energy storage in an electricity grid are on fossil resource use, mineral resource scarcity and global warming, compared to a baseline described in each of the three scenarios listed below.
+
+Synthesize a structured recommendation (less than 400 words) guiding the selection of the appropriate goal and scope, as well as data collection methodology for the following scenarios:
+- Pilot-scale demonstration phase.
+- Large-scale commercial deployment in an electricity grid dominated by renewable energy.
+- Large-scale deployment in a grid dominated by fossil-based electricity. 
+
+Clearly justify each methodological choice based on potential consequences and stakeholder interests. Explain how an attributional or consequential life cycle assessment could help answer the question faced by the energy company. Explain your answer, giving citations in author-year format

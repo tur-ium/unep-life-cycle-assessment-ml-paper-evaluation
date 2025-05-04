@@ -1,0 +1,6 @@
+| best_lookup_string | explanation |
+|--------------------|-------------|
+| bauxite {GLO}| bauxite mine operation | Cut-off, U | 'raw bauxite ore' matches 'bauxite' with a global region code 'GLO' and the activity 'bauxite mine operation'. |
+| cashew {IN}| cashew production | Cut-off, U | 'shelled cashews' matches 'cashew' with the region code 'IN' (India) and the activity 'cashew production'. |
+
+If there are additional items to match, they would be processed similarly based on the provided context. However, since no additional items are given, the table only includes the examples provided. If an item does not match any entry, the `best_lookup_string` would be `null` with an appropriate explanation.

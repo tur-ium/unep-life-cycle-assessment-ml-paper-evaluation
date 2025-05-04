@@ -1,0 +1,22 @@
+>
+
+To address the energy company's concerns regarding the life cycle impacts of its novel hydrogen production process via electrolysis, a structured recommendation is provided for each of the three scenarios.
+
+1. **Pilot-scale demonstration phase**: At this stage, the primary goal is to understand the environmental performance of the novel technology. An attributional life cycle assessment (ALCA) is more suitable as it assesses the environmental impacts associated with the production process itself, providing a snapshot of its environmental footprint (Ekvall & Weidema, 2004). The scope should be limited to the production process, and data collection should focus on the specific inputs and outputs of the pilot-scale electrolysis process. This will help in identifying hotspots for improvement.
+
+2. **Large-scale commercial deployment in an electricity grid dominated by renewable energy**: For this scenario, a consequential life cycle assessment (CLCA) is more appropriate. CLCA evaluates the consequences of a change in the system, such as large-scale deployment of the hydrogen production technology (Weidema, 2003). It will help in understanding how the increased demand for renewable energy-based electricity for electrolysis affects the overall grid and resource use. The scope should include the potential changes in the energy mix and the impacts on fossil resource use, mineral resource scarcity, and global warming. Data collection should consider the marginal electricity generation technologies that are likely to be affected by the increased demand.
+
+3. **Large-scale deployment in a grid dominated by fossil-based electricity**: Again, CLCA is the preferred approach here. The focus should be on understanding the consequential impacts of large-scale hydrogen production on a grid that is largely fossil-based. This includes assessing how the additional demand for electricity (and potentially the shift towards cleaner energy sources due to the integration of hydrogen into the energy mix) affects the grid's overall environmental performance (Earles & Halog, 2011). The data collection should emphasize the potential changes in electricity generation mix and the resulting impacts on the selected environmental indicators.
+
+In all scenarios, understanding the potential consequences and stakeholder interests is crucial. For instance, in a renewable-dominated grid, stakeholders might be interested in how hydrogen production affects the integration of intermittent renewable energy sources. In a fossil-dominated grid, the focus might be on the potential for hydrogen to reduce overall greenhouse gas emissions.
+
+ALCA can help answer the question by providing a detailed environmental profile of the hydrogen production process, while CLCA can offer insights into the broader systemic changes and consequences of large-scale deployment. By choosing the appropriate LCA methodology based on the scenario, the energy company can better understand the environmental implications of its novel hydrogen production process and make informed decisions (Finnveden et al., 2009).
+
+References:
+Earles, J. M., & Halog, A. (2011). Consequential life cycle assessment: a review. Journal of Cleaner Production, 19(17-18), 2069-2078.
+
+Ekvall, T., & Weidema, B. P. (2004). System boundaries and input data in consequential life cycle inventory analysis. International Journal of Life Cycle Assessment, 9(3), 161-171.
+
+Finnveden, G., Hauschild, M. Z., Ekvall, T., Guinée, J., Heijungs, R., Hellweg, S., ... & Suh, S. (2009). Recent developments in life cycle assessment. Journal of Environmental Management, 91(1), 1-21.
+
+Weidema, B. (2003). Market information in life cycle assessment. Environmental Project No. 863. Danish Environmental Protection Agency.

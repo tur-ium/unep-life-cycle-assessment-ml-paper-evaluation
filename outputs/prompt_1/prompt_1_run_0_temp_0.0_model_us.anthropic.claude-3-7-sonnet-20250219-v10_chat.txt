@@ -1,0 +1,3 @@
+The answer is A: Disposal at the end of useful life.
+
+This is the correct choice because biodegradability and recyclability specifically relate to what happens to the product after its useful life is complete. The disposal stage of an LCA examines the environmental impacts of different end-of-life scenarios, including whether materials can be recycled, composted (biodegraded), incinerated, or sent to landfill. These characteristics are particularly relevant when the product (paper plate) is no longer being used for its intended purpose.

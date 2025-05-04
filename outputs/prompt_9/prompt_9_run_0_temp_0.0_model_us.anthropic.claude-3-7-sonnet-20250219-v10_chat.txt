@@ -1,0 +1,36 @@
+# Analytical Framework for Resolving Conflicting LCA Findings on Plant-Based Meat Substitutes
+
+## Methodological Assessment
+1. **Functional Unit Analysis**: Examine whether studies use comparable functional units (e.g., kg product, nutritional equivalence, protein content). Differences in functional unit definition can fundamentally alter conclusions (Heller and Keoleian, 2018).
+
+2. **System Boundary Evaluation**: Map boundaries of both studies to identify inclusion/exclusion differences in:
+   - Upstream processes (agricultural inputs, land use change)
+   - Processing stages (energy sources, waste management)
+   - Distribution and retail considerations
+   - End-of-life assumptions
+
+3. **Impact Category Comparison**: Determine which environmental impact categories each study prioritizes. Plant-based alternatives may outperform beef in GHG emissions but show different results for water use or land occupation (Poore and Nemecek, 2018).
+
+4. **Data Source Assessment**: Compare primary vs. secondary data usage, geographical relevance, temporal scope, and technological representativeness of production systems.
+
+## Harmonization Approach
+1. **Meta-analytical Recalculation**: Standardize functional units and system boundaries, then recalculate key impacts using a consistent LCIA methodology.
+
+2. **Sensitivity Analysis**: Identify key parameters driving divergent results and test sensitivity to methodological choices (Searchinger et al., 2018).
+
+3. **Uncertainty Quantification**: Apply Monte Carlo simulations to determine if differences fall within statistical uncertainty ranges or represent genuine methodological disagreements.
+
+4. **Contextual Validation**: Cross-reference findings with broader literature to determine if either study represents an outlier position (Hallström et al., 2015).
+
+## Recommendations for Future LCAs
+1. **Standardized Reporting Protocol**: Implement consistent reporting frameworks specifically for alternative protein LCAs, including transparent documentation of assumptions and limitations.
+
+2. **Multi-dimensional Functional Units**: Report results using multiple functional units (mass-based, protein-based, nutritional-based) to enable comprehensive comparison.
+
+3. **Scenario Development**: Include multiple scenarios representing different production pathways, technological developments, and regional contexts.
+
+4. **Comprehensive Impact Assessment**: Expand beyond climate impacts to include water, land, biodiversity, and other relevant environmental indicators (Willett et al., 2019).
+
+5. **Stakeholder Review**: Incorporate multi-stakeholder review processes to identify potential methodological biases before publication.
+
+This framework enables systematic evaluation of conflicting LCA studies by identifying root causes of discrepancies and establishing a pathway toward more consistent, transparent, and comprehensive environmental assessments of alternative protein products.

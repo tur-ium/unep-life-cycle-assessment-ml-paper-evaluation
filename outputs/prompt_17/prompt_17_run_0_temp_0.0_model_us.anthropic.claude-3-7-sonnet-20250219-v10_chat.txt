@@ -1,0 +1,5 @@
+{{
+  "justification": "The item description is empty, and I need to find matches from the reference products list. Since there is no item description provided, I cannot determine any matches. In this case, I should return one entry with empty reference_product and index.",
+  "reference_product": "",
+  "index": ""
+}}

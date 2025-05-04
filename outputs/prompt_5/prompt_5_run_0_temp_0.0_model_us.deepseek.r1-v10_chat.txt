@@ -1,0 +1,11 @@
+The recommended hierarchy for dealing with multi-functionality in **ISO 15804:2012+A2:2019** aligns with the principles of ISO 14044, prioritizing avoidance of allocation first, followed by physical allocation, and finally economic allocation. This approach ensures the most scientifically robust and least arbitrary method is prioritized. 
+
+**Correct Answer:**  
+**A: 1. Avoid allocation as far as possible, 2. Allocation on basis of physical properties, 3. Allocation on basis of revenue**
+
+### Explanation:
+1. **Avoid allocation** (preferred): Modify the system boundary through subdivision or expansion to eliminate the need for allocation entirely.  
+2. **Physical allocation** (second): If avoidance is impossible, allocate based on measurable physical relationships (e.g., mass, energy).  
+3. **Economic allocation** (last resort): Use revenue or market value as a basis only when physical allocation is not feasible.  
+
+This hierarchy minimizes subjectivity and ensures consistency with broader LCA standards like ISO 14044.

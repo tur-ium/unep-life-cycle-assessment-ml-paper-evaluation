@@ -7,7 +7,7 @@ from typing import List, Dict, Any, Optional
 class BaseAssistant:
     """Base class for all LLM assistants"""
     
-    def __init__(self, model_name: str, maintain_history: bool = True):
+    def __init__(self, model_name: str, maintain_history: bool = True, region: str = "us-west-2"):
         """
         Initialize the base assistant
         
@@ -18,7 +18,7 @@ class BaseAssistant:
         self.model_name = model_name
         self.maintain_history = maintain_history
         self.conversation_history = []
-        self._initialize_model()
+        self._initialize_model(region)
         
     def _initialize_model(self, **kwargs) -> None:
         """Initialize the model - to be implemented by subclasses"""

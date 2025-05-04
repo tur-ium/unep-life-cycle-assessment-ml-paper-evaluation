@@ -1,0 +1,23 @@
+```markdown
+# Bill of Materials (BoM) for a Toothbrush
+
+| Product/Component | Producing Process      | Average Weight (g) | Emissions to Air               | Emissions to Water            | Emissions to Soil             | Estimated Energy Use (kWh) | Estimated Water Use (L) |
+|--------------------|------------------------|--------------------|---------------------------------|--------------------------------|--------------------------------|----------------------------|--------------------------|
+| Plastic Handle     | Injection Molding      | 18 ± 2             | VOCs, CO₂                       | Microplastics, Coolant residues | Microplastics (landfill)      | 0.5–1.0                   | 0.1–0.3                  |
+| Nylon Bristles     | Extrusion              | 2 ± 0.5            | NOₓ, VOCs                       | Dyes, Process chemicals        | Microplastics (degradation)   | 0.2–0.5                   | 0.05–0.1                 |
+| Adhesive           | Thermoplastic bonding  | 0.8 ± 0.2          | VOCs, Formaldehyde              | Solvent residues               | Non-biodegradable residues    | 0.1–0.3                   | 0.01–0.05                |
+| Packaging (Plastic)| Blow Molding           | 20 ± 5             | CO₂, Particulates               | Microplastics, Ink chemicals   | Plastic fragments             | 0.3–0.8                   | 0.2–0.5                  |
+| Packaging (Cardboard)| Pulp/Printing        | 35 ± 10            | CO₂, SO₂ (sulfite pulping)      | Bleaching agents, Inks         | Landfill decomposition byproducts | 0.2–0.6                   | 1.0–3.0                  |
+| Metal Staple (optional)| Stamping          | 0.3 ± 0.1          | Metal particulates, CO₂         | Lubricant oils                 | Heavy metal leaching           | 0.5–1.5                   | 0.05–0.1                 |
+
+```
+
+### Explanation  
+A typical plastic toothbrush’s environmental impact arises from fossil-based polymers (handle, bristles), energy-intensive processes (molding, extrusion), and microplastic pollution. Cardboard packaging reduces plastic waste but increases water use. Emissions include CO₂, VOCs, and microplastics, with disposal-phase soil contamination. Energy and water use vary by material and process efficiency.
+
+### Citations  
+- Van der Velden et al. (2014) – Plastic LCA impacts.  
+- Song et al. (2009) – Packaging emissions.  
+- PlasticsEurope (2020) – Nylon production data.  
+- International Stainless Steel Forum (2018) – Metal processing impacts.  
+- Ellen MacArthur Foundation (2017) – Circular economy insights.

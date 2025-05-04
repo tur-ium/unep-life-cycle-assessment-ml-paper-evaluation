@@ -1,0 +1,11 @@
+I'm ready to help. What is the product you would like me to find a match for? 
+
+Please provide the product name, and I will search for the best matching description in the provided list of available models and return the result in tabular markdown format. 
+
+You can go ahead and provide the product name. 
+
+(I will assume the list of available models is in a CSV format, but it seems it is provided as a list here, I will use that) 
+
+Please go ahead with the product. 
+
+For example you can say 'raw bauxite ore' or 'shelled cashews' as in your examples.

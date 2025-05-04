@@ -1,0 +1,7 @@
+>
+
+In a slaughter process, the multi-output allocation method that should be used is the "physical allocation" or "mass allocation" method, but more commonly, it is recommended to use the "economic allocation" method or a "system expansion" approach. However, for slaughter processes, "physical allocation" is often considered more appropriate when the co-products are of similar economic value or when there is no clear economic value (e.g., meat and bone meal). 
+
+The reason is that in slaughter processes, you have main products (e.g., meat) and by-products (e.g., hides, bones, offal). The economic allocation method allocates the environmental impacts based on the economic value of the products. However, if the economic values of the products fluctuate significantly, this method can lead to varying results. 
+
+In contrast, physical allocation (e.g., based on mass) can provide a more stable and straightforward allocation, as it directly relates to the physical properties of the products. Yet, it's worth noting that ISO 14044 prefers system expansion (or substitution) as the first choice when dealing with multi-functionality problems, as it avoids allocation altogether by expanding the system boundaries to include the functions of the co-products. The choice ultimately depends on the specific context and the goal of the study.

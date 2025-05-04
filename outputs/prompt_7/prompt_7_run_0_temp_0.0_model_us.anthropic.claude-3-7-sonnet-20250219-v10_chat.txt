@@ -1,0 +1,39 @@
+# Recommendation for Hydrogen Production LCA Methodology
+
+## Pilot-Scale Demonstration Phase
+
+**Recommendation**: Adopt an attributional LCA (ALCA) approach with prospective elements.
+
+**Justification**: At pilot scale, direct market effects are minimal, making ALCA appropriate for establishing baseline environmental performance (Brander et al., 2021). Focus on:
+- Detailed inventory of direct inputs/outputs
+- Foreground system data collection from pilot operations
+- Background data from established databases
+- Functional unit: 1 kg H₂ produced
+
+This approach provides a transparent environmental profile before scale-up decisions, satisfying stakeholders' need for technical validation while avoiding the uncertainty of market-mediated effects that would be premature at this stage (Zamagni et al., 2012).
+
+## Large-Scale Deployment in Renewable-Dominated Grid
+
+**Recommendation**: Full consequential LCA (CLCA) approach.
+
+**Justification**: Large-scale deployment will trigger significant market-mediated effects that CLCA can capture (Weidema et al., 2018). Key methodological elements:
+- System expansion to include displaced energy storage alternatives
+- Marginal electricity mix modeling for electrolysis
+- Economic input-output analysis for infrastructure requirements
+- Functional unit: Grid services provided by 1 MWh of hydrogen storage
+
+This approach addresses the consequential nature of integrating hydrogen storage into renewable grids, capturing benefits like reduced curtailment and fossil peaker plant displacement (Arvesen et al., 2018), which are critical for policy stakeholders and grid operators.
+
+## Large-Scale Deployment in Fossil-Dominated Grid
+
+**Recommendation**: Hybrid CLCA with scenario analysis.
+
+**Justification**: In fossil-dominated contexts, hydrogen production creates complex interactions requiring robust modeling of substitution effects (Plevin et al., 2014). Key elements:
+- Dynamic modeling of grid transition pathways
+- Scenario analysis with varying hydrogen penetration rates
+- Consideration of technology learning curves
+- Functional unit: Energy services provided by hydrogen vs. conventional alternatives
+
+This approach addresses the transformational potential of hydrogen in fossil-dependent systems while acknowledging uncertainty through scenarios, meeting the needs of policy stakeholders concerned with decarbonization pathways (Masanet and Horvath, 2012).
+
+For all scenarios, transparent reporting of methodological choices, system boundaries, and uncertainty analysis is essential to support decision-making aligned with the company's strategic objectives and stakeholder expectations.

@@ -1,0 +1,19 @@
+To assess the life cycle impacts of hydrogen production via electrolysis, the energy company should tailor its methodological approach to each scenario, balancing between attributional life cycle assessment (ALCA) and consequential life cycle assessment (CLCA).
+
+**Pilot-scale Demonstration Phase:**
+For the pilot phase, an ALCA is recommended. ALCA quantifies the environmental burdens directly associated with the production process, providing a clear baseline of the technology's performance (Ekvall & Weidema, 2004). This method is suitable for early-stage assessments where the primary goal is to understand and optimize the process itself rather than its broader market impacts. Data collection should focus on process-specific inputs and outputs, including energy consumption, material use, and emissions.
+
+**Large-scale Commercial Deployment in a Renewable-Dominated Grid:**
+In a grid dominated by renewables, CLCA is more appropriate. CLCA evaluates how increased hydrogen production affects the broader system, including potential displacement of other technologies and changes in supply and demand dynamics (Weidema, 2003). This approach will help understand the indirect effects, such as reduced fossil fuel dependency and changes in mineral resource use due to shifts in energy infrastructure. Data should include marginal electricity supply sources, grid interaction effects, and long-term resource availability.
+
+**Large-scale Deployment in a Fossil-Based Grid:**
+For a fossil-dominated grid, CLCA is again recommended to capture the significant system-wide changes. The introduction of hydrogen could lead to reduced fossil fuel consumption and lower greenhouse gas emissions, but it might also induce changes in fossil fuel markets and resource extraction rates (Zamagni et al., 2012). Data collection should emphasize the marginal suppliers of electricity, potential market-mediated effects on fossil fuel production, and the overall carbon footprint reduction.
+
+**Conclusion:**
+ALCA is ideal for the pilot phase to establish a performance baseline, while CLCA is better suited for large-scale scenarios to assess broader impacts and system interactions. By selecting the appropriate method, the energy company can accurately evaluate the environmental consequences of hydrogen production, aligning with stakeholder interests in sustainability and resource management (Finnveden et al., 2009).
+
+**References:**
+- Ekvall, T., & Weidema, B. P. (2004). System boundaries and input data in consequential life cycle inventory analysis. *International Journal of Life Cycle Assessment, 9*(3), 161-171.
+- Finnveden, G., et al. (2009). Recent developments in Life Cycle Assessment. *Journal of Environmental Management, 91*(1), 1-21.
+- Weidema, B. P. (2003). Market information in life cycle assessment. *Danish Environmental Protection Agency*.
+- Zamagni, A., et al. (2012). Lights and shadows in consequential LCA. *International Journal of Life Cycle Assessment, 17*(7), 904-918.

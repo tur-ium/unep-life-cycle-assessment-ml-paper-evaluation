@@ -1,0 +1,9 @@
+The correct answer is C.
+
+Life cycle assessment (LCA) as defined in the ISO 14044 standard is a method used to evaluate the environmental impacts of a product or process throughout its entire life cycle, from raw material extraction to end-of-life disposal or recycling. This includes assessing various environmental impacts such as greenhouse gas emissions, resource depletion, and toxicity.
+
+Option C is the best fit for LCA as it involves evaluating the environmental impact (carbon footprint) of a product (plastic sheet) resulting from a change in its production process (new synthesis route for a feedstock chemical). 
+
+In contrast, option A is about policy comparison, option B is about medical outcomes, and option D is about biological life cycles and ecology, which do not directly relate to the environmental impact assessment of products or processes as per ISO 14044. 
+
+Therefore, C is the correct choice.

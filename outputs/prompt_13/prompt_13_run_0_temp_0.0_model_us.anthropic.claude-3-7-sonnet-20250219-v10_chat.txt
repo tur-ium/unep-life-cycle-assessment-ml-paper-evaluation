@@ -1,0 +1,19 @@
+# Carbon Footprint of a High-End Consumer Laptop
+
+The carbon footprint of producing a high-end consumer laptop is approximately **300-400 kg CO2e**.
+
+## Explanation
+
+The carbon footprint of laptop production varies based on several factors including manufacturing processes, materials used, and the specific definition of "high-end." Several studies provide relevant data:
+
+Berners-Lee (2010) estimates that manufacturing a laptop generates about 200-400 kg CO2e, with higher-end models typically falling in the upper range of this estimate.
+
+A more detailed study by Deng et al. (2011) analyzed the life cycle assessment of laptop computers and found that the production phase accounts for approximately 300-350 kg CO2e for premium models, with the majority coming from integrated circuit manufacturing and assembly processes.
+
+Apple (2023), in their environmental reports, indicates that the 16-inch MacBook Pro (a high-end laptop) has a carbon footprint of approximately 394 kg CO2e for manufacturing alone.
+
+Dell (2022) published environmental product declarations showing their high-performance XPS laptops generate between 300-380 kg CO2e during production, depending on specific configurations.
+
+The Intergovernmental Panel on Climate Change (IPCC, 2022) notes that electronic device manufacturing has become more energy-efficient over time, but the increasing complexity of high-end components partially offsets these gains.
+
+Based on these sources, a reasonable estimate for the carbon footprint of producing a high-end consumer laptop is **350 kg CO2e**.

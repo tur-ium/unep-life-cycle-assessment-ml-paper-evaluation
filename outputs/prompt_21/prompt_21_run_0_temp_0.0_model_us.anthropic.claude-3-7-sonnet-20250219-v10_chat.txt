@@ -1,0 +1,17 @@
+# Limitations of Our LCA Comparison
+
+While our Life Cycle Assessment provides valuable insights comparing our product against industry averages, several limitations should be acknowledged:
+
+**Data Quality**: Our analysis relies on industry-average data for competitor products, which may not reflect specific manufacturing practices or recent improvements by individual companies.
+
+**System Boundaries**: The assessment focuses primarily on production and use phases, with less comprehensive data on end-of-life scenarios and potential secondary impacts.
+
+**Geographic Variability**: Environmental impacts vary significantly by region due to different energy grids, transportation networks, and waste management systems, which may not be fully captured.
+
+**Temporal Considerations**: The industry is rapidly evolving, meaning comparative data may become outdated as competitors improve their sustainability practices.
+
+**Methodological Choices**: Impact assessment methods involve subjective weighting of environmental categories, potentially favoring certain impact areas over others.
+
+**Uncertainty Factors**: Some environmental impacts contain inherent uncertainty, particularly regarding long-term effects and emerging concerns not yet fully incorporated into LCA methodologies.
+
+We remain committed to transparent reporting and continuous improvement of our assessment methodologies as better data and practices become available.

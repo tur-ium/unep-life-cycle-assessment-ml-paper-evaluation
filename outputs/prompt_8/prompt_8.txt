@@ -1,0 +1,7 @@
+You must conduct an LCA to compare environmental impacts of battery recycling versus battery reuse in energy storage applications. No direct LCI data is publicly available for reuse scenarios, and recycling technologies are rapidly evolving. Outline (in ~400 words) your methodological strategy, explicitly addressing:
+
+- How you handle data uncertainty and technological variability.
+- How you set boundaries and choose an appropriate functional unit.
+- How you justify methodological assumptions to stakeholders unfamiliar with LCA methods
+
+Explain your answer, giving citations in author-year format

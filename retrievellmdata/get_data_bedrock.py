@@ -41,9 +41,8 @@ root_output_dir = Path('../outputs')
 temperature = 0.0
 number_of_responses_per_prompt = 1
 
-# Default model to use
-model = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"
-# Other available models:
+# model to use
+# model = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 # model = "anthropic.claude-3-5-sonnet-20241022-v2:0"
 # model = "anthropic.claude-3-5-haiku-20241022-v1:0"
 # model = "us.amazon.nova-pro-v1:0"
@@ -51,8 +50,8 @@ model = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 # model = "us.amazon.nova-micro-v1:0"
 # model = "us.amazon.nova-premier-v1:0"
 # model = "us.meta.llama3-3-70b-instruct-v1:0"
-# model = "meta.llama4-maverick-17b-instruct-v1:0"
-# model = "meta.llama4-scout-17b-instruct-v1:0"
+# model = "us.meta.llama4-maverick-17b-instruct-v1:0"
+model = "us.meta.llama4-scout-17b-instruct-v1:0"
 # model = "us.deepseek.r1-v1:0"
 # model = "us.mistral.mistral-large-2407-v1:0"
 
@@ -65,7 +64,8 @@ max_tokens_response = 4096  # may need to change
 class BedrockAssistant(BaseAssistant):
     def __init__(self, 
                  model_name: str = "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
-                 maintain_history: bool = True,
+                 maintain_history: bool = False,
+                 region: str = "us-west-2",
                  **kwargs):
         self.supported_models = [
             "anthropic.claude-3-sonnet-20240229-v1:0",
@@ -76,7 +76,10 @@ class BedrockAssistant(BaseAssistant):
             "us.amazon.nova-pro-v1:0",
             "us.amazon.nova-lite-v1:0", 
             "us.amazon.nova-micro-v1:0",
+            "us.amazon.nova-premier-v1:0",
             "us.meta.llama3-3-70b-instruct-v1:0",
+            "us.meta.llama4-maverick-17b-instruct-v1:0",
+            "us.meta.llama4-scout-17b-instruct-v1:0",
             "us.deepseek.r1-v1:0",
             "us.mistral.mistral-large-2407-v1:0"
         ]
@@ -126,6 +129,7 @@ class BedrockAssistant(BaseAssistant):
             return "mistral"
         else:
             return "claude"
+        
     def _prepare_request_body(
         self,
         prompt: str,
@@ -159,23 +163,35 @@ class BedrockAssistant(BaseAssistant):
         }
 
     def _prepare_llama_request(self, prompt: str, temperature: float, max_tokens: int) -> dict:
-        formatted_text = self._format_conversation_history("llama")
+        # Use direct formatting without relying on conversation history
+        formatted_text = f"""
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+{prompt}
+<|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>"""
+            
         return {
             "prompt": formatted_text,
             "max_gen_len": max_tokens,
             "temperature": temperature
         }
+    
     def _prepare_deepseek_request(self, prompt: str, temperature: float, max_tokens: int) -> dict:
-        formatted_text = self._format_conversation_history("deepseek")
+        # Use the new format directly without relying on conversation history
+        formatted_prompt = f"""
+        <｜begin▁of▁sentence｜><｜User｜>{prompt}<｜Assistant｜><think>
+        """
+        
         return {
-            "prompt": formatted_text,
+            "prompt": formatted_prompt,
             "max_tokens": max_tokens,
-            "temperature": temperature,
-            "top_p": 0.9
+            "temperature": temperature
         }
 
     def _prepare_mistral_request(self, prompt: str, temperature: float, max_tokens: int) -> dict:
-        formatted_text = self._format_conversation_history("mistral")
+        # Use direct formatting without relying on conversation history
+        formatted_text = f"<s>[INST] {prompt} [/INST]"
+            
         return {
             "prompt": formatted_text,
             "max_tokens": max_tokens,
@@ -190,48 +206,7 @@ class BedrockAssistant(BaseAssistant):
             "max_tokens": max_tokens,
             "messages": messages
         }
-
-    def _format_conversation_history(self, model_type: str) -> str:
-        """Format conversation history based on model type"""
-        formatters = {
-            "llama": self._format_llama_history,
-            "deepseek": self._format_deepseek_history,
-            "mistral": self._format_mistral_history
-        }
-        return formatters[model_type]()
-    def _format_llama_history(self) -> str:
-        formatted = ""
-        for msg in self.conversation_history:
-            role = "user" if msg["role"] == "user" else "assistant"
-            content = msg["content"]
-            if isinstance(content, list):
-                content = content[0]["text"]
-            formatted += f"""
-<|begin_of_text|><|start_header_id|>{role}<|end_header_id|>
-{content}
-<|eot_id|>
-"""
-        return formatted + "<|start_header_id|>assistant<|end_header_id|>"
-
-    def _format_deepseek_history(self) -> str:
-        formatted = ""
-        for msg in self.conversation_history:
-            role = "User" if msg["role"] == "user" else "Assistant"
-            content = msg["content"]
-            if isinstance(content, list):
-                content = content[0]["text"]
-            formatted += f"<｜{role}｜>{content}"
-        return formatted + "<｜Assistant｜><think>\n"
-
-    def _format_mistral_history(self) -> str:
-        formatted = ""
-        for msg in self.conversation_history:
-            role = "user" if msg["role"] == "user" else "assistant"
-            content = msg["content"]
-            if isinstance(content, list):
-                content = content[0]["text"]
-            formatted += f"<s>[INST] {content} [/INST]" if role == "user" else f"{content}</s>"
-        return formatted
+    
     @retry(
         wait=wait_exponential(multiplier=2, min=10, max=120),
         stop=stop_after_attempt(5),
@@ -245,6 +220,7 @@ class BedrockAssistant(BaseAssistant):
         clear_history: bool = False
     ) -> str:
         """Generate response using Bedrock model with retry logic"""
+        # TODO: implement history properly
         if clear_history:
             self.clear_history()
 
@@ -269,6 +245,7 @@ class BedrockAssistant(BaseAssistant):
         except Exception as e:
             logger.exception(f"Error generating response: {str(e)}")
             return ""
+        
     def _extract_response(self, response_body: dict) -> str:
         """Extract response text based on model type"""
         model_type = self._get_model_type()
@@ -280,7 +257,15 @@ class BedrockAssistant(BaseAssistant):
                 return response_body.get("generation", "")
             elif model_type == "deepseek":
                 text = response_body.get("choices", [{}])[0].get("text", "")
-                return text.split("</think>")[-1].strip() if "</think>" in text else text
+                # Split on '</think>\n\n' as specified in the example
+                if "</think>\n\n" in text:
+                    thinking, response = text.split("</think>\n\n", 1)
+                    return response.strip()
+                # Fallback to the old method if the new format isn't found
+                elif "</think>" in text:
+                    return text.split("</think>")[-1].strip()
+                else:
+                    return text
             elif model_type == "mistral":
                 return response_body.get("choices", [{}])[0].get("message", {}).get("content", "")
             else:  # claude
@@ -359,7 +344,7 @@ def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, 
     output_dir.mkdir(exist_ok=True, parents=True)
 
     # Initialize the Bedrock assistant
-    bedrock_assistant = BedrockAssistant(model_name=model)
+    bedrock_assistant = BedrockAssistant(model_name=model, region=region)
     
     # Extract model name for logging and filenames
     model_name_parts = model.split('/')
@@ -392,7 +377,8 @@ def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, 
                 response_text = bedrock_assistant.generate_response(
                     prompt=prompt_txt,
                     temperature=temperature,
-                    max_tokens=max_tokens_response
+                    max_tokens=max_tokens_response,
+                    clear_history=True,
                 )
                 
                 if not response_text:

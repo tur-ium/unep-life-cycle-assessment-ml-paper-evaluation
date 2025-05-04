@@ -1,0 +1,56 @@
+**Goal and Scope Definition for Life Cycle Assessment (LCA) of Land Use Options in a Rural Community**
+
+### **Goal**  
+The goal of this LCA is to evaluate and compare the environmental impacts, with a focus on greenhouse gas (GHG) emissions, of three land use scenarios for agricultural land in a rural community:  
+1. **Conversion to a solar farm** (displacing agriculture),  
+2. **Continued conventional agriculture**,  
+3. **Agrivoltaics integration** (co-locating solar panels and agriculture).  
+
+This assessment aims to provide evidence-based insights to stakeholders on the environmental trade-offs of each option, supporting informed decision-making aligned with climate change mitigation and local priorities.
+
+---
+
+### **Scope**  
+#### **System Boundaries**  
+- **Temporal**: 25-year lifespan (typical for solar infrastructure), with annual agricultural cycles included.  
+- **Geographical**: Localized to the rural community’s agricultural land and regional energy/agricultural systems.  
+- **Technical**:  
+  - **Solar Farm**: Manufacturing, transportation, installation, operation, and decommissioning of panels/infrastructure.  
+  - **Agriculture**: Inputs (fertilizers, pesticides, machinery), soil management, crop production, and associated GHG emissions (e.g., N₂O from fertilizers, CH₄ from livestock if applicable).  
+  - **Agrivoltaics**: Combined solar infrastructure and modified agricultural practices, including potential yield changes and resource synergies.  
+
+#### **Functional Unit**  
+- **1 hectare of land over 25 years**, enabling direct comparison of land-use efficiency and impacts.  
+- **Secondary units**:  
+  - Energy output (kWh) for solar/agrivoltaics.  
+  - Agricultural yield (tonnes of crop) for baseline and agrivoltaics.  
+
+#### **Impact Categories**  
+1. **Climate Change** (CO₂, CH₄, N₂O emissions).  
+2. **Land Use Change** (biodiversity, soil health).  
+3. **Resource Depletion** (water, minerals for solar panels).  
+4. **Eutrophication/Acidification** (from agricultural runoff).  
+
+#### **Key Assumptions**  
+- **Energy Displacement**: Solar electricity replaces regional fossil fuel-based grid energy.  
+- **Agricultural Practices**: Current practices remain constant unless altered by agrivoltaics (e.g., reduced yields but lower irrigation needs).  
+- **Indirect Effects**: Excluded unless data permits (e.g., land-use displacement from agricultural loss).  
+
+#### **Data Sources**  
+- Solar panel lifecycle data (manufacturing emissions, efficiency).  
+- USDA agricultural emissions factors (fertilizer use, machinery).  
+- Peer-reviewed studies on agrivoltaics (Dinesh and Pearce, 2016).  
+
+#### **Limitations**  
+- Agrivoltaics data may be limited or context-specific.  
+- Social/economic factors (jobs, tax revenue) are excluded but could complement the LCA in a broader decision framework.  
+
+---
+
+### **Justification**  
+1. **Alignment with Stakeholder Priorities**: Focuses on GHG emissions (developer’s key argument) while addressing land-use trade-offs (community concerns).  
+2. **Functional Unit Choice**: Balances direct land-use comparison (hectare-based) with output-specific metrics (kWh/tonnes) to clarify trade-offs.  
+3. **System Boundaries**: Captures critical lifecycle stages (e.g., solar panel production, agricultural nitrous oxide) without overcomplicating the analysis.  
+4. **Consequential Approach**: Implicitly considers avoided emissions from displacing fossil fuels, enhancing relevance to climate goals.  
+
+This framework ensures the LCA provides actionable environmental insights while acknowledging the need for complementary socio-economic assessments to address all stakeholder interests.
