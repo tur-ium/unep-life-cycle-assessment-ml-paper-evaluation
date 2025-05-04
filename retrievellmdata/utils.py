@@ -37,7 +37,6 @@ def save_text_as_img(text: str, output_path: Path | str, dimensions: Tuple[int, 
 
 
 def save_text_as_img_markdown(md_text:str,output_path:str|Path,font_family:str="dejavusans",font_size:int=16,poppler_path='poppler/poppler-24.08.0/Library/bin'):
-
     # Parse Markdown to HTML
     html = markdown.markdown(md_text)
 

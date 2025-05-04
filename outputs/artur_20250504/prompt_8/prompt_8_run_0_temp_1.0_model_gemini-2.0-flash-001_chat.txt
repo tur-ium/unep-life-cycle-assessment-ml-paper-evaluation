@@ -1,0 +1,37 @@
+Here's a methodological strategy for conducting an LCA comparing battery recycling and reuse in energy storage, acknowledging data uncertainty and methodological limitations:
+
+**Data Uncertainty and Technological Variability:**
+
+To address the lack of specific LCI data for reuse, a hybrid LCA approach combining process-based and economic input-output (EIO) data will be employed (Suh et al., 2004). Primary data collection from pilot reuse projects will be prioritized to fill critical data gaps concerning refurbishment, performance degradation over time, and end-of-life management after the second life. Where primary data is unavailable, secondary data from similar electronic device refurbishment processes and battery degradation models will be used, employing uncertainty analysis (e.g., Monte Carlo simulation) with probability distributions around these estimates (Huijbregts, 1998).
+
+Technological variability in recycling processes will be handled by modelling both established (e.g., pyrometallurgy) and emerging (e.g., hydrometallurgy, direct recycling) technologies. Each technology will be represented with its own LCI data derived from literature reviews, patents, and industry consultations. Sensitivity analyses will then explore the impact of shifting the recycling technology mix on overall LCA results (Heijungs & Suh, 2002). Scenario analysis, combined with expert elicitation (Morgan, 2014), will also be employed to account for future changes in recycling efficiency, material recovery rates, and energy sources used in the recycling processes.
+
+**Boundaries and Functional Unit:**
+
+The system boundary will encompass the entire life cycle of both battery recycling and reuse scenarios, starting from battery end-of-life (EOL) after its initial application (e.g., electric vehicle). It includes transportation, testing, refurbishment (for reuse), recycling processes, and disposal of residuals. The system boundary will extend to credit allocation based on material recovered in recycling, avoiding open-loop recycling allocation issues (ISO 14044, 2006).
+
+The functional unit will be **"1 MWh of electricity storage capacity provided over a 10-year period, either by recycled materials from batteries used in new batteries or by the reused battery itself."** This aligns with the intended function of both systems and accounts for the lifespan variability between repurposed batteries and new batteries using recycled materials. This functional unit is selected to directly address the comparison of resource efficiency for energy storage needs.
+
+**Methodological Assumptions and Justification:**
+
+To stakeholders unfamiliar with LCA, the following justifications will be presented:
+
+1.  **Allocation of benefits:** "Since the initial production impacts of the battery are identical for both scenarios, we focus on the differential impacts from EOL onward. In the recycling scenario, we allocate environmental burden and credit based on the mass of materials recovered, reflecting their utility in future production cycles."
+2.  **Data quality:** "We use the best available data, prioritizing primary data where possible. Where secondary data is used, we conduct rigorous uncertainty analysis to identify key areas for further research and to present results with clear limitations."
+3.  **System boundaries:** "We include all relevant stages from EOL to the provision of 1 MWh of electricity storage capacity over 10 years, including transportation, processing, and disposal. This ensures a fair comparison."
+4.  **Scenario analysis:** "We recognize that future recycling technologies may differ from current practices. Therefore, we examine the impacts of multiple plausible scenarios, highlighting how changes in technology can influence the environmental outcomes."
+5.  **Conservative approach:** "To account for unknowns and potential biases, we will use conservative assumptions when selecting data and modeling processes, prioritizing robust findings over overly optimistic projections."
+
+This transparent and iterative approach aims to create a robust and policy-relevant LCA that effectively compares battery recycling and reuse.
+
+**References:**
+
+Heijungs, R., & Suh, S. (2002). *The computational structure of life cycle assessment*. Kluwer Academic Publishers.
+
+Huijbregts, M. A. J. (1998). *Application of uncertainty and variability in environmental life cycle assessment*.
+
+ISO 14044. (2006). *Environmental Management – Life Cycle Assessment – Requirements and Guidelines*.
+
+Morgan, M. G. (2014). *Use (and abuse) of expert elicitation in support of decision making for public policy*. Proceedings of the National Academy of Sciences, *111*(Supplement 4), 7176-7184.
+
+Suh, S., Lenzen, M., Treloar, G. J., Hondo, H., Nakamura, S., & Kondo, N. (2004). *System boundary of life cycle assessment using input–output analysis*. Environmental Science & Technology, *38*(3), 757-764.

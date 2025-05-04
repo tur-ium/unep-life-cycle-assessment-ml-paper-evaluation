@@ -1,0 +1,10 @@
+In a slaughter process, the **physical allocation method based on mass (weight)** is commonly used for allocating inputs and impacts among multiple co-products (e.g., meat cuts, bones, hides, offal). This method assigns environmental burdens proportionally to the mass of each product obtained.
+
+**Why use mass-based allocation?**
+- **Reflects actual product flows:** The physical nature of the process means output streams (different animal parts) are tangible and quantifiable by weight.
+- **Standardized guidance:** ISO 14044 for Life Cycle Assessment (LCA) recommends physical allocation (such as mass or energy) when possible and meaningful.
+- **Avoids economic fluctuations:** Economic allocation (based on market prices) can be volatile and sometimes does not represent physical relationships in the system.
+- **Transparency:** Mass allocation is straightforward, reproducible, and not subject to frequent change.
+
+**In short:**  
+**Mass-based allocation** is typically used because it directly correlates with the physical output of the slaughter process, aligns with international LCA guidelines, and provides transparent, robust results.

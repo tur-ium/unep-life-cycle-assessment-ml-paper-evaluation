@@ -1,0 +1,13 @@
+Let's match the given items to the best matching description from the provided list of products.
+
+1. **raw bauxite ore**
+2. **shelled cashews**
+
+Here is the result in tabular markdown format:
+
+| best_lookup_string                                | explanation                                                                 |
+|----------------------------------------------------|----------------------------------------------------------------------------|
+| bauxite {GLO}| bauxite mine operation | Cut-off, U  | The closest match for 'raw bauxite ore' is 'bauxite {GLO}| bauxite mine operation | Cut-off, U'. The term 'bauxite' matches the main product and 'GLO' suggests a global region if not specified. |
+| cashew {RoW}| cashew production | Cut-off, U  | The closest match for 'shelled cashews' is 'cashew {RoW}| cashew production | Cut-off, U'. The term 'cashew' matches the main product and 'RoW' suggests 'Rest of the World' region, which is a more generalized region when no specific region is known. |
+
+This ensures that the items are matched to the most appropriate descriptions based on the provided patterns and available models.

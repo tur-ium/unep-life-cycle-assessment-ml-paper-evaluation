@@ -1,0 +1,33 @@
+**No, you should not use ReCiPe 2016 (Huijbregts, 2016) or CML-IA methods for social life cycle assessment (S-LCA).**
+
+### Explanation
+
+#### What are ReCiPe 2016 and CML-IA?
+- **ReCiPe 2016** and **CML-IA** are life cycle impact assessment (LCIA) methods widely used in environmental life cycle assessment (E-LCA).
+- They provide characterization factors for **environmental impact categories** such as climate change, eutrophication, acidification, toxicity, resource depletion, etc.
+
+#### What about Social LCA?
+- **Social LCA (S-LCA):** Assesses the social and socio-economic impacts of products along their life cycle (labor rights, human health, community impact, etc.).
+- Uses different indicators, methods, and databases **specifically developed for social issues**.
+- Common S-LCA methods/frameworks include the **UNEP/SETAC S-LCA Guidelines**, **SHDB (Social Hotspot Database)**, **PSILCA**, and **SoFi** (by 2.-0 LCA consultants).
+
+#### Why can't you use ReCiPe/CML-IA for S-LCA?
+- **Not designed for social aspects:** These methods have no indicators, characterization factors, or impact pathways related to social issues.
+- **Environmental focus:** All impact categories address environmental, not social, mechanisms.
+- **Misapplication:** Using them in S-LCA would fail to capture relevant social impacts (e.g., labor rights, health and safety, human rights, fair wages).
+
+### **What should you use for S-LCA?**
+- **UNEP/SETAC S-LCA Guidelines**
+- **Social Hotspot Database (SHDB)**
+- **PSILCA**
+- **S-LCA specific indicators and frameworks**
+
+#### **References**
+- Huijbregts, M. A. J., et al. (2017). ReCiPe2016: A harmonized life cycle impact assessment method at midpoint and endpoint level. *International Journal of Life Cycle Assessment*.
+- United Nations Environment Programme. (2020) Guidelines for Social Life Cycle Assessment of Products and Organizations.
+- Ciroth, A., Franze, J. (2011). LCA of Textile Products: Social Aspects in LCA.
+
+---
+
+**Summary:**  
+> **ReCiPe 2016 and CML-IA are designed for environmental LCA and not applicable or appropriate for social LCA. For S-LCA, use methods, indicators, and databases built specifically for social impact assessment.**

@@ -1,0 +1,23 @@
+No, you **cannot** directly use ReCiPe 2016 or CML-IA for **social** life cycle assessment (S-LCA).
+
+Here's why:
+
+*   **ReCiPe 2016 and CML-IA are designed for environmental LCA (E-LCA).** They focus on quantifying the environmental impacts of a product or service throughout its life cycle. They assess aspects like climate change, resource depletion, human toxicity, etc., using environmental indicators.
+
+*   **Social LCA focuses on the social impacts** of a product or service on various stakeholders (workers, consumers, local communities, society). This includes aspects like working conditions, human rights, health and safety, and cultural heritage. Social indicators are used to measure these impacts.
+
+*   **Different Data and Indicators:**  E-LCA uses data on resource use, emissions, and waste, and calculates indicators based on environmental mechanisms (e.g., global warming potential). S-LCA requires data on social aspects like wages, working hours, and community access to resources, and uses social indicators to assess the impact on different stakeholder groups.
+
+**What you need for S-LCA:**
+
+*   **Specific Social LCA Guidelines and Methods:**  Use frameworks and guidelines specifically developed for S-LCA. The most common and widely accepted is the "Guidelines for Social Life Cycle Assessment of Products" by UNEP/SETAC.
+*   **Social Indicators:** Define relevant social indicators based on the scope and goal of your S-LCA.  Examples include:
+    *   Fair wages
+    *   Safe working conditions
+    *   Freedom of association
+    *   Health impacts
+    *   Community development
+*   **Stakeholder Analysis:** Identify the key stakeholders involved in the product's life cycle.
+*   **Data Collection:** Collect data on the social performance related to the product's life cycle.  This can involve surveys, interviews, company reports, and databases.
+
+**In summary:**  While both E-LCA and S-LCA are forms of life cycle assessment, they are distinct and require different methodologies, data, and indicators.  ReCiPe 2016 and CML-IA are excellent tools for environmental assessment, but they are not designed for or applicable to social impact assessment.  You need to use S-LCA specific guidelines and methodologies.

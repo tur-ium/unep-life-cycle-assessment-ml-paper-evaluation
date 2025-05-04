@@ -1,0 +1,11 @@
+In a Life Cycle Assessment (LCA) study for oranges, the storage of carbon in the trees should be considered as temporary carbon sequestration. Here's how to deal with it and why:
+
+1. **Accounting**: Calculate the amount of carbon stored in the biomass of the orange trees using IPCC factors or specific factors for citrus trees if available.
+
+2. **Timeline**: Consider the orchard's lifetime. Carbon is sequestered during growth, but a significant portion is released at the end-of-life stage (e.g., through decay or burning).
+
+3. **Allocation**: Allocate the temporary carbon storage to the orange production over the lifespan of the orchard. This can be done by dividing the total carbon stored by the number of years the orchard is productive.
+
+4. **Why**: This approach is important to avoid overestimating the climate benefits of orange production. Considering the entire lifecycle ensures that the LCA study accurately reflects the net carbon exchange, providing a more comprehensive assessment of the environmental impacts.
+
+5. **Reporting**: Clearly report the carbon dynamics, including sequestration and release, to ensure transparency in the LCA study.

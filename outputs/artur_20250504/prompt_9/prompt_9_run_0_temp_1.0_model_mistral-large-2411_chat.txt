@@ -1,0 +1,26 @@
+1. **Methodological Analysis**:
+   - **Data Sources**: Compare the data sources used in each Life Cycle Assessment (LCA). Differences in data quality and reliability can greatly impact results. Specifically, examine if one study uses primary data from actual plant-based meat production facilities while the other relies on secondary data or databases like Ecoinvent (Weidema et al., 2013).
+   - **System Boundaries**: Evaluate the system boundaries set for each LCA. Inconsistent boundaries can lead to the exclusion of significant impacts. For instance, one study might include the environmental burdens of land use change ( Searchinger et al., 2018) while the other does not.
+   - **Functional Units**: Check the functional units used. They should be equivalent to ensure a fair comparison, such as "per kg of protein" or "per serving of meat" (ISO, 2006).
+   - **LCIA Methods**: Compare the Life Cycle Impact Assessment (LCIA) methods. Different methods (e.g., ReCiPe, CML, IPCC) can yield varied results due to differences in impact categories and characterization factors (Hauschild et al., 2013).
+
+2. **Harmonization and Reliability Determination**:
+   - **Sensitivity Analysis**: Conduct a sensitivity analysis to assess how changes in key parameters (e.g., emission factors, energy use) affect the conclusions of each study.
+   - **Scenario Analysis**: Develop harmonized scenarios using consistent data sources, boundaries, functional units, and LCIA methods. Recalculate the impacts of plant-based meat substitutes and traditional beef under these scenarios.
+   - **Peer Review**: Consider the robustness of the peer-review process each study underwent. Studies published in reputable journals with rigorous peer-review processes may have more reliable conclusions.
+   - **Stakeholder Consultation**: Engage with stakeholders, including industry representatives, LCA experts, and policy makers, to gather insights on the plausibility of each study's conclusions.
+
+3. **Recommendations for Future LCAs**:
+   - **Transparency**: Future LCAs should clearly document data sources, system boundaries, functional units, and LCIA methods to ensure reproducibility and comparability (ISO, 2006).
+   - **Standardization**: Where possible, adhere to standardized LCA methods and guidelines, such as those from the ISO or the European Commission's Joint Research Centre.
+   - **Comprehensive Modelling**: Include all relevant environmental impacts and consider using multiple LCIA methods to provide a more comprehensive assessment (Huijbregts et al., 2016).
+   - **Regular Update**: Periodically update LCAs to reflect changes in technology, data availability, and methodological advancements.
+
+By following this framework, LCA practitioners and decision-makers can better understand the reasons for discrepancies between studies and work towards more robust and reliable conclusions.
+
+**References**:
+- Hauschild, M., et al. (2013). Environmental Assessment of Products — Volume 1: Methodology, Applications and LCA Software. CRC Press.
+- Huijbregts, M.A.J., et al. (2016). ReCiPe2016: a harmonised life cycle impact assessment method at midpoint and endpoint level. Int J Life Cycle Assess, 21, 138-147.
+- ISO (2006). Environmental management — Life cycle assessment — Principles and framework (ISO 14040:2006). International Organization for Standardization.
+- Searchinger, T., et al. (2018). Assessing the Efficiency of Changes in Land Use for Mitigating Climate Change. Nature, 564, 249-253.
+- Weidema, B.P., et al. (2013). The ecoinvent database: overview and methodological framework. Int J Life Cycle Assess, 18, 1173-1192.

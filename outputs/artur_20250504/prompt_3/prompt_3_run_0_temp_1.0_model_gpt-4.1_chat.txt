@@ -1,0 +1,11 @@
+**Correct answer: C**
+
+**Explanation:**
+
+Life Cycle Assessment (LCA) as defined by the ISO 14044 standard is a systematic method for assessing the environmental aspects and potential impacts associated with a product, process, or service throughout its entire life cycle—from raw material extraction, production, use, to disposal ("cradle to grave"). 
+
+Option **C** asks: "What is the impact of using a new synthesis route for a feedstock chemical on the carbon footprint of a plastic sheet?" This is directly about quantifying the environmental impact (specifically, carbon footprint) of a product (plastic sheet) when changing a production process. It requires analyzing all life cycle stages affected by the change, which aligns perfectly with what LCA does as per ISO 14044.
+
+The other options focus on policy analysis (A), medical outcomes (B), or biological life cycles (D), all of which fall outside the primary scope of LCA as formalized by ISO 14044.
+
+Therefore, **C** is the best example of a question suited to life cycle assessment.

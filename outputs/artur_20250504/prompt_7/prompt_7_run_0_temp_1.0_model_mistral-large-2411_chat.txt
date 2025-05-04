@@ -1,0 +1,25 @@
+**Recommendation:**
+
+1. **Goal and Scope:**
+   - For the *pilot-scale demonstration phase*, focus on understanding the hotspots and optimization potentials within the novel hydrogen production process itself.
+   - For *large-scale commercial deployment in a renewable-dominated grid*, emphasize the impacts and benefits of integrating the hydrogen production process into the grid, including storage and indirect effects on other energy systems.
+   - For *large-scale deployment in a fossil-based grid*, assess the potential environmental trade-offs and benefits, considering the decarbonization potential and resource allocation shifts.
+
+2. **Methodological Choices:**
+   - *Pilot-scale demonstration phase*: Use **Attributional LCA** to quantify the resource use and emissions directly associated with the hydrogen production process. This approach helps identify inefficiencies and optimize the process (Guinée et al., 2001).
+   - *Large-scale commercial deployment scenarios*: Employ **Consequential LCA** to capture the broader implications of hydrogen production on the energy grid. This approach accounts for the consequential effects of displacing existing energy technologies and the use of marginal energy mixes (Ekvall et al., 2016).
+
+3. **Data Collection Methodology:**
+   - For the *pilot-scale phase*, collect primary data from the demonstration process, including direct measurements of energy consumption, emissions, and resource use. Use industry databases (e.g., Ecoinvent) for background processes.
+   - For *large-scale deployment scenarios*, gather data on the marginal electricity generation mix, grid dynamics, and potential displaced energy technologies. Utilize energy market models and scenarios to project future grid compositions.
+
+**Justification:**
+
+- **Attributional LCA** for the pilot phase is suitable because it provides a detailed assessment of the direct impacts of the hydrogen production process, helping stakeholders understand and optimize the technology (Guinée et al., 2001).
+- **Consequential LCA** for large-scale deployment scenarios is essential as it considers the broader system changes and indirect effects, which are crucial for stakeholders interested in the overall environmental impact of scaling up hydrogen production (Ekvall et al., 2016).
+
+By adopting these methodologies, the energy company can effectively assess the environmental impacts of their hydrogen production process in different deployment scenarios, thereby informing strategic decision-making and stakeholder communication.
+
+**References:**
+- Guinée, J. B., Gorrée, M., Heijungs, R., Huppes, G., Kleijn, R., de Koning, A., ... & Suh, S. (2001). Life cycle assessment: An operational guide to the ISO standards. Ministry of Housing, Ministerie van Volkshuisvesting, Ruimtelijke Ordening en Milieubeheer.
+- Ekvall, T., Finnveden, G., & Moberg, A. (2016). Consequential life cycle assessment: Key concepts and relation to attributional LCA. The International Journal of Life Cycle Assessment, 21(3), 278-290.

@@ -1,0 +1,4 @@
+```[
+{{"justification": 'No reference products are relevant to the given item description.',"reference_product": "", "index": ""}}
+]
+```

@@ -1,0 +1,1 @@
+The functional unit in a life cycle assessment (LCA) is a quantified description of the primary function fulfilled by a product system, providing a reference to which all data in the LCA are normalized. It ensures comparability of LCA results, for example, "one liter of bottled water" or "the insulation of one square meter of wall for one year."

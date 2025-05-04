@@ -1,0 +1,1 @@
+The functional unit in life cycle assessment (LCA) is a quantified description of the performance of a product system, serving as a reference to which inputs and outputs are normalized. It enables fair comparison of different systems by providing a consistent basis, such as "1 liter of drinking water delivered" or "1 ton of paper produced."

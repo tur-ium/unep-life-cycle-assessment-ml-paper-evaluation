@@ -1,0 +1,11 @@
+As an LCA practitioner, the carbon stored in orange trees during their lifespan presents a complex issue.  Generally, **biogenic carbon sequestration is treated as neutral if the harvested biomass is regrown within the study timeframe.**  However, this needs careful consideration for perennial crops like oranges.
+
+Here's my approach:
+
+1.  **System Boundary:** Define the system boundary.  Is it cradle-to-gate (farm to processing) or cradle-to-grave (including consumption and end-of-life)?  This dictates how to address tree lifecycle.
+2.  **Short-Term vs. Long-Term Storage:** While trees store CO2, this storage is not permanent.  Harvesting and eventual decomposition/combustion releases it.
+3.  **Practical Approach:**
+    *   **Simplified:** Assume carbon neutrality if the orange grove is actively managed for sustainable yield, meaning replanting replaces harvested trees.
+    *   **Detailed (if data allows):** Account for carbon uptake during growth and release during orchard removal. Discount future emissions. This requires detailed modeling and reliable data.
+
+Ignoring carbon sequestration is a significant oversimplification. Selecting the appropriate method requires balancing accuracy with data availability and study goals. Ensure transparency regarding the chosen approach and its limitations.

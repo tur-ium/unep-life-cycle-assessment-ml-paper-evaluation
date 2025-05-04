@@ -1,0 +1,40 @@
+Let's compare the two products based on the provided environmental impact categories:
+
+**1. Carbon Footprint (Global Warming Potential):**
+- **Product A:** 5 kg CO2 eq
+- **Product B:** 2 kg CO2 eq  
+**Product B is better** (lower carbon footprint).
+
+**2. Water Footprint (Water Deprivation):**
+- **Product A:** 10 m³ deprived
+- **Product B:** 30 m³ deprived  
+**Product A is better** (lower water use, less contribution to water scarcity).
+
+**3. Marine Eutrophication Impact:**
+- **Product A:** 3 kg N eq
+- **Product B:** 3 kg N eq  
+**Both are equal** (same impact).
+
+---
+
+### **Which is more environmentally friendly?**
+
+**There is no clear, objective answer** unless you specify which impact is more important in the context of use or geography. Both products have trade-offs:
+
+- **Product A** is worse for climate change, but better for water use.
+- **Product B** is better for climate change, but much worse for water use.
+
+#### Other considerations:
+- If water scarcity is a **major concern in the region of consumption or production**, Product A would be preferred.
+- If **reducing greenhouse gas emissions** is a priority, Product B would be preferred.
+- Both have **equal marine eutrophication effects**.
+
+**In summary:**  
+**Neither product is categorically "more environmentally friendly" overall—one is better for carbon, the other for water, and they are equal for eutrophication.**  
+A full answer depends on:
+- Which impact category matters most for you/your region.
+- If you can weight the environmental harms (e.g., via normalization or stakeholder values) to compare them.
+
+**If you must choose without prioritization, both are environmentally friendly in some aspects but not in others.**  
+If you prefer a *lower carbon footprint*, choose **Product B**.  
+If you prefer a *lower water footprint*, choose **Product A**.
