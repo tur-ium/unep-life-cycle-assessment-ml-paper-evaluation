@@ -1,0 +1,77 @@
+**Goal and Scope Definition for the Life Cycle Assessment (LCA) Scenario**
+
+---
+
+### **Goal Definition**
+
+**Goal:**  
+The goal of this LCA is to compare the environmental impacts of three land use scenarios for a rural community:  
+1. Continued conventional agriculture  
+2. Conversion of agricultural land to a solar farm  
+3. Implementation of agrivoltaics (combined solar and agriculture)
+
+The assessment aims to provide objective, science-based evidence to inform community decision-makers and stakeholders about the potential environmental trade-offs and benefits of each scenario, with a particular focus on greenhouse gas emissions, land use, and other relevant environmental impacts. The results will support consensus-building and guide the community in selecting the most sustainable and beneficial land use option.
+
+**Justification:**  
+- The community faces a decision with significant environmental, economic, and social implications.
+- Stakeholders have diverse priorities: climate change mitigation, job creation, tax revenue, and agricultural productivity.
+- An LCA provides a systematic, transparent, and comparative analysis of the environmental impacts of each scenario, supporting informed decision-making.
+
+---
+
+### **Scope Definition**
+
+**1. Functional Unit:**  
+- **1 hectare of land** managed for **1 year** under each scenario.  
+  *Justification:* This allows for a direct, fair comparison of environmental impacts per unit area and time, regardless of the land use type.
+
+**2. System Boundaries:**  
+- **Cradle-to-grave** approach for each scenario, including:
+  - **Agriculture:** Inputs (fertilizers, pesticides, water, energy), farming operations, harvest, and transport to farm gate.
+  - **Solar Farm:** Manufacturing, transport, installation, operation, maintenance, and end-of-life management of solar panels and infrastructure.
+  - **Agrivoltaics:** Combination of the above, accounting for interactions between solar and agricultural activities.
+- **Exclusions:** Downstream processing of agricultural products (beyond farm gate), distribution of electricity (beyond grid connection), unless specifically relevant to local impacts.
+
+**3. Impact Categories:**  
+- **Primary:** Greenhouse gas emissions (CO₂, CH₄, N₂O), land use change, and energy use.
+- **Secondary (if data allows):** Water use, biodiversity impacts, soil health, and local air quality.
+
+**4. Assumptions and Limitations:**  
+- Local data will be used where possible; otherwise, reputable databases and literature will inform inventory data.
+- Socio-economic impacts (jobs, tax revenue) are important but will be addressed in a separate, complementary assessment (e.g., social LCA or cost-benefit analysis).
+
+**5. Audience:**  
+- Local government, community members, and other stakeholders involved in land use decision-making.
+
+---
+
+### **Summary Table**
+
+| Aspect              | Definition                                                                 |
+|---------------------|----------------------------------------------------------------------------|
+| **Goal**            | Compare environmental impacts of agriculture, solar farm, and agrivoltaics |
+| **Functional Unit** | 1 hectare of land managed for 1 year                                       |
+| **System Boundary** | Cradle-to-grave for each scenario                                          |
+| **Impact Categories**| GHG emissions, land use, energy use, (optionally: water, biodiversity)    |
+| **Audience**        | Community decision-makers and stakeholders                                 |
+
+---
+
+### **Justification of Choices**
+
+- **Functional unit** ensures comparability across scenarios.
+- **System boundaries** capture all relevant life cycle stages for each land use.
+- **Impact categories** reflect the main environmental concerns raised (GHG, land use) and allow for broader sustainability considerations.
+- **Goal and audience** are tailored to the community’s needs for evidence-based, transparent decision-making.
+
+---
+
+**References:**
+- Cherp et al., 2021 (on solar GHG emissions)
+- USDA, 2022 (on agricultural GHG emissions)
+- Dinesh and Pearce, 2016 (on agrivoltaics)
+
+---
+
+**In summary:**  
+The LCA’s goal and scope are designed to provide a fair, comprehensive, and relevant comparison of the environmental impacts of the three land use options, supporting the community’s decision-making process with robust scientific evidence.

@@ -1,0 +1,19 @@
+The correct answer is:
+
+**A: 1. Avoid allocation as far as possible, 2. Allocation on basis of physical properties, 3. Allocation on basis of revenue**
+
+**Explanation:**
+
+According to **ISO 15804:2012+A2:2019** (which is harmonized with ISO 14044), the recommended hierarchy for dealing with multi-functionality is:
+
+1. **Avoid allocation as far as possible** (by system subdivision or system expansion).
+2. **If allocation cannot be avoided, allocate based on a relevant underlying physical relationship** (e.g., mass, energy content).
+3. **If a physical relationship cannot be established, allocate based on another relationship, such as economic value (revenue).**
+
+So, the correct order is:
+
+1. Avoid allocation (system subdivision/expansion)
+2. Physical allocation
+3. Economic allocation
+
+**Therefore, option A is correct.**

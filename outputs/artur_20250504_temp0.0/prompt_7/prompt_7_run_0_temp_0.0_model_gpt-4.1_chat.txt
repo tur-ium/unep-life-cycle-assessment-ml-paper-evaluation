@@ -1,0 +1,55 @@
+**Structured Recommendation for LCA Goal, Scope, and Data Collection Methodology**
+
+**1. Pilot-scale demonstration phase**
+
+**Goal & Scope:**  
+At this stage, the primary objective is to understand the environmental profile of the novel hydrogen production process itself, benchmarked against existing technologies. The focus is on process optimization, technology improvement, and early-stage stakeholder communication.
+
+**Methodological Choice:**  
+**Attributional LCA (ALCA)** is recommended. ALCA quantifies the direct environmental impacts associated with the inputs and outputs of the pilot process, using average data (Finnveden et al., 2009). This approach is suitable for technology development and internal decision-making, as it provides a clear baseline for process improvements without considering broader market effects.
+
+**Data Collection:**  
+Collect primary data from the pilot plant (e.g., energy use, material flows), supplemented with secondary data from databases (e.g., ecoinvent) for upstream and downstream processes.
+
+**Justification:**  
+Stakeholders (e.g., R&D, investors) are interested in the inherent environmental performance of the new process, not its market consequences at this stage (Curran et al., 2023).
+
+---
+
+**2. Large-scale commercial deployment in a renewable-dominated grid**
+
+**Goal & Scope:**  
+Here, the company must assess the system-wide impacts of hydrogen production for energy storage, considering interactions with the electricity grid and potential displacement of other storage or generation technologies.
+
+**Methodological Choice:**  
+**Consequential LCA (CLCA)** is appropriate. CLCA evaluates the environmental consequences of changes in the system, such as increased hydrogen production, by modeling marginal changes in electricity supply and demand (Ekvall & Weidema, 2004). This approach captures indirect effects, such as the impact on renewable curtailment or fossil backup generation.
+
+**Data Collection:**  
+Use scenario-based modeling of grid operations, marginal electricity mixes, and market responses. Combine primary data (plant performance) with secondary data (grid models, market projections).
+
+**Justification:**  
+Stakeholders (e.g., policymakers, utilities) are interested in the broader consequences of hydrogen deployment, including its role in decarbonization and resource use at the system level (Weidema et al., 2018).
+
+---
+
+**3. Large-scale deployment in a fossil-dominated grid**
+
+**Goal & Scope:**  
+The focus is on the net environmental impact of hydrogen production when the grid is primarily fossil-based, including potential increases in fossil resource use and emissions.
+
+**Methodological Choice:**  
+**Consequential LCA (CLCA)** is again recommended. The marginal electricity used for electrolysis is likely fossil-based, so CLCA will reveal the true system-level impacts, including rebound effects and indirect emissions (Ekvall & Weidema, 2004).
+
+**Data Collection:**  
+Model marginal electricity generation (likely fossil), and assess impacts on fossil resource depletion, mineral scarcity, and GHG emissions. Use a mix of primary and secondary data, with emphasis on grid modeling.
+
+**Justification:**  
+Stakeholders (e.g., regulators, environmental groups) need to understand whether hydrogen production in this context supports or hinders climate and resource goals (Finnveden et al., 2009).
+
+---
+
+**References:**  
+- Curran, M.A. et al. (2023). *Life Cycle Assessment: Principles and Practice*.  
+- Ekvall, T. & Weidema, B.P. (2004). System boundaries and input data in consequential life cycle inventory analysis. *Int J LCA*, 9(3), 161-171.  
+- Finnveden, G. et al. (2009). Recent developments in Life Cycle Assessment. *J Environ Manage*, 91(1), 1-21.  
+- Weidema, B.P. et al. (2018). Attributional or consequential Life Cycle Assessment: A matter of social responsibility. *J Clean Prod*, 174, 305-314.

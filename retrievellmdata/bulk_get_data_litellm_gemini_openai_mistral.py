@@ -16,19 +16,16 @@ logging.basicConfig(filename='log.log', filemode='w', encoding='utf-8', level=lo
 logging.getLogger()
 
 # PARAMETERS
-sql_db_name = '../records_artur_20250504.db'  # Used to store the ids of prompts and responses
+sql_db_name = '../records_artur_20250505.db'  # Used to store the ids of prompts and responses
 root_input_prompt_dir = Path('../prompts')  # Top level directory with sub-directories for each prompt
-root_output_dir = Path('../outputs/artur_20250504_temp1.0')
-temperature = 1. # For OpenAI o-series models the only permitted temperature is fixed to 1 https://community.openai.com/t/why-is-the-temperature-and-top-p-of-o1-models-fixed-to-1-not-0/938922/4
+root_output_dir = Path('../outputs/artur_20250504_temp0.0')
+temperature = 0.0 # For OpenAI o-series models the only permitted temperature is fixed to 1 https://community.openai.com/t/why-is-the-temperature-and-top-p-of-o1-models-fixed-to-1-not-0/938922/4
 number_of_responses_per_prompt = 1
 
 models = [
     "mistral/mistral-large-2411",
-    # "anthropic/claude-3-5-sonnet-20240620",
     "gemini/gemini-2.0-flash-001", # 2025-05-04 Enabled billing, therefore increasing to Gemini 2.0 flash (instead of flash lite). 2025-04-03 Having issues accessing gemini-2.0-flash-001. Error 503, model overloaded
     "openai/gpt-4.1", # GPT 4.1 mini and GPT-4.1 (standard) returned rate limit errors when attempted to use
-    # "openai/o3", # We were not able to access o3 because OpenAI requires organizations to verify to use the models.
-    # "openai/o4-mini" # We were not able to access o4-mini because OpenAI requires organizations to verify to use the models.
 ]
 
 

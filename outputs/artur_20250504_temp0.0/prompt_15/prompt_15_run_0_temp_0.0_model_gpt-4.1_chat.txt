@@ -1,0 +1,19 @@
+Please provide the list of bill of materials (BOM) items you want to match. Based on your context, I can only match items if you give me the BOM items to look up.
+
+**Example usage:**  
+If you provide:  
+- "raw bauxite ore"  
+- "citric acid"  
+- "maize starch"  
+- "protein feed"  
+
+I will return:
+
+| best_lookup_string                                                      | explanation                                                                                   |
+|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| bauxite {GLO}| bauxite mine operation | Cut-off, U                                             | "raw bauxite ore" matches "bauxite" and only one bauxite entry exists, global region.         |
+| Citric acid {CN}| production | Cut-off, U                                               | "citric acid" matches "Citric acid", and China (CN) is a specific region, chosen as example.  |
+| Maize starch {CN}| citric acid production | Cut-off, U                                             | "maize starch" matches "Maize starch", China (CN) is a specific region, chosen as example.    |
+| protein feed, 100% crude {CN}| citric acid production | Cut-off, U                                             | "protein feed" matches "protein feed, 100% crude", China (CN) is a specific region, example.  |
+
+**Please provide your BOM items for matching.**

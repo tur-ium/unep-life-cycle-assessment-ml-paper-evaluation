@@ -1,0 +1,14 @@
+ReCiPe 2016 and CML-IA are both well-established life cycle impact assessment (LCIA) methods, but they are primarily designed for environmental life cycle assessment (LCA), not social life cycle assessment (S-LCA). Here's a brief overview of each and their suitability for S-LCA:
+
+1. **ReCiPe 2016**: Developed by Huijbregts et al., ReCiPe 2016 is a harmonized LCIA method that includes a wide range of environmental impact categories. It focuses on environmental impacts such as climate change, particulate matter formation, terrestrial acidification, and more. It does not include social impact categories, so it is not suitable for S-LCA on its own.
+
+2. **CML-IA (Centrum voor Milieukunde Leiden - Impact Assessment)**: This method, developed by the Institute of Environmental Sciences Leiden, focuses on environmental impacts similar to ReCiPe. It includes categories like climate change, stratospheric ozone depletion, and ecotoxicity. Like ReCiPe, it does not cover social impact categories, so it is not directly applicable to S-LCA.
+
+For social life cycle assessment (S-LCA), you should consider methods and guidelines specifically designed for this purpose. The UNEP/SETAC Guidelines for Social Life Cycle Assessment of Products provide a framework for conducting S-LCA. These guidelines include social impact categories such as human rights, working conditions, health and safety, cultural heritage, and governance.
+
+Some databases and tools that support S-LCA include:
+
+- **PSILCA (Product Social Impact Life Cycle Assessment) Database**: Developed by the Social Hotspots Database project, it provides social impact data for various sectors and regions.
+- **Social Hotspots Database**: This database offers characterization factors for social impacts, which can be used in S-LCA studies.
+
+In summary, while ReCiPe 2016 and CML-IA are valuable for environmental LCA, they are not designed for S-LCA. For assessing social impacts, you should use methods and databases specifically tailored for S-LCA.

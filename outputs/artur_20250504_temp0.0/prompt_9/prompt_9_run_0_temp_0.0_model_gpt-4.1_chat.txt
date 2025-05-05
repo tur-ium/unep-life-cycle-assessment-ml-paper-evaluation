@@ -1,0 +1,51 @@
+**Analytical Framework for Comparing Conflicting LCAs of Plant-Based Meat Substitutes**
+
+**1. Identify and Compare Methodological Elements**
+
+a. **Goal and Scope Definition**  
+   - *Functional Unit*: Examine if both studies use the same basis for comparison (e.g., per kg product, per serving, per protein content) (ISO 14044, 2006).  
+   - *System Boundaries*: Assess whether both LCAs include the same life cycle stages (e.g., cradle-to-gate vs. cradle-to-grave), and whether they account for land use change, transportation, packaging, and end-of-life (Notarnicola et al., 2017).
+
+b. **Data Sources and Quality**  
+   - *Primary vs. Secondary Data*: Determine if studies use direct measurements, industry data, or literature values, and assess data representativeness and age (Weidema et al., 2013).  
+   - *Geographical and Technological Coverage*: Check if data reflect similar regions and production technologies.
+
+c. **Life Cycle Impact Assessment (LCIA) Methods**  
+   - *Impact Categories*: Compare which environmental impacts are assessed (e.g., GHG emissions, water use, land use).  
+   - *Characterization Models*: Note if different LCIA models or factors are used (e.g., GWP100 vs. GWP20 for climate impacts).
+
+d. **Assumptions and Allocation Procedures**  
+   - *Co-product Allocation*: Review how environmental burdens are distributed among co-products (ISO 14044, 2006).  
+   - *Assumptions*: Identify key assumptions (e.g., yield, energy mix, consumer behavior).
+
+**2. Steps to Harmonize or Assess Reliability**
+
+a. **Side-by-Side Comparison**  
+   - Create a matrix summarizing methodological choices and key results.
+
+b. **Sensitivity and Uncertainty Analysis**  
+   - Evaluate if studies conducted sensitivity analyses; if not, attempt to recalculate results using harmonized assumptions where possible (Colomb et al., 2015).
+
+c. **Critical Review**  
+   - Assess transparency, peer review status, and adherence to LCA standards (ISO 14044, 2006).
+
+d. **Meta-Analysis or Recalculation**  
+   - If data permit, recalculate impacts using a common functional unit, system boundary, and LCIA method to directly compare results.
+
+e. **Expert Consultation**  
+   - Engage LCA experts to interpret methodological differences and their likely influence on results.
+
+**3. Recommendations for Future LCAs**
+
+- **Standardize Functional Units and System Boundaries** (Poore & Nemecek, 2018).
+- **Ensure Transparent Reporting of Data Sources and Assumptions**.
+- **Adopt Harmonized LCIA Methods and Impact Categories**.
+- **Conduct and Report Sensitivity/Uncertainty Analyses**.
+- **Encourage Peer Review and Adherence to ISO Standards**.
+
+**References**  
+- Colomb, V. et al. (2015). "Uncertainty analysis in LCA." *Int J Life Cycle Assess* 20: 1107–1123.  
+- ISO 14044 (2006). "Environmental management—Life cycle assessment—Requirements and guidelines."  
+- Notarnicola, B. et al. (2017). "Environmental impacts of food consumption in Europe." *J Clean Prod* 140: 753–765.  
+- Poore, J. & Nemecek, T. (2018). "Reducing food’s environmental impacts through producers and consumers." *Science* 360: 987–992.  
+- Weidema, B.P. et al. (2013). "Data quality management for life cycle inventories." *J Clean Prod* 30: 43–48.

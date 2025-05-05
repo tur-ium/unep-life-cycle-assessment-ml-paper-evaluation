@@ -1,0 +1,10 @@
+Most industrial processes produce more than the intended product. Normally more than one input is needed to produce one product and sometimes products are co-produced with other products. When dealing with systems that have produce multiple products or recycling processes, known as multi-functionality, sometimes allocation may be necessary.
+
+In ISO 14044 there are three methods for dealing with multi-functionality: Allocation on basis of revenue, allocation on the basis of physical relationships, or modifying the system boundary to avoid allocation. Allocation can be avoided by subdividing the system boundary or expanding the system boundary. 
+
+What is the recommended hierarchy of dealing with multi-functionality according to ISO 15804:2012+A2:2019? The preferred option should be numbered (1), the second best is (2) and the least preferred is numbered (3)
+
+- A: 1. Avoid allocation as far as possible, 2. Allocation on basis of physical properties, 3. Allocation on basis of revenue 
+- B: 1. Allocation on basis of physical properties, 2. Allocation on basis of revenue, 3. Avoid allocation as far as possible
+- C: 1. Allocation on basis of revenue, 2. Allocation on basis of physical properties, 3. Avoid allocation as far as possible
+- D: 1. Allocation on basis of revenue, 2. Allocation on basis of physical properties, 3. Avoid allocation as far as possible

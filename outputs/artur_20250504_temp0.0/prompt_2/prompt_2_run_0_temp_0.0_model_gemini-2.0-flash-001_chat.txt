@@ -1,0 +1,5 @@
+**D**
+
+**Explanation:**
+
+Life Cycle Assessment (LCA) focuses on quantifying the environmental impacts of a product or service *across its entire life cycle*. While climate change (driven by anthropogenic causes) can be a factor *within* an LCA, the disruption of moth populations in Chile is an ecological study, not a product-focused life cycle analysis. Options A, B, and C all relate to the environmental impacts of specific products or processes.

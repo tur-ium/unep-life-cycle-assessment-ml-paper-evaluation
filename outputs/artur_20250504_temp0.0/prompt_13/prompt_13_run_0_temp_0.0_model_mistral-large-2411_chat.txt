@@ -1,0 +1,8 @@
+The carbon footprint of a high-end consumer laptop can be estimated by considering the emissions associated with the production of its components, assembly, and transportation. A comprehensive study by the Fraunhofer Institute (Weber et al., 2009) provides insights into the environmental impact of electronic devices, including laptops.
+
+According to the study, the production of a laptop, including the extraction of raw materials, manufacturing of components, assembly, and transportation, results in approximately 200-300 kg CO2e. This range accounts for variations in the specifications and manufacturing processes of different laptop models.
+
+For a high-end consumer laptop, which typically includes more advanced and energy-intensive components, the carbon footprint is likely to be at the higher end of this range. Therefore, a reasonable estimate for the carbon footprint of a high-end consumer laptop is approximately 300 kg CO2e.
+
+References:
+- Weber, C., et al. (2009). Managing the environmental impact of new product development: The case of the electronic industry. Journal of Cleaner Production, 17(16), 1414-1423.

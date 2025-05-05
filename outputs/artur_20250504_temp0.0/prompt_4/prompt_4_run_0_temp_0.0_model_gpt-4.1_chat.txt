@@ -1,0 +1,4 @@
+**Answer: B. The addresses of upstream suppliers**
+
+**Explanation:**  
+ISO 14044 requires specifying the functional unit, allocation procedures, and the type of critical review in an LCA study. However, it does **not** require the addresses of upstream suppliers; such detailed contact information is not relevant to the methodological requirements of an ISO-compliant LCA.

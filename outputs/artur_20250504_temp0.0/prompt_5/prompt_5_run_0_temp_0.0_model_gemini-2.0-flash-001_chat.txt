@@ -1,0 +1,7 @@
+The correct answer is **A: 1. Avoid allocation as far as possible, 2. Allocation on basis of physical properties, 3. Allocation on basis of revenue**.
+
+ISO 15804:2012+A2:2019 (Sustainability of construction works - Environmental product declarations - Core rules for the product category of construction products) follows the same hierarchy as ISO 14044 for dealing with multi-functionality:
+
+1.  **Avoid allocation as far as possible:** This is the preferred option. This can be achieved by system subdivision or system expansion.
+2.  **Allocation on basis of physical properties:** If allocation cannot be avoided, it should be based on physical relationships (e.g., mass, energy content).
+3.  **Allocation on basis of revenue:** This is the least preferred option and should only be used if allocation based on physical properties is not possible.

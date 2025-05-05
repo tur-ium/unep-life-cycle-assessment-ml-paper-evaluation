@@ -1,0 +1,28 @@
+The carbon footprint of producing a high-end consumer laptop is typically in the range of **200–400 kg CO₂e** per device.
+
+### Explanation and Sources
+
+- **Teehan & Kandlikar (2013)** estimated the embodied emissions of a 2009 MacBook Pro at **270 kg CO₂e**.
+- **Apple (2023)** reports for its latest MacBook Pro models (14-inch and 16-inch, M2 Pro/Max) a **lifecycle carbon footprint of 340–400 kg CO₂e**, with **70–80%** of that from production (i.e., **~240–320 kg CO₂e**).
+- **Deng et al. (2011)** found that the manufacturing of a typical laptop (not necessarily high-end) results in **210–270 kg CO₂e**.
+
+The majority of emissions come from the extraction and processing of raw materials, manufacturing of components (especially the display and logic board), and assembly.
+
+### Calculation Example
+
+For a high-end laptop (e.g., MacBook Pro 16-inch, 2023):
+- **Total lifecycle emissions:** 400 kg CO₂e (Apple, 2023)
+- **Production share:** ~75% (Apple, 2023)
+- **Production emissions:** 0.75 × 400 = **300 kg CO₂e**
+
+### **Final Output**
+
+**The carbon footprint of producing a high-end consumer laptop is approximately 300 kg CO₂e.**
+
+---
+
+**References:**
+
+- Apple (2023). *MacBook Pro Environmental Report*. [https://www.apple.com/environment/pdf/products/notebooks/16-inch-macbook-pro-2023.pdf](https://www.apple.com/environment/pdf/products/notebooks/16-inch-macbook-pro-2023.pdf)
+- Teehan, P., & Kandlikar, M. (2013). *Comparing Embodied Greenhouse Gas Emissions of Modern Computing and Electronics Products*. Environmental Science & Technology, 47(9), 3997–4003.
+- Deng, L., Babbitt, C. W., Williams, E., & Matthews, H. S. (2011). *Economic-Balance Hybrid LCA Extended with Uncertainty Analysis: Case Study of a Laptop Computer*. Environmental Science & Technology, 45(7), 2784–2792.

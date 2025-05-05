@@ -1,0 +1,12 @@
+Generate a Bill of Materials (BoM) for a toothbrush. Include the following data elements:
+
+- Product or component
+- Producing process
+- Average weight (include uncertainties)
+- Emissions to air, water and soil 
+- Estimated energy use
+- Estimated water use
+
+Ensure the BoM is comprehensive and covers the relevant factors for an environmental life cycle assessment of a toothbrush. 
+
+Give the output as a markdown table. Then give a short explanation in less than 100 words. Finally give citations to relevant sources in author-date format.

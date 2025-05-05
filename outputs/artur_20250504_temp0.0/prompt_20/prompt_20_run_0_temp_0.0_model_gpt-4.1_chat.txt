@@ -1,0 +1,9 @@
+In an LCA study for oranges, the storage of carbon in orange trees should be accounted for as **biogenic carbon sequestration**. According to ISO 14067 and the Product Environmental Footprint (PEF) guidelines, the temporary storage of carbon in perennial crops like orange trees can be included in the carbon balance if the trees are not immediately harvested for wood or burned. 
+
+**How to deal with it:**  
+- Quantify the net carbon uptake by the trees during their growth phase (photosynthesis minus respiration and decomposition).
+- Account for the fate of the stored carbon at the end of the orchard’s life: if the trees are left to decompose or are burned, the stored carbon is released back to the atmosphere, negating the sequestration benefit. If the wood is used in long-lived products, some carbon remains stored.
+- Report the timing and duration of carbon storage, as temporary sequestration is not equivalent to permanent removal.
+
+**Why:**  
+Including biogenic carbon storage provides a more accurate picture of the net greenhouse gas emissions associated with orange production. However, it is essential to follow recognized standards and transparently report assumptions, as the climate benefit depends on the permanence of storage. Most LCA guidelines recommend reporting both with and without biogenic carbon storage to allow for comparison and transparency.

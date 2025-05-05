@@ -1,0 +1,7 @@
+**Physical Causality Allocation** is generally the most appropriate multi-output allocation method for slaughter processes.
+
+**Why?**
+
+Slaughter inherently involves physically separating a single input (the live animal) into distinct, measurable outputs (meat cuts, organs, bones, etc.). Physical causality allocation directly links the environmental burden of the input to each output based on its physical mass or energy content. This method is transparent, easily understood, and reflects the actual material flow within the process.
+
+Other methods, like economic allocation, can be influenced by market fluctuations and may not accurately represent the environmental impact associated with each product. System expansion, while comprehensive, can be complex and data-intensive. Physical causality provides a practical and defensible approach for allocating environmental burdens in slaughter processes.
