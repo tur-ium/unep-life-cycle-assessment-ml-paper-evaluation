@@ -32,7 +32,7 @@ def save_text_as_img(text: str, output_path: Path | str, dimensions: Tuple[int, 
         font = ImageFont.truetype(text_font_name, text_size)
 
     d.text(text_pos, text, fill=text_colour,font=font)
-    with open(output_path,'wb') as fw:
+    with open(output_path,'wb', encoding='utf-8') as fw:
         img.save(fw, 'png')
 
 

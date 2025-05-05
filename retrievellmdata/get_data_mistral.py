@@ -32,7 +32,7 @@ poppler_path = os.getenv('POPPLER_PATH') # For rendering markdown to image
 
 client = Mistral(api_key=mistral_api_key)
 
-with open(input_list_of_processes,'r') as f:
+with open(input_list_of_processes,'r', encoding='utf-8') as f:
     lca_model_lookup_list = [x.strip() for x in f.readlines()[1:]]
 
 print(lca_model_lookup_list)
