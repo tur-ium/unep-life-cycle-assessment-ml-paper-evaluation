@@ -127,8 +127,10 @@ class BedrockAssistant(BaseAssistant):
             return "deepseek"
         elif "mistral" in self.model_name:
             return "mistral"
-        else:
+        elif "claude" in self.model_name:
             return "claude"
+        else: #
+            raise ValueError(f"Unknown model name: {self.model_name}")
         
     def _prepare_request_body(
         self,
