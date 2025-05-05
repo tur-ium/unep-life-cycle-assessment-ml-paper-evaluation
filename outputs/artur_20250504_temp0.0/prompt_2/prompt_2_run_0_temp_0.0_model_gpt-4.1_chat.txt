@@ -1,0 +1,4 @@
+**Answer: D**
+
+**Explanation:**  
+Life cycle assessment (LCA) is a tool used to evaluate the environmental impacts of products or services throughout their life cycle—from raw material extraction to disposal. Options A, B, and C relate to products or organizational activities, which LCA can assess. Option D focuses on ecological impacts on moth populations due to climate change, which is outside the scope of LCA and falls under ecological or biodiversity impact studies.

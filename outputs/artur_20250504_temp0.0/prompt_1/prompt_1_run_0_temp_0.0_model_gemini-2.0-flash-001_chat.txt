@@ -1,0 +1,3 @@
+The answer is **A: Disposal at the end of useful life**.
+
+Biodegradability and recyclability are properties that relate directly to what happens to the plate *after* it has been used and is being discarded. Therefore, this information would be included in the disposal stage of the LCA.

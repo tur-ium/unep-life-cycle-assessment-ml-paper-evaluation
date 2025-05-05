@@ -1,0 +1,3 @@
+**Answer: D**
+
+Explanation: Life cycle assessment (LCA) typically focuses on the environmental impacts of products, processes, or services throughout their life cycle. Option D is about the impact on animal populations due to climate change, which is not directly assessed using LCA. LCA does not usually model ecosystem responses like changes in moth populations. Instead, it assesses impacts like global warming potential, resource depletion, and land use changes directly caused by the studied system.

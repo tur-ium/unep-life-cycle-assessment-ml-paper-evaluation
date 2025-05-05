@@ -1,0 +1,31 @@
+The carbon footprint of producing a high-end consumer laptop is typically in the range of **200–350 kg CO₂e** (0.2–0.35 tonnes CO₂e) per device.
+
+**Explanation and sources:**
+
+1. **Apple's Environmental Reports** are among the most transparent: Apple estimates that the production of a new MacBook Pro (14-inch, 2023) emits about **294 kg CO₂e** (Apple 2023). Production represents the largest share of the lifecycle emissions, far more than use, transport, or end-of-life.
+
+2. **Dell's Product Carbon Footprints:** Dell estimates that the manufacturing of its XPS 13 9380 laptop accounts for around **279 kg CO₂e per device** (Dell 2020).
+
+3. **Peer-reviewed meta-studies:** A review by Malmodin and Lundén (2016) shows that **manufacturing dominates the carbon footprint of laptops**, and most modern laptops range from **200–400 kg CO₂e** per unit, confirming industry numbers.
+
+4. **Summary Table:**
+
+| Brand / Study                | CO₂e for Production (kg CO₂e) |
+|------------------------------|------------------------------|
+| Apple MacBook Pro (2023)     |        294                   |
+| Dell XPS 13 (2020)           |        279                   |
+| Malmodin & Lundén (2016)     |     200–400                  |
+
+**Conclusion:**
+
+> The carbon footprint of producing a high-end consumer laptop is **approximately 0.2–0.35 tonnes CO₂e** per device, based on transparent disclosures from leading manufacturers and independent studies (Apple 2023; Dell 2020; Malmodin & Lundén 2016).
+
+---
+
+**References:**
+
+- Apple. 2023. "Environmental Report: MacBook Pro 14-inch." [Apple Environment Reports](https://www.apple.com/environment/reports/).
+- Dell. 2020. "Product Carbon Footprint Report: XPS 13 9380." [Dell Sustainability](https://www.delltechnologies.com/en-us/social-impact/reporting/).
+- Malmodin, J. & Lundén, D. 2016. "The Energy and Carbon Footprint of the Global ICT and E&M Sectors 2010–2015." *Sustainability*, 8(7), 617. [doi:10.3390/su8070617](https://www.mdpi.com/2071-1050/8/7/617)
+
+If you need a specific brand/model, or a further breakdown, let me know!

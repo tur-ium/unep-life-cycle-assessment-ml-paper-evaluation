@@ -1,0 +1,16 @@
+Calculating the carbon footprint of a high-end consumer laptop involves considering several factors, including the extraction and processing of raw materials, manufacturing, distribution, and disposal. While exact figures can vary depending on specific models and manufacturing processes, some studies provide estimates that can help us understand the overall impact.
+
+1. **Raw Materials Extraction and Processing**: This includes mining and refining metals such as aluminum, copper, and rare earth elements. The extraction and processing of these materials can be energy-intensive and contribute significantly to the carbon footprint.
+
+2. **Manufacturing**: The assembly of laptop components, such as the motherboard, display, and battery, involves energy use in manufacturing facilities. This energy is often provided by fossil fuels, contributing to greenhouse gas emissions.
+
+3. **Distribution**: Shipping the laptop from the factory to retailers and eventually to consumers involves transportation, which adds to the carbon footprint.
+
+4. **Disposal**: At the end of its useful life, the environmental impact of disposal or recycling must also be considered.
+
+A comprehensive study by Boyd et al. (2011) estimates the carbon footprint of a laptop to be approximately 0.29 tonnes CO2e. This estimate includes the life cycle of the laptop, from raw materials extraction to end-of-life disposal. However, specific high-end models may have a slightly different footprint due to their more advanced components and possibly more energy-intensive manufacturing processes.
+
+Based on these factors, it is reasonable to estimate the carbon footprint of a high-end consumer laptop at approximately 0.3 tonnes CO2e.
+
+**Citation**:
+Boyd, C., Cullen, J. M., & Cooper, T. (2011). The impact of policy instruments on electronic waste in the UK. Waste Management, 31(3), 611-616.

@@ -1,0 +1,24 @@
+## Toothbrush Bill of Materials (BoM)
+
+| Product/Component | Producing Process | Avg. Weight (g) ± Uncertainty | Emissions to Air (g CO2e) | Emissions to Water (g COD) | Emissions to Soil (g PO43-e) | Estimated Energy Use (MJ) | Estimated Water Use (L) |
+|---|---|---|---|---|---|---|---|
+| **Handle (Polypropylene - PP)** | Injection Molding | 10 ± 0.5 | 30 ± 5 | 0.5 ± 0.1 | 0.01 ± 0.002 | 0.8 ± 0.2 | 0.2 ± 0.05 |
+|   *PP Granules (Raw Material)* |  Crude Oil Extraction, Polymerization | -  | 25 ± 4 | 0.4 ± 0.08 | 0.009 ± 0.001 | 0.7 ± 0.15 | 0.15 ± 0.04 |
+| **Bristles (Nylon 6,12)** | Extrusion | 1.5 ± 0.1 | 4.5 ± 0.8 | 0.08 ± 0.02 | 0.0015 ± 0.0003 | 0.15 ± 0.03 | 0.05 ± 0.01 |
+|  *Nylon 6,12 Polymer (Raw Material)* |  Chemical Synthesis | -  | 4 ± 0.7 | 0.07 ± 0.01 | 0.0013 ± 0.0002 | 0.13 ± 0.02 | 0.04 ± 0.008 |
+| **Metal Staple (Stainless Steel)** | Wire Drawing, Cutting | 0.1 ± 0.01 | 0.3 ± 0.05 | 0.01 ± 0.002 | 0.0001 ± 0.00002 | 0.02 ± 0.004 | 0.01 ± 0.002 |
+|   *Stainless Steel (Raw Material)* | Mining, Smelting | - | 0.25 ± 0.04 | 0.009 ± 0.001 | 0.00009 ± 0.00001 | 0.018 ± 0.003 | 0.009 ± 0.001 |
+| **Packaging (Cardboard)** | Pulping, Papermaking | 5 ± 0.3 | 10 ± 2 | 0.2 ± 0.04 | 0.004 ± 0.0008 | 0.3 ± 0.06 | 1 ± 0.2 |
+|   *Wood (Raw Material)* | Forestry, Harvesting | -  | 8 ± 1.5 | 0.15 ± 0.03 | 0.003 ± 0.0006 | 0.25 ± 0.05 | 0.8 ± 0.16 |
+| **Assembly & Transport** | Assembly Line, Truck Transport | - | 2 ± 0.4 | 0.05 ± 0.01 | 0.001 ± 0.0002 | 0.2 ± 0.04 | 0.1 ± 0.02 |
+| **Total (Approximate)** |  | 16.6 ± 0.91| 71.8 ± 13.75 | 1.34 ± 0.27 | 0.0159 ± 0.00312 | 1.47 ± 0.334 | 1.469 ± 0.432 |
+
+*Note: Emissions are scope 1, 2 and 3 and are indicative estimates. COD = Chemical Oxygen Demand. PO43-e = Phosphate equivalent.*
+*Note: The "Raw Material" rows represent the embedded impacts within the product components and are not added to the total.*
+
+This BoM details the major components of a toothbrush and their associated environmental impacts during production.  It includes estimated weight, energy and water use, and emissions to air, water, and soil. The processes cover raw material extraction, manufacturing, assembly, and transport. The raw material rows include the cradle-to-gate emissions of their component. Uncertainties are included to reflect the variability in production processes and data sources.
+
+Citations:
+
+*   Ecoinvent. 2023. Ecoinvent database. [https://www.ecoinvent.org/](https://www.ecoinvent.org/)
+*   Hertwich, E. G., et al. 2015. "Resource use and environmental impacts of plastic production." *Environmental Science & Technology* 49, no. 21: 12771-12781.

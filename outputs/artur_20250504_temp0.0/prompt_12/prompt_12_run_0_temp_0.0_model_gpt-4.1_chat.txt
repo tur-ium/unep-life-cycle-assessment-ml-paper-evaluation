@@ -1,0 +1,25 @@
+**No, you should not use ReCiPe 2016 or CML-IA for social life cycle assessment (S-LCA).**
+
+**Here’s why:**
+
+- **ReCiPe 2016** (Huijbregts et al., 2016) and **CML-IA** (developed by the Centrum voor Milieukunde Leiden) are both **environmental life cycle impact assessment (LCIA) methods**. They are designed to assess and characterize **environmental impacts** such as climate change, acidification, eutrophication, human toxicity (from an environmental perspective), resource depletion, etc.
+- These methods **do not include social indicators** or social impact categories. Their impact categories are strictly environmental and do not cover social issues like labor rights, human health from a social perspective, child labor, community impacts, or other social aspects.
+
+**For Social LCA:**
+- Social LCA uses **different indicators and methods**. The most widely recognized framework is the **UNEP/SETAC Guidelines for Social Life Cycle Assessment of Products** (2009, 2020), which recommend using social impact categories such as human rights, working conditions, health and safety, cultural heritage, etc.
+- There are specific **social impact assessment methods and databases** (e.g., PSILCA, Social Hotspots Database) designed for S-LCA.
+
+**Summary Table:**
+
+| Method         | Type of LCA | Impact Categories Covered         | Suitable for S-LCA? |
+|----------------|-------------|-----------------------------------|---------------------|
+| ReCiPe 2016    | Environmental| Environmental only                | No                  |
+| CML-IA         | Environmental| Environmental only                | No                  |
+| S-LCA (UNEP/SETAC, PSILCA, etc.) | Social       | Social (human rights, labor, etc.) | Yes                 |
+
+**References:**
+- Huijbregts, M.A.J., et al. (2016). ReCiPe2016: a harmonised life cycle impact assessment method at midpoint and endpoint level. *International Journal of Life Cycle Assessment*, 22(2), 138-147.
+- UNEP/SETAC (2009, 2020). Guidelines for Social Life Cycle Assessment of Products.
+
+**In summary:**  
+**ReCiPe 2016 and CML-IA are not suitable for social LCA. Use S-LCA-specific methods and indicators for social impact assessment.**

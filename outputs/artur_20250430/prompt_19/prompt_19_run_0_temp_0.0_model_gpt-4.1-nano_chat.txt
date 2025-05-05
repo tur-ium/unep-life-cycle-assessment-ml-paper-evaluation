@@ -1,0 +1,12 @@
+In a slaughter process, the most appropriate multi-output allocation method is the **physical (or mass-based) allocation method**. This approach allocates costs or environmental impacts based on the physical quantities of outputs produced, such as carcass weight, meat cuts, or other measurable products.
+
+**Reasoning:**  
+Slaughter processes typically generate multiple outputs—meat, hides, bones, offal, and other by-products—whose proportions are directly related to the physical quantities of the raw material processed. Using physical allocation ensures that each product's share of costs or impacts reflects its actual physical contribution, providing a transparent and straightforward basis for allocation.
+
+**Advantages:**  
+- **Objectivity:** Relies on measurable physical data rather than economic value, reducing subjectivity.  
+- **Fairness:** Distributes costs proportionally to the physical output, aligning with the actual resource use.  
+- **Simplicity:** Easier to implement when physical data are readily available.
+
+**In summary:**  
+The physical allocation method is preferred in slaughter processes because it accurately reflects the physical contribution of each product, ensuring fair and transparent allocation of costs and environmental impacts.

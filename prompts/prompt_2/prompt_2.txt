@@ -1,0 +1,8 @@
+Which of the following is not an example of a question that can be answered using life cycle assessment?
+
+Give as answer either A, B, C, or D. Explain briefly (less than 100 words) your choice
+
+- A: Identify hotspots in the production of a pair of jeans
+- B: Compare different material choices for a water bottle, considering environmental impact in production, use and disposal
+- C: Analyse impacts of an organization on deforestation and land use change in the Congo river basin
+- D: Analyse the impact of the disruption on the life cycle of moth populations in Chile due to changes in climate driven by anthropogenic causes

@@ -1,0 +1,11 @@
+For an LCA of a crop from a regenerative farm, I need data spanning the entire life cycle. Key areas include:
+
+*   **Farm Inputs:** Seed type & source, soil amendments (compost, biochar quantities & origin), fertilizers (type & amount), pesticides (type & amount), water use (source & quantity), energy use (fuel, electricity for machinery & irrigation).
+*   **Regenerative Practices:** Specific practices implemented (cover cropping, no-till, crop rotation, livestock integration), duration, and how they are managed. This includes data on any seeds used, any inputs used, and any extra machinery used.
+*   **Field Operations:** Machinery use (type, fuel consumption, hours), labor (hours), yields (quantity & quality).
+*   **Harvest & Processing:** Energy use for harvesting, cleaning, drying, and any initial processing.
+*   **Transportation:** Distance and mode of transport from farm to processing/market.
+*   **Soil Data:** Baseline and ongoing soil carbon sequestration measurements (organic matter, bulk density).
+*   **Infrastructure:** Building and equipment (materials, maintenance).
+
+I also need data related to infrastructure and equipment used, like types of materials, maintenance, and decommissioning practices. It will be important to model any trade-offs and allocate impacts accurately.

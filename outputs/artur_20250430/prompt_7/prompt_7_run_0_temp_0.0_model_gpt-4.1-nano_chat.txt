@@ -1,0 +1,58 @@
+**Structured Recommendation for Goal and Scope, and Data Collection Methodology**
+
+**Overview:**  
+The choice between attributional (ALCA) and consequential life cycle assessment (CLCA) hinges on the study’s purpose—whether to describe existing processes or to evaluate the broader system impacts of changes. ALCA allocates environmental impacts based on current flows, suitable for detailed product-level analysis, while CLCA models the environmental consequences of system-level changes, capturing market responses and indirect effects (Weidema et al., 2018).
+
+---
+
+### 1. **Pilot-Scale Demonstration Phase**
+
+**Goal & Scope:**  
+- **Objective:** Characterize the environmental impacts of the novel electrolysis process at an early stage, primarily for internal process understanding and initial stakeholder feedback.  
+- **Scope:** Focus on the specific process, with limited system boundaries, reflecting current technology and operational conditions.
+
+**Methodology:**  
+- **Recommended Approach:** **Attributional LCA**  
+- **Justification:** At this stage, the focus is on quantifying impacts directly attributable to the process as designed, without considering market or system-wide changes. This provides a clear baseline for process optimization and stakeholder communication (Weidema et al., 2018).  
+- **Data Collection:** Use process-specific data, laboratory measurements, and existing inventories for electricity, water, and materials used, ensuring transparency and accuracy.
+
+---
+
+### 2. **Large-Scale Deployment in a Renewable-Dominated Grid**
+
+**Goal & Scope:**  
+- **Objective:** Assess the environmental impacts of scaling up hydrogen production, considering the shift in the electricity grid’s energy mix toward renewables.  
+- **Scope:** Broader system boundaries, including potential changes in electricity generation, grid infrastructure, and market dynamics.
+
+**Methodology:**  
+- **Recommended Approach:** **Consequential LCA**  
+- **Justification:** Large-scale deployment in a renewable-dominated grid can influence market dynamics, such as increased renewable capacity, grid stability, and resource allocation. CLCA captures these indirect effects, providing insights into the overall environmental consequences of scaling up (Weidema et al., 2018).  
+- **Data Collection:** Combine process data with scenario modeling of electricity market evolution, renewable capacity expansion, and potential shifts in resource use.
+
+---
+
+### 3. **Large-Scale Deployment in a Fossil-Based Grid**
+
+**Goal & Scope:**  
+- **Objective:** Quantify the impacts of deploying hydrogen production in a grid primarily powered by fossil fuels, considering potential system feedbacks and resource depletion.  
+- **Scope:** System-wide impacts, including fossil resource extraction, emissions, and potential market responses.
+
+**Methodology:**  
+- **Recommended Approach:** **Consequential LCA**  
+- **Justification:** The deployment could lead to increased fossil fuel extraction, changes in energy prices, and indirect environmental effects. CLCA effectively models these consequences, informing stakeholders about broader sustainability implications (Weidema et al., 2018).  
+- **Data Collection:** Use scenario analysis incorporating fossil fuel market dynamics, resource depletion rates, and emissions modeling.
+
+---
+
+### **Summary:**  
+- **Pilot phase:** Attributional LCA for detailed process impacts.  
+- **Renewable grid deployment:** Consequential LCA to capture system-wide effects of scaling.  
+- **Fossil grid deployment:** Consequential LCA to understand indirect impacts and resource implications.
+
+**Implications for Stakeholders:**  
+Using ALCA in early phases ensures transparency and process optimization, while CLCA in large-scale scenarios informs strategic decisions, policy, and sustainability assessments by accounting for market and system effects (Weidema et al., 2018). This tailored approach aligns methodological rigor with stakeholder interests and the specific context of each deployment stage.
+
+---
+
+**References:**  
+Weidema, B. P., et al. (2018). *The role of attributional and consequential life cycle assessment*. Journal of Cleaner Production, 199, 1-13.

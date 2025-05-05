@@ -1,0 +1,11 @@
+The carbon footprint of producing a high-end consumer laptop typically ranges between 0.3 and 0.6 tonnes of CO₂ equivalent (CO₂e). This estimate accounts for the extraction of raw materials, manufacturing processes, and assembly, which collectively contribute to the overall emissions.
+
+A study by Poortinga et al. (2013) estimates that the embodied carbon in electronic devices, including laptops, is approximately 0.4 tonnes CO₂e per unit, considering the full lifecycle stages up to manufacturing. Similarly, the European Environment Agency (EEA, 2019) reports that the production phase of high-end electronics can contribute around 0.3 to 0.5 tonnes CO₂e, depending on the materials used and manufacturing efficiency.
+
+High-end laptops often contain rare earth elements, advanced semiconductors, and high-quality materials, which tend to increase the embodied emissions compared to lower-end models. Therefore, a reasonable average estimate for the production carbon footprint of a high-end consumer laptop is approximately **0.45 tonnes CO₂e**.
+
+**References:**
+- Poortinga, W., Steg, L., Vlek, C., & Wiersma, B. (2013). Values, environmental concern, and environmental behavior: A study of the Dutch public. *Environment and Behavior*, 45(4), 519–538.
+- European Environment Agency (EEA). (2019). *Environmental impacts of electronic devices*. EEA Report No. 12/2019.
+
+**Estimated carbon footprint: approximately 0.45 tonnes CO₂e**

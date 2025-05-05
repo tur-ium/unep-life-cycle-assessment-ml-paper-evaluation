@@ -1,0 +1,62 @@
+Let's analyze the climate change impact of emissions according to the **EF 3.1 impact assessment method** by the European Commission, focusing on **5 kg of CO₂** vs **1 kg of N₂O**.
+
+---
+
+## 1. **Global Warming Potentials (GWP) in EF 3.1**
+
+The **EF (Environmental Footprint) 3.1 method** adheres to the IPCC (Intergovernmental Panel on Climate Change) characterization factors to assess climate change potential. The EF 3.1 method uses **GWP100** factors (100-year time horizon):
+
+- **CO₂ (carbon dioxide):** GWP100 = **1**
+- **CH₄ (methane):** GWP100 = **28** (or 25 in older methods)
+- **N₂O (nitrous oxide):** GWP100 = **265**
+
+> These values are based on the IPCC AR5 report and currently adopted in EF 3.1.
+
+---
+
+## 2. **Calculation of Impact (in kg CO₂-eq)**
+
+To compare the climate change impact, convert both emissions to **kg CO₂-equivalents (CO₂-eq)** using GWP100 factors:
+
+### **For 5 kg CO₂:**
+
+\[
+\text{Impact} = 5\,\text{kg} \times 1 = \mathbf{5\,kg\,CO_2\text{-}eq}
+\]
+
+### **For 1 kg N₂O:**
+
+\[
+\text{Impact} = 1\,\text{kg} \times 265 = \mathbf{265\,kg\,CO_2\text{-}eq}
+\]
+
+---
+
+## 3. **Conclusion**
+
+**1 kg of N₂O** has far **more impact** on climate change than **5 kg of CO₂**.
+
+- **1 kg N₂O = 265 kg CO₂-eq**
+- **5 kg CO₂ = 5 kg CO₂-eq**
+
+So, **1 kg N₂O is 53 times more impactful than 5 kg CO₂.**
+
+---
+
+## 4. **Why?**
+
+- **N₂O** has a much **higher global warming potential** due to its higher infrared absorption and much longer atmospheric lifetime than CO₂.
+- According to the EF 3.1 method, these differences are captured in the GWP factors.
+
+---
+
+### **Summary Table**
+
+| Emission      | Amount (kg) | GWP100 | Impact (kg CO₂-eq) |
+|---------------|-------------|--------|--------------------|
+| CO₂           | 5           | 1      | 5                  |
+| N₂O           | 1           | 265    | 265                |
+
+### **Final Answer**
+
+> **According to the EF 3.1 method, 1 kg of N₂O has much more impact on climate change than 5 kg of CO₂ (265 kg CO₂-eq vs 5 kg CO₂-eq) because the global warming potential (GWP) of N₂O is 265 times higher than that of CO₂.**

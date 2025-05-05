@@ -1,0 +1,8 @@
+**Physical causation** is the preferred multi-output allocation method in slaughter processes. This method bases allocation on the physical relationships between inputs (resources used) and outputs (different cuts of meat, byproducts, etc.).
+
+**Why?**
+
+*   **Accuracy:** Physical causation reflects the actual usage of resources by each output. For example, the amount of energy used to chill the carcass is directly allocated to the resulting meat cuts.
+*   **Fairness:** It avoids arbitrary allocation based on economic value, which can be skewed by market fluctuations and distort environmental impact assessments.
+*   **Transparency:** It provides a clear and traceable link between resource consumption and product generation, facilitating better management and improvement efforts.
+*   **Conformity:** It aligns with guidelines from organizations like ISO and is considered best practice in life cycle assessment (LCA) for agricultural products.

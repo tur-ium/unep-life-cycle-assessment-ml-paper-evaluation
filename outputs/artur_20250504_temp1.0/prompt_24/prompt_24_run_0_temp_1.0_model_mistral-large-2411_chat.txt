@@ -1,0 +1,35 @@
+To perform a Life Cycle Assessment (LCA) for a crop from a regenerative farm, you'll need to collect data across several categories:
+
+1. **Farm Operations:**
+   - Types and quantities of inputs (seeds, fertilizers, pesticides, water)
+   - Energy use (fuel, electricity) for machinery, irrigation, and other processes
+   - Labor hours and equipment used for cultivation, harvesting, and post-harvest operations
+
+2. **Soil Health:**
+   - Soil organic carbon changes
+   - Soil nutrient levels and microbial activity
+   - Erosion and compaction rates
+
+3. **Biodiversity:**
+   - Species diversity and abundance (both plants and animals)
+   - Habitat types and quality
+
+4. **Yield and Quality:**
+   - Crop yields (tons/hectare)
+   - Produce quality and nutrient content
+
+5. **Emissions and Waste:**
+   - Greenhouse gas emissions (CO2, N2O, CH4)
+   - Other air emissions (NOx, SOx, particulate matter)
+   - Water emissions (nitrate, phosphate, pesticide residues)
+   - Solid waste generation (crop residues, packaging waste)
+
+6. **Socio-economic:**
+   - Farmer and farmworker income
+   - Local employment and economic development
+   - Community engagement and support
+
+7. **Supply Chain:**
+   - Transportation distances and modes
+   - Storage and processing methods
+   - Packaging materials and waste

@@ -1,0 +1,33 @@
+Let's break down the impact assessment using the EF 3.1 method and determine which emission has a greater impact on climate change.
+
+**Understanding the EF 3.1 Method and Global Warming Potentials (GWP)**
+
+The EF 3.1 (Environmental Footprint 3.1) method, published by the European Commission, uses a life cycle assessment (LCA) approach.  For climate change, it relies on Global Warming Potentials (GWPs).  A GWP is a measure of how much energy the emissions of 1 ton of a gas will absorb over a given period, relative to the emissions of 1 ton of carbon dioxide (CO2).  The higher the GWP, the more that a given gas warms the Earth compared to CO2 over that time period.
+
+**Key GWP Values (from EF 3.1 for a 100-year time horizon):**
+
+*   **CO2 (Carbon Dioxide):** GWP = 1 (by definition, CO2 is the reference gas)
+*   **N2O (Nitrous Oxide):** GWP = 273
+
+**Calculating the Climate Change Impact**
+
+To compare the impact of 5 kg of CO2 and 1 kg of N2O, we need to convert them into a common unit: CO2 equivalents (CO2e).  This allows us to compare the warming potential of different greenhouse gases.
+
+**1.  5 kg CO2:**
+
+*   Since CO2 has a GWP of 1, 5 kg of CO2 is equivalent to:
+    *   5 kg CO2 * (1 kg CO2e / 1 kg CO2) = 5 kg CO2e
+
+**2.  1 kg N2O:**
+
+*   N2O has a GWP of 273.  Therefore, 1 kg of N2O is equivalent to:
+    *   1 kg N2O * (273 kg CO2e / 1 kg N2O) = 273 kg CO2e
+
+**Comparison and Conclusion**
+
+*   5 kg CO2 is equivalent to 5 kg CO2e.
+*   1 kg N2O is equivalent to 273 kg CO2e.
+
+**Conclusion:**
+
+1 kg of N2O has a significantly greater impact on climate change than 5 kg of CO2.  The 1 kg of N2O has a climate change impact equivalent to 273 kg of CO2, while the 5 kg of CO2 has an impact equivalent to only 5 kg of CO2.  This is because N2O has a much higher GWP than CO2.

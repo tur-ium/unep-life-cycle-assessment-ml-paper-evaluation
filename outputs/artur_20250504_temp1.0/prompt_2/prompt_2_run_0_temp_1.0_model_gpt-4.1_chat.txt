@@ -1,0 +1,4 @@
+**Answer: D**
+
+**Explanation:**  
+Life cycle assessment (LCA) is designed to evaluate the environmental impacts of products or services throughout their life cycle (from raw material extraction to disposal). Option D focuses on the impact of climate-driven changes on a *biological population* (moths) rather than a product or service, and thus falls outside the typical scope of LCA.

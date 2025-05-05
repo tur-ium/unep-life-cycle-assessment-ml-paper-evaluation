@@ -1,0 +1,25 @@
+According to the EF 3.1 impact assessment method, 1 kg of N2O has a much greater impact on climate change than 5 kg of CO2. This is because N2O has a significantly higher Global Warming Potential (GWP) than CO2.
+
+Here's the breakdown:
+
+*   **Global Warming Potential (GWP):** GWP is a measure of how much energy the emissions of 1 ton of a gas will absorb over a given period of time (usually 100 years), relative to the emissions of 1 ton of carbon dioxide (CO2). It is a relative index, thus CO2 has a GWP of 1.
+
+*   **GWP Values (EF 3.1):**  The EF 3.1 method provides specific GWP values for different greenhouse gases.
+    *   **CO2:** GWP = 1
+    *   **N2O:** GWP = 265
+
+*   **Calculating Impact:** To determine the relative impact, multiply the mass of each gas by its GWP:
+    *   **5 kg CO2 Impact:** 5 kg * 1 GWP = 5 kg CO2-eq
+    *   **1 kg N2O Impact:** 1 kg * 265 GWP = 265 kg CO2-eq
+
+**Conclusion:**
+
+1 kg of N2O (265 kg CO2-eq) has a *significantly higher* impact on climate change than 5 kg of CO2 (5 kg CO2-eq) according to the EF 3.1 impact assessment method. N2O has **53 times** the impact of CO2.
+
+**Why the Difference?**
+
+N2O has a much higher GWP than CO2 for two main reasons:
+
+1.  **Infrared Absorption:** N2O molecules are much more effective at absorbing infrared radiation (heat) emitted from the Earth's surface than CO2 molecules. This means that even small concentrations of N2O can trap significantly more heat in the atmosphere.
+
+2.  **Atmospheric Lifetime:** N2O has a much longer atmospheric lifetime than CO2. N2O molecules persist in the atmosphere for an average of 114 years, continuously contributing to global warming over that period. While some CO2 is absorbed by the earth quickly, a substantial part of CO2 emissions can linger in the atmosphere for centuries.

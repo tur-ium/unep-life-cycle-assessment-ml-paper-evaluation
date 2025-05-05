@@ -1,0 +1,10 @@
+As an LCA practitioner, I must account for carbon storage in orange trees. This is crucial because trees sequester atmospheric CO2 during growth.
+
+Here's how I'd handle it:
+
+1.  **Allocation:** I'd allocate the carbon stored in the tree to the functional unit (e.g., 1 kg of oranges) over the tree's lifespan.
+2.  **Biogenic Carbon Uptake:** I'd model the CO2 uptake during tree growth as a negative emission (carbon sequestration) in the "cradle-to-gate" phase.
+3.  **End-of-Life:** At the end of the tree's productive life, I'd consider the fate of the stored carbon. If the tree is burned (releasing CO2), I'd model this as a positive emission. If the wood is used for durable products, the carbon remains stored, and I'd account for this in the LCA.
+4.  **Sensitivity Analysis:** I'd perform sensitivity analysis to understand the impact of different tree management practices (e.g., replanting frequency) on the overall carbon footprint.
+
+This approach ensures a more accurate and complete assessment of the orange production system's environmental impact.

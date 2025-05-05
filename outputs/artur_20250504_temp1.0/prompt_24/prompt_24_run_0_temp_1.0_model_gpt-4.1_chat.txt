@@ -1,0 +1,14 @@
+To conduct an LCA for a crop from a regenerative farm, I need to collect primary data on:
+
+- **Inputs:** Types and quantities of seeds, organic amendments (compost, manure), fertilizers (including source and application rates), and pest/disease control measures (biological or chemical).
+- **Energy Use:** Fuels and electricity used for cultivation, irrigation, harvest, and post-harvest processes.
+- **Water Use:** Irrigation amounts, source of water.
+- **Field Operations:** Details of machinery use (type, hours of operation), tillage practices, and other field interventions (cover cropping, grazing, rotation schedules).
+- **Yields:** Quantity of crop harvested per hectare (fresh and dry basis).
+- **Emissions:** Direct field emissions (N₂O, CH₄, CO₂), including measurement or estimation of nitrous oxide from soils, methane (if paddy rice or livestock integration), ammonia volatilization, and leaching/runoff.
+- **Soil Carbon:** Changes in soil organic carbon stocks, to capture potential sequestration due to regenerative practices.
+- **Residue Management:** Treatment of crop residues and by-products.
+- **Land Use:** Area cultivated and duration, land use change (if any).
+- **Waste Management:** Disposal or recycling of wastes, including plastics or packaging.
+
+Secondary data may be used for background processes (e.g., upstream input production, transport). Collecting qualitative information on regenerative practices (e.g., agroforestry, intercropping) is also important for context and impact interpretation.

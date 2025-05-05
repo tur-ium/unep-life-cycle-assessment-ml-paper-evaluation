@@ -1,0 +1,11 @@
+The ISO 15804:2012+A2:2019 standard recommends a hierarchy for dealing with multi-functionality, prioritizing the most preferred approaches to ensure consistency and minimize uncertainty.
+
+The correct hierarchy is:
+
+**(1) Avoid allocation as far as possible**  
+**(2) Allocation on the basis of physical properties**  
+**(3) Allocation on the basis of revenue**
+
+This corresponds to option **A**.
+
+**Answer: A**

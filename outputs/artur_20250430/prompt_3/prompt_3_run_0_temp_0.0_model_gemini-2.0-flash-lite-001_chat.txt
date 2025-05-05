@@ -1,0 +1,8 @@
+The correct answer is **C**.
+
+Life Cycle Assessment (LCA) as defined in ISO 14044 is a standardized methodology for evaluating the environmental impacts of a product, process, or service throughout its entire life cycle, from raw material extraction to end-of-life disposal.
+
+*   **A** focuses on policy comparison, which is outside the scope of LCA.
+*   **B** deals with medical outcomes and patient health, which is not the primary focus of LCA.
+*   **C** directly addresses the environmental impact (carbon footprint) of a product (plastic sheet) by analyzing a change in its production process (synthesis route). This aligns perfectly with the core principles of LCA.
+*   **D** concerns the biological life cycle of an insect, which is unrelated to the environmental impact assessment of products or services.

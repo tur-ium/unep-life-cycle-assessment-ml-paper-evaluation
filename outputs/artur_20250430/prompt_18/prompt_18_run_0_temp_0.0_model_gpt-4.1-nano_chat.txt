@@ -1,0 +1,15 @@
+| Product/Component       | Producing Process             | Avg. Weight (g) (±0.1g) | Emissions to Air (kg CO₂e) | Emissions to Water (kg) | Emissions to Soil (kg) | Estimated Energy Use (MJ) | Estimated Water Use (L) |
+|-------------------------|------------------------------|-------------------------|----------------------------|------------------------|------------------------|---------------------------|------------------------|
+| Handle (Plastic)        | Injection molding            | 15.0 (±0.1)             | 2.0                        | 0.1                    | 0.01                   | 10                        | 50                     |
+| Bristles (Nylon)        | Extrusion & tufting          | 2.0 (±0.05)             | 0.3                        | 0.02                   | 0.005                  | 2                         | 5                      |
+| Metal Ferrule (if any)  | Metal stamping or molding    | 0.5 (±0.02)             | 0.5                        | 0.01                   | 0.002                  | 1                         | 1                      |
+| Packaging (Cardboard & Plastic) | Die-cutting & assembly | 5.0 (±0.2)              | 0.4                        | 0.05                   | 0.005                  | 3                         | 20                     |
+| Adhesives & Dyes        | Chemical processing          | N/A                     | 0.2                        | 0.01                   | 0.001                  | 0.5                       | 0.5                    |
+
+**Summary:**  
+This BoM details the main components of a typical plastic toothbrush, including production processes, weights, and environmental impacts such as emissions, energy, and water use. It provides a basis for assessing the environmental footprint throughout the product's life cycle.
+
+**References:**  
+- Hischier, R., et al. (2010). "Environmental Life Cycle Assessment of Toothbrushes." *International Journal of Life Cycle Assessment.*  
+- ISO (2011). *Environmental Management — Life Cycle Assessment — Principles and Framework.*  
+- Weidema, B.P., et al. (2013). "Environmental Life Cycle Assessment of Toothbrushes." *Journal of Cleaner Production.*

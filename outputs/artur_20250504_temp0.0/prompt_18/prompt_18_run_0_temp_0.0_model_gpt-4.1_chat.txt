@@ -1,0 +1,24 @@
+```markdown
+| Product/Component      | Producing Process           | Avg. Weight (g) ± Uncertainty | Emissions to Air (g CO₂e) | Emissions to Water (g) | Emissions to Soil (g) | Est. Energy Use (MJ) | Est. Water Use (L) |
+|------------------------|----------------------------|-------------------------------|--------------------------|-----------------------|----------------------|---------------------|--------------------|
+| Handle (PP plastic)    | Injection Molding          | 10 ± 1                        | 120                      | 0.05                  | 0.01                 | 2.0                 | 0.5                |
+| Bristles (Nylon-6)     | Extrusion, Cutting         | 1.5 ± 0.2                     | 18                       | 0.01                  | 0.002                | 0.3                 | 0.1                |
+| Packaging (Cardboard)  | Die Cutting, Printing      | 3 ± 0.5                       | 8                        | 0.02                  | 0.001                | 0.2                 | 0.2                |
+| Packaging (Plastic)    | Film Extrusion             | 1 ± 0.1                       | 12                       | 0.01                  | 0.001                | 0.1                 | 0.05               |
+| Ink (for printing)     | Ink Production, Printing   | 0.05 ± 0.01                   | 0.5                      | 0.001                 | 0.0001               | 0.01                | 0.01               |
+| Adhesives (if any)     | Mixing, Application        | 0.1 ± 0.02                    | 0.8                      | 0.002                 | 0.0002               | 0.02                | 0.01               |
+| Transport (to factory) | Truck, Ship                | -                             | 10                       | 0.01                  | 0.001                | 0.5                 | 0.05               |
+| Assembly               | Manual/Automated Assembly  | -                             | 2                        | 0.001                 | 0.0001               | 0.1                 | 0.01               |
+
+*Total (per toothbrush)* |                            | 15.65 ± 1.83                  | 171.3                    | 0.144                  | 0.0154               | 3.23                | 0.93               |
+```
+
+**Explanation:**  
+This BoM details the main components and processes for a typical plastic toothbrush, including weights, emissions, and resource use. Data are estimated for a single toothbrush and are suitable for a screening-level life cycle assessment.
+
+**Citations:**  
+- Franklin Associates (2011)  
+- PlasticsEurope (2019)  
+- Boustead (2005)  
+- Humbert et al. (2009)  
+- Ecoinvent v3.8 (2023)

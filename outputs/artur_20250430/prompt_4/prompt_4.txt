@@ -1,0 +1,7 @@
+What is not a key requirement that must be specified in an ISO-compliant Life Cycle Assessment study, according to the ISO 14044 standard?
+
+Give as answer either A, B, C, or D. Explain briefly (less than 100 words) your choice
+- A.	The functional unit of the reference flow
+- B.	The addresses of upstream suppliers
+- C.	Allocation procedures
+- D.	The type of critical review, if any
