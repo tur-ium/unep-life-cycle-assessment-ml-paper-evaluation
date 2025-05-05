@@ -1,0 +1,42 @@
+To conduct an LCA for a crop from a regenerative farm, you need to collect:
+
+**1. Goal & Scope Definition:**  
+- Functional unit (e.g., 1 kg of crop at farm gate)  
+- System boundaries (e.g., cradle-to-farm gate)
+
+**2. Inventory Data (Life Cycle Inventory):**  
+- **Inputs:**  
+  - Seeds (type, quantity, source)  
+  - Water use (irrigation volume, source)  
+  - Fertilizers (type, amount, origin—especially organic/compost)  
+  - Pesticides/herbicides (type, amount, frequency)  
+  - Energy use (fuel/electricity for machinery, irrigation, etc.)  
+  - Machinery (type, hours used, maintenance)  
+  - Labor (hours, practices)
+
+- **Regenerative Practices:**  
+  - Cover cropping (species, area, frequency)  
+  - Crop rotation details  
+  - Compost/manure application (type, amount, source)  
+  - Reduced/no-till practices  
+  - Agroforestry or integration of livestock (if applicable)  
+  - Soil amendments (biochar, etc.)
+
+- **Outputs:**  
+  - Crop yield (amount, quality)  
+  - Co-products or by-products  
+  - Emissions (N₂O, CH₄, CO₂ from soil, compost, livestock)  
+  - Soil carbon sequestration data (if available)
+
+- **Waste Management:**  
+  - Crop residues (management, fate)  
+  - On-farm waste (handling, disposal)
+
+**3. Site-Specific Data:**  
+- Soil type, climate, field size  
+- Baseline soil carbon (if assessing sequestration)
+
+**4. Transport:**  
+- Distance and mode for input delivery and crop distribution (if included in scope)
+
+Collecting accurate, site-specific data is crucial for a robust LCA of regenerative agriculture.

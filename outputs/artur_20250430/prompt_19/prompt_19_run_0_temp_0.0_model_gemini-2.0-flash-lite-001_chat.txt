@@ -1,0 +1,10 @@
+The most appropriate multi-output allocation method for a slaughter process is **physical measures (e.g., weight or volume)**.
+
+Here's why:
+
+*   **Direct Relationship:** Physical measures like carcass weight or the volume of byproducts (blood, offal) directly reflect the physical output of the slaughter process.
+*   **Cost Driver:** The amount of resources consumed (labor, utilities, etc.) often correlates with the physical quantity of the outputs. Larger animals or more byproducts generally require more resources.
+*   **Simplicity:** This method is relatively easy to implement and understand, making it practical for a complex process.
+*   **Fairness:** It provides a more equitable allocation of costs compared to methods that might arbitrarily assign costs based on sales value or other less direct factors.
+
+Using physical measures ensures costs are allocated based on the actual resources consumed in producing each output.

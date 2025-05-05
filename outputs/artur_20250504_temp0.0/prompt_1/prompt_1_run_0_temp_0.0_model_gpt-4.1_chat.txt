@@ -1,0 +1,4 @@
+**Answer:** A: Disposal at the end of useful life
+
+**Explanation:**  
+Biodegradability and recyclability describe what happens to a material after it is no longer used. The LCA stage that considers how a product is disposed of, including whether it can break down naturally (biodegradable) or be recycled, is the "Disposal at the end of useful life" stage. This is why the correct answer is A.

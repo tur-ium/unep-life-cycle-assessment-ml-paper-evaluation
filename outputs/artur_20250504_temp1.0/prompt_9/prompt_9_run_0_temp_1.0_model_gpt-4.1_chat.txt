@@ -1,0 +1,39 @@
+**Analytical Framework for Comparing Conflicting LCAs on Plant-Based Meat Substitutes**
+
+1. **Identify and Compare Key Methodological Factors**
+
+   a. **Goal and Scope Definition:**  
+      - *System Boundaries*: Examine if both studies use ‘cradle-to-gate’ (production only) or ‘cradle-to-grave’ (including distribution, use, end-of-life) boundaries. System boundary choices can significantly alter impact estimates (Finnveden et al. 2009).
+      - *Functional Unit*: Check if both analyses use the same functional unit, e.g., "per kg product" vs. "per kg protein" or "per serving of equivalent nutritional value." Differences here can skew apparent impacts (Notarnicola et al. 2017).
+   
+   b. **Inventory Data and Assumptions:**  
+      - *Primary Data Sources*: Assess whether inventory data for agricultural production, processing, and distribution are comparable in terms of region, technology, and date of collection (Hellweg & Canals, 2014).
+      - *Background Database Choices*: Identify if different LCA databases (e.g., Ecoinvent vs. Agri-footprint) or outdated datasets were used.
+      - *Allocation Procedures*: Evaluate how studies treat co-products (e.g., economic vs. mass allocation)—a key source of variation in food LCAs (Flysjö et al. 2012).
+   
+   c. **Life Cycle Impact Assessment (LCIA) Methods:**  
+      Compare characterization models and impact categories (e.g., GWP100 for climate change, water use metrics, land use changes), as well as whether direct and indirect land use changes (LUC & iLUC) are included (Cherubini et al. 2016).
+
+2. **Systematic Steps to Harmonize or Assess Reliability**
+
+   a. **Tabulate Differences:**  
+      Construct a matrix comparing study elements: boundaries, data sources, functional units, allocation methods, etc.
+   
+   b. **Scenario Alignment:**  
+      If possible, recalculate key results using adjusted parameters to harmonize functional units and boundaries. If data permits, rerun inventories with consistent assumptions.
+   
+   c. **Quality and Transparency Assessment:**  
+      Analyze transparency (reporting of data, assumptions, and sensitivity analyses) and methodological robustness (adherence to ISO 14040/44 standards) to judge reliability (Guinée et al. 2011).
+   
+   d. **Contextualization:**  
+      Place findings within the broader LCA literature (Poore & Nemecek, 2018) to identify which study’s results align with high-quality meta-analyses.
+
+3. **Recommendations for Future LCAs**
+
+   - Ensure clear and standardized reporting of boundaries, functional units, data sources, and allocation procedures (ISO 14044).
+   - Conduct sensitivity and uncertainty analyses to reveal influence of critical assumptions.
+   - Adopt agreed-upon, product-relevant functional units (e.g., “per 100g digestible protein”) and system boundary conventions.
+   - Promote open data availability and peer review for transparent, reproducible results (Clune et al. 2017).
+
+**References:**  
+Cherubini et al., 2016; Clune et al., 2017; Finnveden et al., 2009; Flysjö et al., 2012; Guinée et al., 2011; Hellweg & Canals, 2014; Notarnicola et al., 2017; Poore & Nemecek, 2018

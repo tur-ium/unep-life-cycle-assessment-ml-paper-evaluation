@@ -1,0 +1,3 @@
+The correct answer is **A: Disposal at the end of useful life**.
+
+Biodegradability and recyclability are properties that relate to how a product is handled *after* its useful life is over. This falls under the disposal stage of a life cycle assessment, as it considers the environmental impact of the plate once it's no longer needed. The other stages focus on the creation and use of the product, not its end-of-life characteristics.

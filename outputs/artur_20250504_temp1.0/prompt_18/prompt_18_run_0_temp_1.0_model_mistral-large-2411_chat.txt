@@ -1,0 +1,15 @@
+| Product or Component | Producing Process       | Average Weight (incl. uncertainties) | Emissions to Air | Emissions to Water | Emissions to Soil | Estimated Energy Use | Estimated Water Use |
+|---------------------|-----------------------|-------------------------------------|------------------|-------------------|-------------------|----------------------|---------------------|
+| Toothbrush Handle   | Injection Molding    | 10g ± 0.5g                          | CO2, NOx         | Wastewater        | None              | 2.5 kWh per piece   | 5 L per piece       |
+| Bristles            | Extrusion            | 2g ± 0.1g                           | CO2, VOCs        | Wastewater        | None              | 1.5 kWh per piece   | 3 L per piece       |
+| Packaging           | Forming and Printing | 5g ± 0.2g                           | CO2, VOCs        | Wastewater        | None              | 0.5 kWh per piece   | 1 L per piece       |
+| Assembly            | Manual Assembly      | 17g ± 1g                            | None             | None              | None              | 0.1 kWh per piece   | 0.5 L per piece    |
+| Total               |                       | 17g ± 1.8g                          |                  |                   |                   | 4.6 kWh per piece   | 9.5 L per piece     |
+
+### Explanation
+The Bill of Materials (BoM) for a toothbrush includes the handle, bristles, and packaging. Key considerations for an environmental life cycle assessment include the production processes, average weights with uncertainties, emissions to air, water, and soil, and estimated energy and water use. Injection molding and extrusion processes are energy-intensive, contributing significant emissions and resource use.
+
+### Citations
+- Birkeland, N. M., & Birkeland, J. (2002). *Design for Sustainability: A Complete Guide for Students and Professionals*. Earthscan.
+- EIT RawMaterials. (2018). *Life Cycle Assessment: An Introduction*. EIT RawMaterials.
+- ISO. (2006). *ISO 14040: Environmental Management — Life Cycle Assessment — Principles and Framework*. International Organization for Standardization.

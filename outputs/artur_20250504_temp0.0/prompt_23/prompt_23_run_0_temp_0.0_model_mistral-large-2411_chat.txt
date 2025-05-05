@@ -1,0 +1,21 @@
+To determine which emission has a greater impact on climate change according to the EF 3.1 impact assessment method published by the European Commission, we need to consider the Global Warming Potential (GWP) of each gas. The GWP is a measure of how much a given mass of a greenhouse gas contributes to global warming over a given period, typically 100 years, compared to the same mass of carbon dioxide (CO2).
+
+The GWP values for CO2 and N2O (nitrous oxide) are as follows:
+- CO2: 1 (by definition, as it is the reference gas)
+- N2O: 298 (over a 100-year period)
+
+This means that 1 kg of N2O has the same warming effect as 298 kg of CO2 over 100 years.
+
+Now, let's calculate the impact of each emission:
+
+1. For 5 kg of CO2:
+   - Impact = 5 kg CO2 * 1 (GWP of CO2) = 5 kg CO2-equivalent
+
+2. For 1 kg of N2O:
+   - Impact = 1 kg N2O * 298 (GWP of N2O) = 298 kg CO2-equivalent
+
+Comparing the two:
+- 5 kg CO2-equivalent (from CO2)
+- 298 kg CO2-equivalent (from N2O)
+
+Clearly, 1 kg of N2O has a much greater impact on climate change than 5 kg of CO2. Therefore, according to the EF 3.1 impact assessment method, 1 kg of N2O has more impact on climate change than 5 kg of CO2.

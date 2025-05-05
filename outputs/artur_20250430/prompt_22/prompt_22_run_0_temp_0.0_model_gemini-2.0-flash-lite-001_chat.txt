@@ -1,0 +1,11 @@
+Product B is more environmentally friendly. Here's the breakdown:
+
+*   **Carbon Footprint:** Product B has a significantly lower carbon footprint (2 kg CO2 eq) compared to Product A (5 kg CO2 eq). This means it contributes less to climate change.
+*   **Water Footprint:** Product A has a lower water footprint (10 m3 deprived) compared to Product B (30 m3 deprived). This means it uses less water resources.
+*   **Marine Eutrophication Impact:** Both products have the same marine eutrophication impact (3 kg N eq). This means they contribute equally to the over-enrichment of nutrients in marine environments.
+
+**Overall Assessment:**
+
+While Product B has a higher water footprint, its significantly lower carbon footprint is a major advantage. Since climate change is a pressing global issue, reducing greenhouse gas emissions is often prioritized. The impact on marine eutrophication is the same for both products.
+
+**Therefore, Product B is the more environmentally friendly option.**

@@ -1,0 +1,13 @@
+**C** is the best answer.
+
+Here's why:
+
+Life Cycle Assessment (LCA), according to ISO 14044, is a standardized methodology for evaluating the environmental impacts of a product or service throughout its entire life cycle (from raw material extraction to disposal).
+
+*   **A** focuses on policy comparison, which is outside the scope of LCA's environmental impact assessment of products/services.
+
+*   **B** is related to healthcare and patient outcomes, which are not environmental impacts.
+
+*   **C** specifically investigates the environmental impact (carbon footprint) of a process change (new synthesis route) related to a product (plastic sheet) across its life cycle, which perfectly aligns with the purpose of LCA.
+
+*   **D** is a question related to biology and pest control and is not suited to assessment of environmental impact.

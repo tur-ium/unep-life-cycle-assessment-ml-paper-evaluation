@@ -1,0 +1,30 @@
+To determine which product is more environmentally friendly, we need to consider the overall impact of each environmental metric: carbon footprint, water footprint, and marine eutrophication impact.
+
+### Carbon Footprint:
+- **Product A:** 5 kg CO2 eq
+- **Product B:** 2 kg CO2 eq
+
+Product B has a lower carbon footprint, which means it contributes less to greenhouse gas emissions.
+
+### Water Footprint:
+- **Product A:** 10 m³ deprived
+- **Product B:** 30 m³ deprived
+
+Product A has a significantly lower water footprint, indicating it requires less water, which is beneficial for conserving water resources.
+
+### Marine Eutrophication Impact:
+- **Product A:** 3 kg N eq
+- **Product B:** 3 kg N eq
+
+Both products have the same marine eutrophication impact, so this factor does not differentiate the two products.
+
+### Overall Assessment:
+- **Carbon Footprint:** Product B is better (2 kg CO2 eq vs. 5 kg CO2 eq).
+- **Water Footprint:** Product A is better (10 m³ vs. 30 m³).
+- **Marine Eutrophication Impact:** Both are equal (3 kg N eq).
+
+Given that Product A has a significantly lower water footprint while Product B has a lower carbon footprint, the choice between the two depends on which environmental impact is considered more critical in a given context.
+
+However, if we prioritize water conservation (which is often a critical issue in many regions), **Product A** would be the more environmentally friendly choice. Conversely, if reducing greenhouse gas emissions is considered more important, **Product B** would be preferable.
+
+In a balanced view, considering that water deprivation can have immediate and severe impacts on ecosystems and communities, **Product A** might be deemed more environmentally friendly overall, despite its higher carbon footprint.

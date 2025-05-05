@@ -1,0 +1,18 @@
+## Bill of Materials (BoM) for a Toothbrush
+
+| Product or Component | Producing Process | Average Weight (g) | Emissions to Air (g CO2e) | Emissions to Water (g COD) | Emissions to Soil (g PO43-) | Estimated Energy Use (MJ) | Estimated Water Use (L) |
+|---|---|---|---|---|---|---|---|
+| **Handle (Polypropylene - PP)** | Injection Molding | 10 ± 1 | 30 ± 5 | 0.5 ± 0.1 | 0.01 ± 0.002 | 1.5 ± 0.3 | 0.2 ± 0.05 |
+| **Bristles (Nylon - PA6)** | Extrusion, Cutting, Tufting | 2 ± 0.5 | 15 ± 3 | 0.3 ± 0.06 | 0.005 ± 0.001 | 0.8 ± 0.2 | 0.1 ± 0.03 |
+| **Handle Grip (Thermoplastic Elastomer - TPE)** | Co-Injection Molding | 3 ± 0.5 | 10 ± 2 | 0.2 ± 0.04 | 0.003 ± 0.001 | 0.5 ± 0.1 | 0.05 ± 0.02 |
+| **Packaging (Cardboard)** | Pulping, Printing, Cutting | 5 ± 1 | 8 ± 2 | 0.4 ± 0.1 | 0.02 ± 0.005 | 0.4 ± 0.1 | 1.0 ± 0.2 |
+| **Adhesive (for Bristles)** | Chemical Synthesis, Application | 0.1 ± 0.02 | 1 ± 0.2 | 0.1 ± 0.02 | 0.001 ± 0.0002 | 0.05 ± 0.01 | 0.01 ± 0.005 |
+| **Transportation (per toothbrush)** | Trucking, Shipping | N/A | 5 ± 2 | 0.1 ± 0.05 | 0.002 ± 0.001 | 0.3 ± 0.1 | 0.02 ± 0.01 |
+
+This BoM provides a simplified overview for a toothbrush's life cycle assessment. It includes the main components, their manufacturing processes, and estimated environmental impacts. The uncertainties are included to reflect the variability in production and data. Further analysis would require more detailed data and consideration of end-of-life scenarios.
+
+**Citations:**
+
+*   ISO 14040 (2006). *Environmental management — Life cycle assessment — Principles and framework.*
+*   ISO 14044 (2006). *Environmental management — Life cycle assessment — Requirements and guidelines.*
+*   European Commission (2010). *International Reference Life Cycle Data System (ILCD) Handbook - General guide for Life Cycle Assessment - Detailed guidance.*

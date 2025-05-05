@@ -1,0 +1,17 @@
+**Recommendation for LCA Methodology Selection: Novel Solar Electrolysis Hydrogen**
+
+The choice between Attributional (ALCA) and Consequential (CLCA) LCA depends critically on the study's goal, specifically whether it aims to describe environmental burdens *associated* with the process or assess the environmental *consequences* of its implementation (Ekvall & Weidema, 2004).
+
+**1. Pilot-Scale Demonstration Phase:**
+
+*   **Recommended Approach:** Attributional LCA (ALCA).
+*   **Goal & Scope:** To understand the environmental profile and technical performance of the *specific* pilot unit. Identify hotspots for process optimization and establish a baseline. The scope should be cradle-to-gate, focusing tightly on the pilot plant's material/energy flows.
+*   **Data Collection:** Primarily *primary data* from the pilot operations (energy consumption, electrode materials, water use, direct emissions). Use *average* background data for upstream inputs (e.g., solar panel manufacturing).
+*   **Justification:** At this stage, market effects are negligible. The primary interest for stakeholders (R&D, internal management) is understanding the intrinsic performance and potential improvements of the technology itself, not its broader system interactions. ALCA provides this descriptive inventory (Finnveden et al., 2009).
+
+**2. Large-Scale Commercial Deployment (Renewable-Dominated Grid):**
+
+*   **Recommended Approach:** Consequential LCA (CLCA).
+*   **Goal & Scope:** To assess the *system-wide environmental consequences* of introducing large-scale solar hydrogen. This includes impacts on the electricity grid (e.g., affecting marginal generation/storage, reducing curtailment) and displacement of alternative hydrogen sources or energy carriers. The scope must include affected background systems (electricity market, incumbent hydrogen production).
+*   **Data Collection:** Focus on *marginal* data. Identify the *marginal* electricity source(s) affected by the new load/generation profile and the technologies likely *displaced* by the hydrogen produced. Requires market modelling and consequential LCI databases.
+*   **Justification:** Large-scale deployment *will* cause market shifts. Stakeholders (policymakers, investors, grid operators

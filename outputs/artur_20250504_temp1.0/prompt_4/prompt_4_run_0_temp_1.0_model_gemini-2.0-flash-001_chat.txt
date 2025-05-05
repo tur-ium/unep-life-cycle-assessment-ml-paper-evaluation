@@ -1,0 +1,5 @@
+The answer is **B. The addresses of upstream suppliers**.
+
+Explanation:
+
+While understanding the supply chain is important, the *specific addresses* of upstream suppliers are not a mandatory requirement for ISO 14044 compliance. The standard focuses on the processes and flows involved in the product system, allocation procedures, the functional unit and reference flow, and whether a critical review is needed, without requiring that level of specific supplier data.

@@ -1,9 +1,11 @@
 import logging
+import os
 import re
 import sqlite3
 import time
 from pathlib import Path
 from typing import List
+
 
 import dotenv
 
@@ -14,19 +16,19 @@ logging.basicConfig(filename='log.log', filemode='w', encoding='utf-8', level=lo
 logging.getLogger()
 
 # PARAMETERS
-sql_db_name = '../records_4.db'  # Used to store the ids of prompts and responses
+sql_db_name = '../records_artur_20250504.db'  # Used to store the ids of prompts and responses
 root_input_prompt_dir = Path('../prompts')  # Top level directory with sub-directories for each prompt
-root_output_dir = Path('../outputs')
-temperature = 0.
+root_output_dir = Path('../outputs/artur_20250504_temp1.0')
+temperature = 0.0 # For OpenAI o-series models the only permitted temperature is fixed to 1 https://community.openai.com/t/why-is-the-temperature-and-top-p-of-o1-models-fixed-to-1-not-0/938922/4
 number_of_responses_per_prompt = 1
 
 models = [
-    # "mistral/mistral-large-latest",
-    # "ollama_chat/llama3.2:latest",
+    "mistral/mistral-large-2411",
     # "anthropic/claude-3-5-sonnet-20240620",
-    "gemini/gemini-2.0-flash-lite-001",
-    # 2025-04-03 Having issues accessing gemini-2.0-flash-001. Error 503, model overloaded
-    # "openai/gpt-4.1-nano"
+    "gemini/gemini-2.0-flash-001", # 2025-05-04 Enabled billing, therefore increasing to Gemini 2.0 flash (instead of flash lite). 2025-04-03 Having issues accessing gemini-2.0-flash-001. Error 503, model overloaded
+    "openai/gpt-4.1", # GPT 4.1 mini and GPT-4.1 (standard) returned rate limit errors when attempted to use
+    # "openai/o3", # We were not able to access o3 because OpenAI requires organizations to verify to use the models.
+    # "openai/o4-mini" # We were not able to access o4-mini because OpenAI requires organizations to verify to use the models.
 ]
 
 
@@ -51,7 +53,8 @@ def bulk_run_models_on_prompt(prompt_id: int, root_input_prompt_dir:str|Path, mo
 
 
 def bulk_run_all(sql_db_name, root_input_prompt_dir:str|Path, root_output_dir:str|Path, models:List[str], temperature, number_of_responses_per_prompt,
-                 sleep_time_between_batches=3):
+                 sleep_time_between_batches:float=3):
+    assert isinstance(sleep_time_between_batches,(float,int))
     root_input_prompt_dir = Path(root_input_prompt_dir) if not isinstance(root_input_prompt_dir,
                                                                           Path) else root_input_prompt_dir
     root_output_dir = Path(root_output_dir) if not isinstance(root_output_dir,
@@ -85,5 +88,8 @@ def bulk_run_all(sql_db_name, root_input_prompt_dir:str|Path, root_output_dir:st
 
 
 if __name__ == '__main__':
+    sleep_time = float(os.getenv("SLEEP_TIME_BETWEEN_BATCHES"))
     # bulk_run_models_on_prompt(10,Path(r'C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\prompts'),models)
-    bulk_run_all(sql_db_name, root_input_prompt_dir=root_input_prompt_dir, root_output_dir=root_output_dir, models=models,temperature= temperature,number_of_responses_per_prompt= number_of_responses_per_prompt)
+    bulk_run_all(sql_db_name, root_input_prompt_dir=root_input_prompt_dir, root_output_dir=root_output_dir, models=models,temperature= temperature,
+                 number_of_responses_per_prompt= number_of_responses_per_prompt,
+                 sleep_time_between_batches=sleep_time)

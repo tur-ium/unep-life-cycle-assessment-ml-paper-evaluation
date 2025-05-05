@@ -1,0 +1,7 @@
+[
+{"justification": "The item description is 'Ingredient    popped popcorn'. Popped popcorn is made by heating and popping maize (corn) kernels. The main component is maize grain. The most direct match from the reference products is 'maize grain'.", "reference_product": "maize grain", "index": 7},
+{"justification": "'Maize grain, organic' is also highly relevant since organic maize is a suitable variant for producing popcorn.", "reference_product": "maize grain, organic", "index": 4},
+{"justification": "'Maize grain, feed' refers to maize grain used as feed, but it is still essentially maize, so it is relevant for popped popcorn.", "reference_product": "maize grain, feed", "index": 9},
+{"justification": "'Maize seed, at farm' indicates maize at the seed stage which relates to the core agricultural product used for making popcorn.", "reference_product": "maize seed, at farm", "index": 11},
+{"justification": "'Maize grain, feed, organic' is also a variant of maize grain, suitable for popcorn if the adjective organic is considered, so it is somewhat relevant.", "reference_product": "maize grain, feed, organic", "index": 15}
+]

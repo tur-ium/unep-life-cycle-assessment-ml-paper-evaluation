@@ -1,0 +1,20 @@
+The correct answer is:
+
+**A: 1. Avoid allocation as far as possible, 2. Allocation on basis of physical properties, 3. Allocation on basis of revenue**
+
+**Explanation:**
+
+According to ISO 15804:2012+A2:2019, which is the standard for Environmental Product Declarations (EPD) for construction products (harmonized with ISO 14044), the recommended hierarchy for resolving multi-functionality is:
+
+1. **First, avoid allocation by subdivision or system expansion (subsystem or system boundary modification)**  
+2. **If allocation is unavoidable, use physical relationships (such as mass, energy content, or other relevant physical properties)**
+3. **If physical relationships cannot be established, use another relationship such as economic value (i.e., allocation on basis of revenue)**
+
+This mirrors the hierarchy in ISO 14044, and the intent is always to **avoid allocation where possible**.
+
+So, the correct numbered order is:
+1. **Avoid allocation as far as possible**
+2. **Allocation on basis of physical properties**
+3. **Allocation on basis of revenue**
+
+**Correct Option: A**

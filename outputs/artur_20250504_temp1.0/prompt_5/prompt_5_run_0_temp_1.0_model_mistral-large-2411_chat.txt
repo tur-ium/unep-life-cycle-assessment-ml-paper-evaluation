@@ -1,0 +1,5 @@
+The recommended hierarchy of dealing with multi-functionality according to ISO 15804:2012+A2:2019 is:
+
+- A: 1. Avoid allocation as far as possible, 2. Allocation on basis of physical properties, 3. Allocation on basis of revenue
+
+This hierarchy is consistent with the general principles of life cycle assessment, where avoiding allocation through system boundary expansion or subdivision is preferred. If allocation cannot be avoided, using physical relationships (such as mass or energy content) is preferred over economic allocation (such as revenue).

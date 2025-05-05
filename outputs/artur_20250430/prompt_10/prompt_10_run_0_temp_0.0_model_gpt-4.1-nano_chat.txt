@@ -1,0 +1,43 @@
+**Appropriate Goal and Scope Definition for the Life Cycle Assessment (LCA):**
+
+**Goal Statement:**
+The primary goal of this LCA is to evaluate and compare the environmental impacts—particularly greenhouse gas emissions—associated with three land-use scenarios in the rural community: (1) converting agricultural land entirely into a solar farm, (2) maintaining traditional agriculture, and (3) implementing agrivoltaics (combining solar energy production with agricultural activities). The assessment aims to inform community stakeholders and decision-makers about the environmental trade-offs of each pathway to support sustainable land-use planning and policy development.
+
+**Scope Definition:**
+
+1. **Functional Unit:**
+- The functional unit will be defined as *"the production of 1 megawatt-hour (MWh) of electricity over the lifetime of the project."* 
+- This allows comparison of the environmental impacts per unit of energy generated, which is relevant for evaluating the benefits of solar energy relative to traditional agriculture and agrivoltaics.
+
+2. **System Boundaries:**
+- The assessment will include all relevant life cycle stages:
+  - **Raw material extraction and manufacturing** of solar panels and infrastructure.
+  - **Construction and installation** of the solar farm or agrivoltaic system.
+  - **Operation and maintenance** over the system’s lifetime.
+  - **Land-use change impacts**, including land preparation, potential changes in soil carbon stocks, and impacts on local biodiversity.
+  - **Decommissioning and end-of-life disposal or recycling** of equipment.
+- For traditional agriculture, impacts related to land management practices, fertilizer use, and methane/nitrous oxide emissions will be included.
+- For agrivoltaics, impacts will encompass both energy production and agricultural activities.
+
+3. **Geographical and Temporal Scope:**
+- The assessment will focus on the specific community’s land and local environmental conditions.
+- The temporal scope will cover the expected operational lifetime of the solar systems (e.g., 25-30 years).
+
+4. **Impact Categories:**
+- The primary focus will be on **climate change impacts** (greenhouse gas emissions), but secondary categories such as land use, biodiversity, and water use may also be considered if relevant.
+
+5. **Assumptions and Limitations:**
+- Assumptions regarding land productivity, agricultural practices, and system efficiencies will be clearly stated.
+- Limitations related to data availability and regional specificity will be acknowledged.
+
+---
+
+**Justification of Choices:**
+
+- **Aligning with Stakeholder Goals:** By comparing different land-use options—solar farm, agriculture, and agrivoltaics—the assessment directly addresses community concerns about environmental impacts, job creation, and land use.
+- **Functional Unit Selection:** Using energy output (MWh) standardizes impacts across different land uses, facilitating meaningful comparisons.
+- **System Boundaries:** Including full life cycle stages ensures comprehensive impact assessment, capturing upstream and downstream effects.
+- **Geographical Focus:** Localized scope ensures relevance to community decision-making.
+- **Impact Categories:** Emphasizing greenhouse gases aligns with the community’s climate change mitigation goals, while other categories provide a holistic view.
+
+This goal and scope setup provides a clear, transparent framework to evaluate the environmental trade-offs of each land-use pathway, supporting informed, balanced decision-making aligned with community priorities.

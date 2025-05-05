@@ -1,0 +1,5 @@
+The information about paper plates being biodegradable and recyclable pertains to what happens to the product after it has been used. Therefore, the correct stage of a life cycle assessment (LCA) that would contain this information is:
+
+- **A: Disposal at the end of useful life**
+
+This stage deals with the environmental impacts and management of the product once it is no longer in use, including recycling and biodegradation processes.

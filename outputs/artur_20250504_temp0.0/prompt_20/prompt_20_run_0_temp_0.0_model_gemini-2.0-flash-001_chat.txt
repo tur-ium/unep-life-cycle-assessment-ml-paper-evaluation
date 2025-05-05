@@ -1,0 +1,9 @@
+When conducting an LCA for oranges, the carbon stored in the orange trees presents a complex issue.
+
+**Short Answer:**
+
+Generally, **biogenic carbon storage in perennial crops like orange trees is not credited as a carbon sink in LCA.** This is because the carbon is considered temporarily stored and will eventually be released back into the atmosphere through decomposition or combustion when the tree dies or is harvested.
+
+However, **changes in carbon stock** should be considered. If the orange grove is expanding (more trees planted than removed), the *net* increase in carbon storage could be considered a negative emission. Conversely, if the grove is shrinking, the *net* decrease should be considered a positive emission.
+
+The key is to **clearly state the assumptions and methodology used** regarding biogenic carbon accounting in the LCA report, following established guidelines like the PEFCR.

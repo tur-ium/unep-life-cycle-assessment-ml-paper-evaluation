@@ -1,0 +1,3 @@
+The correct answer is **B**.
+
+ISO 14044 requires detailed specifications for a Life Cycle Assessment (LCA) study to ensure transparency and comparability. This includes defining the functional unit, outlining allocation procedures for multi-output processes, and specifying the type of critical review. However, the addresses of upstream suppliers are not a mandatory requirement. While knowing the suppliers is important for data collection, the standard focuses on the processes and data, not the specific location of the suppliers.

@@ -1,0 +1,9 @@
+The correct answer is **A: 1. Avoid allocation as far as possible, 2. Allocation on basis of physical properties, 3. Allocation on basis of revenue**.
+
+ISO 15804:2012+A2:2019 follows a similar hierarchy to ISO 14044 in addressing multi-functionality:
+
+1.  **Avoid allocation as far as possible:** This is the preferred method. System expansion or subdivision should be explored first.
+
+2.  **Allocation on basis of physical properties:** If allocation is unavoidable, it should be based on physical relationships (e.g., mass, energy content).
+
+3.  **Allocation on basis of revenue:** This is the least preferred method and should only be used when allocation based on physical relationships is not possible.

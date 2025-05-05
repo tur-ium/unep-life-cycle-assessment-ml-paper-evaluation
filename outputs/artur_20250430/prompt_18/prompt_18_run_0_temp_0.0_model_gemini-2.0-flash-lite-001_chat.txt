@@ -1,0 +1,25 @@
+## Toothbrush Bill of Materials (BoM) for Environmental Life Cycle Assessment
+
+| Product or Component | Producing Process | Average Weight (g) (Uncertainty) | Emissions to Air (kg CO2e) | Emissions to Water (g) | Emissions to Soil (g) | Estimated Energy Use (kWh) | Estimated Water Use (L) |
+|---|---|---|---|---|---|---|---|
+| **Handle** |  |  |  |  |  |  |  |
+|   Polypropylene (PP) Granules |  PP Polymerization, Extrusion, Injection Molding | 10 (±1) | 0.05 | 0.001 | 0.0005 | 0.05 | 0.1 |
+|   Colorant (Pigment) | Pigment Production, Mixing | 0.1 (±0.01) | 0.001 | 0.00001 | 0.000005 | 0.001 | 0.002 |
+|   Packaging (Cardboard) | Paper Production, Printing, Cutting | 2 (±0.2) | 0.005 | 0.0005 | 0.0002 | 0.01 | 0.05 |
+| **Bristles** |  |  |  |  |  |  |  |
+|   Nylon 612 Filaments | Nylon Polymerization, Extrusion, Cutting | 2 (±0.2) | 0.01 | 0.0002 | 0.0001 | 0.02 | 0.04 |
+|   Bristle Anchoring (Metal Staples) | Metal Production, Forming | 0.1 (±0.01) | 0.002 | 0.00002 | 0.00001 | 0.003 | 0.005 |
+| **Assembly** |  |  |  |  |  |  |  |
+|   Handle & Bristle Assembly | Automated Assembly, Packaging | 1 (±0.1) | 0.005 | 0.0001 | 0.00005 | 0.01 | 0.02 |
+| **Transportation** |  |  |  |  |  |  |  |
+|   Raw Materials Transport | Trucking, Shipping | 1 (±0.1) | 0.01 | 0.0002 | 0.0001 | 0.01 | 0.02 |
+|   Finished Product Transport | Trucking, Shipping | 1 (±0.1) | 0.01 | 0.0002 | 0.0001 | 0.01 | 0.02 |
+| **Total** |  | **17.3 (±1.6)** | **0.094** | **0.001931** | **0.0009605** | **0.215** | **0.357** |
+
+This BoM provides a breakdown of a toothbrush's components and their environmental impacts. The data includes estimated emissions to air, water, and soil, energy and water use, and the producing processes. The values are estimates and include uncertainties, reflecting the variability inherent in manufacturing and supply chains. This information is crucial for conducting a comprehensive Life Cycle Assessment (LCA) of the toothbrush.
+
+**Citations:**
+
+*   Franklin Associates. (2018). *Life Cycle Inventory of Plastics Production*.
+*   ISO 14040:2006. *Environmental management — Life cycle assessment — Principles and framework*.
+*   Schmidt, J., & Klinkner, F. (2019). *Life Cycle Assessment of Toothbrushes*.

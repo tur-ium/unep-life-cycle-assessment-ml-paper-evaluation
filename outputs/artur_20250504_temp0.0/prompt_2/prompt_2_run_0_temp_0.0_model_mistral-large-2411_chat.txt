@@ -1,0 +1,5 @@
+The question that cannot be answered using life cycle assessment is:
+
+D: Analyse the impact of the disruption on the life cycle of moth populations in Chile due to changes in climate driven by anthropogenic causes
+
+Life Cycle Assessment (LCA) typically focuses on the environmental impacts of products, processes, or services throughout their life cycle. It does not usually address specific ecological disruptions like the life cycle of moth populations due to climate change. LCA is more suited for assessing the environmental impacts of human activities and products rather than the direct ecological impacts on specific wildlife populations.

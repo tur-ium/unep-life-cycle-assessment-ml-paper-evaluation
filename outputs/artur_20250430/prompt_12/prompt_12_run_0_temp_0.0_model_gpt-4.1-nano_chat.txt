@@ -1,0 +1,28 @@
+ReCiPe 2016 (Huijbregts, 2016) and CML-IA are primarily designed as life cycle impact assessment (LCIA) methods focused on environmental impacts, such as climate change, acidification, eutrophication, and resource depletion. They are widely used for environmental life cycle assessment (LCA) to quantify potential environmental burdens associated with products or processes.
+
+**Regarding their applicability to social life cycle assessment (S-LCA):**
+
+- **ReCiPe 2016 and CML-IA are not designed for social impacts.** They do not include social indicators or metrics related to social well-being, human rights, labor conditions, community impacts, or other social sustainability aspects.
+
+- **S-LCA requires specialized methods and indicators** that assess social and socio-economic impacts across different stakeholder groups (workers, local communities, consumers, etc.). Common frameworks and databases for S-LCA include the UNEP/SETAC guidelines, the Social Hotspots Database, and specific social impact assessment methods like the S-LCA method developed by Weidema et al.
+
+**In summary:**
+
+- You **cannot** directly use ReCiPe 2016 or CML-IA as social impact assessment tools.
+- They are **not suitable** for S-LCA because they lack social impact indicators.
+- For social life cycle assessment, you should use dedicated social impact assessment methods and databases designed for that purpose.
+
+**Recommendation:**
+
+- Use S-LCA-specific frameworks and databases.
+- If you want a comprehensive sustainability assessment, consider combining environmental LCIA methods (like ReCiPe or CML-IA) with social impact assessment methods in a hybrid approach.
+
+**References:**
+
+- Weidema, B. P., et al. (2013). "Guidelines for Social Life Cycle Assessment of Products." UNEP/SETAC.
+- Huijbregts, M. A. J., et al. (2016). "ReCiPe 2016: A harmonized life cycle impact assessment method at midpoint and endpoint level." RIVM Report 2016-0104.
+
+---
+
+**In conclusion:**  
+ReCiPe 2016 and CML-IA are suitable for environmental impact assessment but **not** for social life cycle assessment. Use dedicated social impact assessment methods for that purpose.

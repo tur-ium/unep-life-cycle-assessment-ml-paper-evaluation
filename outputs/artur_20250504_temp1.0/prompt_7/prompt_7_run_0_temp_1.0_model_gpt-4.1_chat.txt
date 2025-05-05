@@ -1,0 +1,76 @@
+**Structured Recommendation for LCA Goal & Scope, with Data Collection Methodology**
+
+---
+
+### 1. **Pilot-scale Demonstration Phase**
+
+**Goal & Scope:**  
+At this stage, the objective is primarily **process improvement and benchmarking** against existing technologies. The impacts of hydrogen produced for storage are mostly limited to the demonstration’s direct effects, and decision consequences at market scale are indirect.
+
+**Recommended Approach:**  
+- **Attributional LCA** (ALCA)  
+- **System boundaries:** Gate-to-gate or cradle-to-gate
+- **Functional unit:** kg H₂ produced or stored
+
+**Justification:**  
+ALCA provides robust comparative benchmarks for process development, aligning with conventional practice for R&D (Finnveden et al., 2009). Consequential effects are minimal due to the project’s scale, and primary stakeholders (engineers, investors) focus on process efficiency and direct impacts.
+
+**Data Collection:**  
+- **Primary data:** Process flows, energy/mass balances from the pilot.
+- **Secondary data:** Background data from ecoinvent, GaBi, or similar (Frischknecht et al., 2007).
+- **Focus:** Direct emissions, fossil/mineral resource use, and upstream materials.
+
+---
+
+### 2. **Large-scale Commercial Deployment in a Renewable-dominated Grid**
+
+**Goal & Scope:**  
+Seek to understand the **systemic consequences** of integrating large-scale hydrogen storage into a low-carbon grid—the effect on resources and GHGs reflects marginal changes in grid operation and energy demand.
+
+**Recommended Approach:**  
+- **Consequential LCA** (CLCA)  
+- **System boundaries:** Cradle-to-grave, with focus on market-altering effects (e.g., change in marginal generation source, storage-induced load shifting)
+- **Functional unit:** MWh of electricity stored/released via hydrogen
+
+**Justification:**  
+CLCA is suited to inform policy/strategic decisions by capturing system-level and indirect impacts (Ekvall & Weidema, 2004). In a renewables-dominated grid, marginal electricity may come from renewable or fossil backup—influencing climate and resource impacts. Stakeholders, such as regulators and utilities, are interested in total system consequences, including indirect effects.
+
+**Data Collection:**  
+- **Marginal mixes:** Use grid modeling or scenario data to define marginal electricity sources (Pehl et al., 2017).
+- **Include:** Induced demand, grid balancing emissions, market effects.
+- **Sensitivity analyses:** For grid mix, storage use patterns.
+
+---
+
+### 3. **Large-scale Deployment in a Fossil-dominated Grid**
+
+**Goal & Scope:**  
+Assess the **incremental impact** of hydrogen storage in a context where added demand predominantly triggers fossil power generation.
+
+**Recommended Approach:**  
+- **Consequential LCA**  
+- **System boundaries:** Cradle-to-grave, emphasizing marginal power source
+- **Functional unit:** MWh stored and released
+
+**Justification:**  
+CLCA reveals real-world effects—additional electricity demand likely drives increased fossil generation, amplifying GHG and fossil resource use (Klein et al., 2020). This is vital for policymakers considering climate targets, and for investors evaluating project sustainability risks. Focusing on the marginal mix avoids underestimating impacts, offering transparency for skeptical stakeholders.
+
+**Data Collection:**  
+- **Marginal generation:** Model the fossil share that would supply additional demand.
+- **Ancillary impacts:** Account for grid response, upstream fossil supply, and infrastructure.
+
+---
+
+**Summary Table:**
+| Scenario                | Approach         | System Boundaries       | Stakeholder Interest                  |
+|-------------------------|------------------|------------------------|---------------------------------------|
+| Pilot-scale             | Attributional    | Cradle/gate-to-gate    | R&D, process comparison               |
+| Commercial/renewables   | Consequential    | Cradle-to-grave        | Policy, system integration, climate   |
+| Commercial/fossil grid  | Consequential    | Cradle-to-grave        | Policy, climate, investor risk        |
+
+**References:**  
+- Ekvall, T., & Weidema, B.P. (2004). System boundaries and input data in consequential life cycle inventory analysis. *Int J LCA*, 9(3), 161-171.  
+- Finnveden, G. et al. (2009). Recent developments in LCA. *J Env Management*, 91(1), 1-21.  
+- Frischknecht, R. et al. (2007). The ecoinvent Database: Overview and Methodological Framework. *Int J LCA*, 10(1), 3-9.  
+- Pehl, M. et al. (2017). Contribution of carbon capture and storage to a sustainable energy system. *Nature Comm*, 8, 14856.  
+- Klein, M. et al. (2020). Life cycle assessment of hydrogen production. *J Clean Prod*, 250, 119495.

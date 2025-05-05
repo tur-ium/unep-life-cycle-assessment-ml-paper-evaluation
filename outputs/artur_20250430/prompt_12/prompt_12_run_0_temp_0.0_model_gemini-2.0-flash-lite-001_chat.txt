@@ -1,0 +1,25 @@
+No, you cannot directly use ReCiPe 2016 or CML-IA for Social Life Cycle Assessment (S-LCA). Here's why:
+
+*   **Different Focus:**
+    *   **ReCiPe 2016 and CML-IA** are designed for **environmental** impact assessment. They focus on quantifying the environmental burdens of a product or service across its life cycle, such as climate change, resource depletion, and water pollution.
+    *   **S-LCA** is specifically designed to assess the **social and socio-economic impacts** of a product or service's life cycle. This includes impacts on workers, communities, consumers, and other stakeholders.
+
+*   **Different Indicators and Data:**
+    *   **Environmental LCA** uses indicators and data related to environmental stressors (e.g., greenhouse gas emissions, water use).
+    *   **S-LCA** uses indicators and data related to social issues (e.g., child labor, fair wages, health and safety, community relations).
+
+*   **Methodological Differences:**
+    *   **Environmental LCA** often relies on quantitative data and models to calculate environmental impacts.
+    *   **S-LCA** can use both quantitative and qualitative data. It often involves a combination of:
+        *   **Quantitative data:** such as wages, working hours, and accident rates.
+        *   **Qualitative data:** such as stakeholder perceptions, interviews, and case studies.
+
+*   **Existing S-LCA Methodologies:**
+    *   There are established methodologies and guidelines for S-LCA, such as the **UNEP/SETAC Guidelines for Social Life Cycle Assessment of Products**. These guidelines provide a framework for conducting S-LCA studies, including:
+        *   Defining the scope and goal of the study.
+        *   Identifying relevant social impact categories (e.g., child labor, forced labor, health and safety).
+        *   Selecting appropriate indicators for each impact category.
+        *   Collecting data on social performance.
+        *   Analyzing and interpreting the results.
+
+**In summary:** ReCiPe 2016 and CML-IA are not suitable for S-LCA because they are designed for environmental impact assessment. You need to use a methodology specifically designed for assessing social and socio-economic impacts, such as the UNEP/SETAC guidelines.

@@ -1,0 +1,21 @@
+### Bill of Materials (BoM) for a Toothbrush
+
+| Product or Component     | Producing Process         | Average Weight (g, ±) | Emissions (air/water/soil, g CO₂-eq or pollutant/unit) | Estimated Energy Use (MJ) | Estimated Water Use (L) |
+|-------------------------|--------------------------|-----------------------|------------------------------------------------------|--------------------------|-------------------------|
+| Handle (Polypropylene)  | Injection Molding        | 9.0 ± 0.5             | Air: 110 g CO₂-eq, Water: 0.2 g, Soil: ~0           | 1.8                      | 1.1                     |
+| Bristles (Nylon-6)      | Extrusion, Cutting       | 1.0 ± 0.2             | Air: 15 g CO₂-eq, Water: 0.03 g, Soil: ~0           | 0.35                     | 0.18                    |
+| Packaging (Paper/Card)  | Cutting, Printing        | 3.5 ± 0.5             | Air: 6 g CO₂-eq, Water: 0.05 g, Soil: <0.01         | 0.25                     | 0.5                     |
+| Colorant (Pigment)      | Mixing, Injection        | 0.1 ± 0.05            | Air: 1 g CO₂-eq, Water: 0.01 g, Soil: ~0            | 0.02                     | 0.01                    |
+| Metal Staple (Steel)    | Stamping, Insert         | 0.05 ± 0.02           | Air: 2 g CO₂-eq, Water: 0.002 g, Soil: <0.01        | 0.1                      | 0.03                    |
+| **Total per Toothbrush**|                          | **13.65 ± 1.3**        | **134 g CO₂-eq (air), ~0.3 g (water), minimal**     | **2.52**                 | **1.82**                |
+
+---
+
+**Explanation:**  
+This BoM breaks down the materials, production processes, and key environmental metrics for a standard manual toothbrush. It enables a life cycle assessment by quantifying emissions, energy, and water use for each component based on typical industry data.
+
+**Citations:**  
+- Franklin Associates (2011). "Life Cycle Inventory of a Disposable Toothbrush."  
+- Schmidt, J.H. & Beyer, A. (2015). "Life cycle assessment of a toothbrush." Journal of Cleaner Production, 108, 1372-1378.  
+- PlasticsEurope (2018). "Polypropylene (PP) Eco-profiles"  
+- Boustead, I. (2005). "Eco-profiles of the European plastics industry."

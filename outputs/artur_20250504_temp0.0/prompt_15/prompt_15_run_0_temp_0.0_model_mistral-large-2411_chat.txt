@@ -1,0 +1,25 @@
+Sure, let's match the items in the bill of materials to the best matching description from the list of available models.
+
+### Bill of Materials
+1. raw bauxite ore
+2. shelled cashews
+3. citric acid
+4. maize starch
+5. protein feed
+
+### Matching Results
+
+| Item                | best_lookup_string                                      | explanation                                                                 |
+|---------------------|---------------------------------------------------------|-----------------------------------------------------------------------------|
+| raw bauxite ore     | bauxite {GLO}| bauxite mine operation | Cut-off, U  | The item 'raw bauxite ore' matches 'bauxite' with a global region.       |
+| shelled cashews      | cashew {RoW}| cashew production | Cut-off, U  | The item 'shelled cashews' matches 'cashew' with a region of 'Rest of the World'. |
+| citric acid         | Citric acid {RoW}| production | Cut-off, U  | The item 'citric acid' matches 'Citric acid' with a region of 'Rest of the World'. |
+| maize starch        | Maize starch {RoW}| citric acid production | Cut-off, U | The item 'maize starch' matches 'Maize starch' with a region of 'Rest of the World'. |
+| protein feed        | protein feed, 100% crude {RoW}| citric acid production | Cut-off, U | The item 'protein feed' matches 'protein feed, 100% crude' with a region of 'Rest of the World'. |
+
+### Explanation
+- **raw bauxite ore**: The closest match is 'bauxite {GLO}| bauxite mine operation | Cut-off, U' because 'raw bauxite ore' is a form of bauxite and the global region is used when the specific region is not known.
+- **shelled cashews**: The closest match is 'cashew {RoW}| cashew production | Cut-off, U' because 'shelled cashews' is a form of cashew and the region 'Rest of the World' is used when the specific region is not known.
+- **citric acid**: The closest match is 'Citric acid {RoW}| production | Cut-off, U' because 'citric acid' matches exactly and the region 'Rest of the World' is used when the specific region is not known.
+- **maize starch**: The closest match is 'Maize starch {RoW}| citric acid production | Cut-off, U' because 'maize starch' matches exactly and the region 'Rest of the World' is used when the specific region is not known.
+- **protein feed**: The closest match is 'protein feed, 100% crude {RoW}| citric acid production | Cut-off, U' because 'protein feed' matches closely with 'protein feed, 100% crude' and the region 'Rest of the World' is used when the specific region is not known.

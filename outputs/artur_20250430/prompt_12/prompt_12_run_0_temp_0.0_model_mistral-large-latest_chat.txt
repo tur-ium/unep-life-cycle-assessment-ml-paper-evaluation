@@ -1,0 +1,22 @@
+Neither ReCiPe 2016 nor CML-IA (from the Centrum voor Milieukunde) are designed for social life cycle assessment (S-LCA). These methods are primarily focused on environmental life cycle assessment (E-LCA) and do not cover the social and socio-economic aspects that are central to S-LCA.
+
+### ReCiPe 2016
+ReCiPe 2016 is a comprehensive life cycle impact assessment method that evaluates a wide range of environmental impacts, including climate change, human toxicity, ecotoxicity, and resource depletion. It provides a harmonized approach to assessing these impacts but does not include social indicators.
+
+### CML-IA
+CML-IA (Centrum voor Milieukunde - Institute of Environmental Sciences) is another well-known method for environmental impact assessment. It focuses on various environmental impact categories such as global warming, ozone depletion, and acidification. Like ReCiPe, it does not address social impacts.
+
+### Social Life Cycle Assessment (S-LCA)
+S-LCA is a complementary approach to E-LCA that assesses the social and socio-economic aspects of products and their life cycles. It includes indicators related to human rights, working conditions, health and safety, community engagement, and governance.
+
+### Appropriate Methods for S-LCA
+For conducting S-LCA, you would typically use guidelines and frameworks specifically designed for this purpose. Some key resources include:
+
+1. **UNEP/SETAC Guidelines for Social Life Cycle Assessment of Products**: This is a comprehensive guide that outlines the methodology and indicators for S-LCA.
+2. **Social Hotspots Database (SHDB)**: This database provides social risk data for various sectors and regions, which can be used in S-LCA studies.
+3. **PSILCA (Product Social Impact Life Cycle Assessment)**: This is a methodology developed by the European Commission's Joint Research Centre (JRC) for assessing the social impacts of products.
+
+### Integration of E-LCA and S-LCA
+While ReCiPe 2016 and CML-IA are not suitable for S-LCA, you can integrate the results of E-LCA and S-LCA to get a more holistic view of the sustainability of a product or service. This integrated approach can provide a comprehensive assessment of environmental, social, and economic impacts.
+
+In summary, for social life cycle assessment, you should use methods and frameworks specifically designed for S-LCA, such as the UNEP/SETAC guidelines or the Social Hotspots Database. ReCiPe 2016 and CML-IA are not appropriate for this purpose.

@@ -1,0 +1,13 @@
+## Limitations of LCA Comparisons: My Product vs. Industry Average
+
+Comparing a product's Life Cycle Assessment (LCA) results against an industry average has inherent limitations. The industry average represents a hypothetical product, blending data from various manufacturers with varying practices. This creates a benchmark that might not accurately reflect the true best-in-class or worst-case scenarios.
+
+Specifically:
+
+*   **Data Quality & Transparency:** Industry average data can be aggregated and lack the detailed transparency of primary data collected for a specific product. This can obscure crucial impact drivers and limit opportunities for targeted improvement.
+*   **Technological Variations:** The industry average may incorporate outdated technologies or practices, potentially underestimating the potential benefits of newer, innovative products. Conversely, if the product uses a radically new technology, the industry average might not adequately capture novel impacts.
+*   **Geographic Scope:** A global or regional industry average might not be representative of local production conditions where your product is manufactured or used, leading to inaccuracies.
+*   **Functional Unit Equivalence:** Ensuring that the industry average product and your product provide the same functional benefits is crucial. Subtle differences in performance or durability can skew the comparison.
+*   **Benchmarking Bias:** An industry average may be influenced by the practices of dominant players, which may not necessarily reflect best practices in sustainability.
+
+While useful for initial assessments, relying solely on industry average comparisons can mask crucial nuances and limit the potential for truly impactful sustainability improvements. More detailed comparative LCAs against specific competitor products offer a more robust and insightful assessment.

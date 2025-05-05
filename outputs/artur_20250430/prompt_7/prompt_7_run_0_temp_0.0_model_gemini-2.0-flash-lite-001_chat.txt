@@ -1,0 +1,30 @@
+Here's a structured recommendation for the energy company:
+
+**Goal and Scope Selection**
+
+The choice between attributional and consequential LCA hinges on the goal of the assessment and the context of hydrogen production.
+
+*   **Pilot-scale demonstration phase:** An **attributional LCA** is most appropriate. The goal is to understand the environmental footprint of the *specific* electrolysis process. This approach focuses on describing the system as it is, quantifying the resource use, emissions, and impacts directly attributable to the pilot plant (Curran, 2012). Data collection should prioritize detailed process-specific data from the pilot plant itself, including electricity consumption, water use, and materials used.
+
+*   **Large-scale commercial deployment in a renewable-dominated grid:** A **consequential LCA** is crucial. The goal is to understand the *system-wide* impacts of introducing hydrogen production. This approach models how the electricity grid will change in response to the new hydrogen demand (Weidema, 2003). Data collection needs to include grid marginal electricity sources (the sources that will be displaced or added due to hydrogen production), which can be obtained from grid operators or energy market models.
+
+*   **Large-scale deployment in a fossil-based grid:** A **consequential LCA** is again the best choice. The goal is to understand the *system-wide* impacts of introducing hydrogen production. This approach models how the electricity grid will change in response to the new hydrogen demand (Weidema, 2003). Data collection needs to include grid marginal electricity sources (the sources that will be displaced or added due to hydrogen production), which can be obtained from grid operators or energy market models.
+
+**Data Collection Methodology**
+
+*   **Pilot-scale:** Focus on direct measurements and supplier data for the pilot plant.
+*   **Large-scale (renewable/fossil grids):** Utilize grid models, energy market data, and literature to estimate marginal electricity sources. Consider sensitivity analyses to account for uncertainties in grid dynamics.
+
+**Justification**
+
+*   **Attributional LCA** is suitable for the pilot phase because it provides a baseline understanding of the technology's inherent environmental performance.
+*   **Consequential LCA** is essential for large-scale deployment to capture the indirect effects on the electricity grid. This approach is critical for understanding whether hydrogen production truly reduces environmental impacts compared to the baseline scenarios. Stakeholders, including investors and policymakers, need this system-wide perspective to make informed decisions.
+
+**How LCA helps**
+
+Both approaches can help answer the company's question. Attributional LCA provides a snapshot of the pilot plant's performance. Consequential LCA provides a forward-looking assessment of the technology's impact on fossil resource use, mineral resource scarcity, and global warming, considering the broader energy system.
+
+**References**
+
+*   Curran, M. A. (2012). *Environmental life cycle assessment*. McGraw-Hill.
+*   Weidema, B. P. (2003). Market-based life cycle assessment. *Environmental Science & Technology*, *37*(17), 3815-3820.

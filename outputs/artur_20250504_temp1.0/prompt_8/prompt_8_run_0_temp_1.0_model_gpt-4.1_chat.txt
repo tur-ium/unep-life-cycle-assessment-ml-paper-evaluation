@@ -1,0 +1,41 @@
+**Methodological Strategy for Comparing Battery Recycling and Reuse via LCA**
+
+**1. Handling Data Uncertainty and Technological Variability**
+
+Given the lack of direct Life Cycle Inventory (LCI) data for battery reuse and the rapid advancement in recycling technologies, I will adopt a scenario-based, hybrid modeling approach (Finnveden et al. 2009). For recycling, I will consult recent literature and industry reports to gather the most up-to-date data, documenting the range in process efficiencies, yields, and energy mixes (Dunn et al. 2015). For battery reuse (e.g., in stationary energy storage), I will apply process- and input-based modeling, leveraging analogs from secondary use studies (Bobba et al. 2018) and combining them with primary data from industry stakeholders where available. 
+
+To address uncertainty:
+
+- I will employ Monte Carlo simulations to capture parameter uncertainty, representing ranges for key variables such as lifespan, transport energy, and electricity mix (Igos et al. 2019).
+- Technological variability will be modeled through sensitivity analyses, exploring future scenarios for both recycling (e.g., hydrometallurgical vs. pyrometallurgical processes) and reuse (e.g., different repurposing methods, system designs).
+- Data quality indicators (temporal, geographical, and technological representativeness) will be documented using the pedigree matrix approach (Weidema & Wesnæs 1996).
+
+**2. System Boundaries and Functional Unit Selection**
+
+System boundaries will be defined as **cradle-to-grave**, encompassing raw material acquisition, manufacturing, initial use (EV application), collection, transportation, and subsequent end-of-life options:
+
+- For **reuse**, boundaries will include decommissioning, repurposing/refurbishment, second life in stationary storage, and eventual recycling/disposal (e.g., Bobba et al. 2018).
+- For **recycling**, boundaries include collection, sorting, recycling processes, and materials recovery.
+
+The functional unit will be **one kWh of electricity delivered to the grid over the entire second-life or recycled material workflow**. This unit ensures comparability by reflecting the core service provided by the battery in both pathways (ISO 14040:2006; Siret et al. 2022). This choice also allows linking impact results to grid-scale decarbonization goals.
+
+**3. Justifying Methodological Assumptions to Non-LCA Stakeholders**
+
+To ensure transparency and credibility for stakeholders unfamiliar with LCA, I will:
+
+- Clearly communicate the rationale behind chosen system boundaries and functional unit, linking both directly to the service the batteries are expected to deliver (ISO 14044:2006).
+- Explain the reliance on sensitivity and scenario analyses by drawing parallels to probabilistic risk assessment in business and engineering.
+- Use clear visualizations (e.g., tornado diagrams) to demonstrate where uncertainty most significantly affects results.
+- Relate assumptions (e.g., battery second-life duration, recycling efficiencies) to real-world variability and ongoing technological change, stressing that results are indicative rather than prescriptive, and offering scenario ranges instead of point estimates (Pizzol et al. 2017).
+- Provide a concise summary of critical assumptions and data sources in all reporting.
+
+**References**
+
+- Bobba, S., et al. (2018) "Life cycle assessment of repurposed electric vehicle batteries: an adapted method based on modelling energy flows." *Journal of Energy Storage*, 19: 213–225.
+- Dunn, J.B., et al. (2015). "Circularity of lithium-ion battery materials in electric vehicles." *Environmental Science & Technology*, 49(12): 7519-7527.
+- Finnveden, G., et al. (2009). "Recent developments in Life Cycle Assessment." *Journal of Environmental Management*, 91(1): 1-21.
+- Igos, E., et al. (2019). "How to treat uncertainties in life cycle assessment studies?" *The International Journal of Life Cycle Assessment*, 24: 794–807.
+- ISO 14040:2006; ISO 14044:2006. *Environmental management—Life cycle assessment—Principles and framework; Requirements and guidelines*.
+- Pizzol, M., et al. (2017). "The use of Monte Carlo simulation in life cycle assessment: Prospects and challenges." *The International Journal of Life Cycle Assessment*, 22: 237–247.
+- Siret, C., et al. (2022). "Assessment of environmental impacts and circular economy potential for lithium-ion batteries from electric vehicles." *Resources, Conservation and Recycling*, 179: 106118.
+- Weidema, B.P. & Wesnæs, M. (1996). "Data quality management for life cycle inventories—an example of using data quality indicators." *Journal of Cleaner Production*, 4(3-4): 167-174.

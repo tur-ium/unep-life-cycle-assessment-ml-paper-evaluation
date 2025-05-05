@@ -1,0 +1,47 @@
+To guide the energy company in selecting the appropriate life cycle assessment (LCA) approach, goal, scope, and data collection methodology, consider the following recommendations for each scenario:
+
+### Pilot-scale Demonstration Phase
+**Goal and Scope:**
+- **Goal:** To evaluate the environmental performance of the novel hydrogen production process in a controlled setting.
+- **Scope:** Focus on the direct impacts of the pilot-scale process, including material and energy inputs, emissions, and waste outputs.
+
+**Methodological Choice:**
+- **Attributional LCA (ALCA):** This approach is suitable for the pilot phase as it provides a snapshot of the current environmental impacts without considering future market changes (Curran et al., 2005). It helps identify hotspots and areas for improvement within the process itself.
+
+**Data Collection:**
+- **Primary Data:** Collect detailed data on material and energy inputs, emissions, and waste outputs directly from the pilot plant.
+- **Secondary Data:** Use databases like Ecoinvent for background processes (e.g., material production) to complement primary data.
+
+### Large-scale Commercial Deployment in an Electricity Grid Dominated by Renewable Energy
+**Goal and Scope:**
+- **Goal:** To assess the broader environmental impacts of scaling up the hydrogen production process within a renewable-dominated grid.
+- **Scope:** Include direct and indirect impacts, considering the interaction with the electricity grid and potential market responses.
+
+**Methodological Choice:**
+- **Consequential LCA (CLCA):** This approach is appropriate as it considers the system-wide effects of large-scale deployment, including changes in the electricity market and potential displacement of other energy sources (Ekvall & Weidema, 2004).
+
+**Data Collection:**
+- **Primary Data:** Collect data on the scaled-up process, including energy consumption and emissions.
+- **Secondary Data:** Use market data and scenarios to model the impacts on the electricity grid and other affected markets. Utilize databases like GREET for transportation-related impacts.
+
+### Large-scale Deployment in a Grid Dominated by Fossil-based Electricity
+**Goal and Scope:**
+- **Goal:** To evaluate the environmental consequences of deploying the hydrogen production process in a fossil-dominated grid, focusing on potential reductions in greenhouse gas emissions.
+- **Scope:** Consider the direct impacts of the process and the indirect impacts on the electricity market, including potential displacement of fossil fuels.
+
+**Methodological Choice:**
+- **Consequential LCA (CLCA):** This approach is essential to capture the system-wide effects, particularly the potential for reducing fossil fuel use and associated emissions (Weidema, 2003).
+
+**Data Collection:**
+- **Primary Data:** Collect data on the large-scale process, including energy consumption and emissions.
+- **Secondary Data:** Use market data and scenarios to model the impacts on the electricity grid and other affected markets. Utilize databases like Ecoinvent and GREET for comprehensive impact assessment.
+
+### Justification:
+- **Pilot Phase:** ALCA is justified as it provides a clear understanding of the process's current environmental performance, which is crucial for stakeholders interested in immediate improvements and feasibility.
+- **Renewable Grid:** CLCA is justified to capture the broader impacts of integrating the process into a renewable-dominated grid, addressing stakeholder interests in system-wide sustainability.
+- **Fossil Grid:** CLCA is justified to assess the potential for significant emission reductions, aligning with stakeholder interests in mitigating climate change impacts.
+
+### Citations:
+- Curran, M. A., et al. (2005). Environmental life cycle assessment. Journal of Cleaner Production, 13(7), 683-695.
+- Ekvall, T., & Weidema, B. P. (2004). System boundaries and input data in consequential life cycle inventory analysis. International Journal of Life Cycle Assessment, 9(3), 161-172.
+- Weidema, B. P. (2003). Market information in life cycle assessment. International Journal of Life Cycle Assessment, 8(3), 134-140.

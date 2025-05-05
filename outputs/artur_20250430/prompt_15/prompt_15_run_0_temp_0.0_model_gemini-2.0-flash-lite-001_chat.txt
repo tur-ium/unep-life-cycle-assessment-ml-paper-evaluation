@@ -1,0 +1,10 @@
+Here's the table matching the items to the best lookup strings, along with explanations:
+
+| best_lookup_string | explanation |
+|---|---|
+| bauxite {GLO}| bauxite mine operation | Cut-off, U | The item is raw bauxite ore, and the only available option is bauxite mine operation. |
+| null | There is no model for shelled cashews in the provided list. |
+| Citric acid {CN}| production | Cut-off, U | The item is citric acid, and the closest match is citric acid production in China. |
+| energy feed, gross {CN}| citric acid production | Cut-off, U | The item is energy feed, and the closest match is energy feed used in citric acid production in China. |
+| Maize starch {CN}| citric acid production | Cut-off, U | The item is maize starch, and the closest match is maize starch used in citric acid production in China. |
+| protein feed, 100% crude {CN}| citric acid production | Cut-off, U | The item is protein feed, and the closest match is protein feed used in citric acid production in China. |

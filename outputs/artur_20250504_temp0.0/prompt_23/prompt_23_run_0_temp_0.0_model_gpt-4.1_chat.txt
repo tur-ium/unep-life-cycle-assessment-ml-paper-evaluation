@@ -1,0 +1,46 @@
+Let's break down the answer step by step, using the **EF 3.1 impact assessment method** (Environmental Footprint, version 3.1) as published by the European Commission. This method uses **Global Warming Potentials (GWP)** to assess the impact of different greenhouse gases on climate change, typically over a 100-year time horizon (GWP100).
+
+### Step 1: Find the GWP100 values
+
+According to the **EF 3.1 method** (and in line with IPCC AR5, which EF 3.1 uses):
+
+- **CO₂ (carbon dioxide):** GWP100 = **1**
+- **N₂O (nitrous oxide):** GWP100 = **265**
+
+### Step 2: Calculate the climate change impact
+
+The impact is calculated as:
+
+\[
+\text{Impact} = \text{mass emitted} \times \text{GWP100}
+\]
+
+#### For 5 kg CO₂:
+
+\[
+\text{Impact}_{CO_2} = 5\, \text{kg} \times 1 = 5\, \text{kg CO}_2\text{-eq}
+\]
+
+#### For 1 kg N₂O:
+
+\[
+\text{Impact}_{N_2O} = 1\, \text{kg} \times 265 = 265\, \text{kg CO}_2\text{-eq}
+\]
+
+### Step 3: Compare the impacts
+
+- **5 kg CO₂** = **5 kg CO₂-eq**
+- **1 kg N₂O** = **265 kg CO₂-eq**
+
+### **Conclusion**
+
+**1 kg of N₂O has a much greater impact on climate change than 5 kg of CO₂** according to the EF 3.1 method, because N₂O is a much more potent greenhouse gas (GWP100 = 265) compared to CO₂ (GWP100 = 1).
+
+**Summary Table:**
+
+| Emission | Amount | GWP100 | Impact (kg CO₂-eq) |
+|----------|--------|--------|--------------------|
+| CO₂      | 5 kg   | 1      | 5                  |
+| N₂O      | 1 kg   | 265    | 265                |
+
+**Therefore, 1 kg N₂O has a much higher climate change impact than 5 kg CO₂.**
