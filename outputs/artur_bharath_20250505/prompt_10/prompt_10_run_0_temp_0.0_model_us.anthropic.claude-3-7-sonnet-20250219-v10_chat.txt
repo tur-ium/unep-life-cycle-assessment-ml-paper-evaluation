@@ -1,0 +1,75 @@
+# Goal and Scope Definition for Solar Farm vs. Agricultural Land LCA
+
+## Appropriate Goal Definition
+
+The goal of this life cycle assessment (LCA) should be:
+
+**"To compare the environmental impacts, economic benefits, and social implications of three land-use scenarios for the rural community: (1) maintaining current agricultural practices, (2) converting to a dedicated solar farm, and (3) implementing an agrivoltaic system that combines solar power generation with agricultural production."**
+
+### Justification for Goal:
+
+1. **Comprehensive approach**: The goal addresses the multiple dimensions (environmental, economic, social) that stakeholders have expressed interest in, rather than focusing solely on greenhouse gas emissions.
+
+2. **Comparative framework**: By explicitly comparing three alternatives, the LCA will provide decision-makers with clear trade-offs between options.
+
+3. **Stakeholder inclusivity**: The goal acknowledges the diverse interests mentioned in the scenario (climate change mitigation, job creation, tax revenue, and land productivity).
+
+## Appropriate Scope Definition
+
+### Functional Unit:
+"The environmental and socioeconomic impacts per hectare of land over a 30-year period."
+
+### System Boundaries:
+- **Temporal boundary**: 30 years (typical solar farm lifetime)
+- **Spatial boundary**: The specific land area under consideration in the rural community
+- **Life cycle stages**: 
+  * For agriculture: Inputs (seeds, fertilizers, pesticides, machinery), cultivation, harvesting, processing, and transportation
+  * For solar: Manufacturing of panels, installation, operation, maintenance, and end-of-life disposal/recycling
+  * For agrivoltaics: Combined elements of both systems with consideration of synergies and trade-offs
+
+### Impact Categories:
+1. **Environmental**:
+   - Global warming potential (CO₂e)
+   - Land use change impacts
+   - Water consumption and quality
+   - Biodiversity impacts
+   - Soil quality
+
+2. **Economic**:
+   - Job creation (number and quality)
+   - Tax revenue generation
+   - Long-term economic resilience
+   - Energy cost savings
+
+3. **Social**:
+   - Food security implications
+   - Community acceptance
+   - Visual/aesthetic impacts
+   - Skills development opportunities
+
+### Data Requirements:
+- Agricultural yields and inputs for current and projected practices
+- Solar panel efficiency, lifespan, and maintenance requirements
+- Agrivoltaic system design specifications and expected synergies
+- Local economic multipliers for different industries
+- Job creation potential across scenarios
+
+### Assumptions and Limitations:
+- Specification of which agricultural practices are being assessed
+- Assumptions about solar technology evolution over the 30-year period
+- Consideration of local climate conditions affecting both agriculture and solar production
+- Acknowledgment of uncertainty in long-term economic projections
+
+## Justification for Scope:
+
+1. The 30-year timeframe aligns with typical solar installation lifespans while allowing for meaningful agricultural comparisons.
+
+2. The per-hectare functional unit enables scaling to different project sizes and facilitates direct comparison between options.
+
+3. The comprehensive impact categories address all stakeholder concerns mentioned in the scenario.
+
+4. Including both environmental and socioeconomic factors provides a holistic assessment that can better inform community consensus-building.
+
+5. The agrivoltaic option is properly scoped as a distinct alternative rather than merely a compromise, acknowledging its unique characteristics and potential synergies.
+
+This goal and scope definition would provide the community with a balanced, evidence-based assessment to support their decision-making process while addressing the diverse priorities of different stakeholders.

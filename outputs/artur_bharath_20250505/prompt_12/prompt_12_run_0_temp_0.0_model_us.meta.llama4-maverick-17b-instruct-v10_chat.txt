@@ -1,0 +1,23 @@
+>
+
+No, you cannot use ReCiPe 2016 or CML-IA for Social Life Cycle Assessment (S-LCA). Both ReCiPe 2016 (Huijbregts et al., 2016) and CML-IA are life cycle impact assessment (LCIA) methods primarily designed for Environmental Life Cycle Assessment (E-LCA), not for Social Life Cycle Assessment (S-LCA).
+
+### ReCiPe 2016 and CML-IA
+
+1. **ReCiPe 2016**: This is a widely used LCIA method that provides a comprehensive set of impact categories to assess various environmental impacts, such as climate change, human toxicity, and resource depletion. It translates the inventory of emissions and resource extractions into a limited number of environmental impact scores.
+
+2. **CML-IA**: Developed by the Centrum voor Milieukunde (CML) at Leiden University, CML-IA is another LCIA method used for E-LCA. It provides characterization factors for a range of environmental impact categories, such as abiotic depletion, acidification, and eutrophication.
+
+### Social Life Cycle Assessment (S-LCA)
+
+S-LCA is a methodology used to assess the social and socio-economic aspects of products and organizations. It aims to evaluate the potential positive and negative impacts on stakeholders along the life cycle of a product or service. S-LCA is guided by the UNEP/SETAC Guidelines for Social Life Cycle Assessment of Products (2009) and the Methodological Sheets for Subcategories in Social Life Cycle Assessment (2013).
+
+### Why ReCiPe 2016 and CML-IA are not suitable for S-LCA
+
+1. **Different Focus**: ReCiPe 2016 and CML-IA are designed to assess environmental impacts, not social or socio-economic impacts. S-LCA, on the other hand, focuses on the social and socio-economic aspects.
+
+2. **Impact Categories**: The impact categories in ReCiPe 2016 and CML-IA are related to environmental issues, not social issues. S-LCA requires different types of impact categories that are related to social and socio-economic aspects, such as working conditions, human rights, and community engagement.
+
+3. **Methodological Differences**: The methodologies and data requirements for S-LCA differ significantly from those for E-LCA. S-LCA involves assessing more subjective and context-dependent issues, requiring different types of data and assessment approaches.
+
+For S-LCA, you should refer to the guidelines and methodological sheets provided by UNEP/SETAC or other frameworks and tools specifically designed for social impact assessment. These resources will guide you in selecting appropriate subcategories and methodologies for assessing social and socio-economic impacts.

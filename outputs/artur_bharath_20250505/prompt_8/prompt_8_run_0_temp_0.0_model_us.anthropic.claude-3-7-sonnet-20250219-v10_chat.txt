@@ -1,0 +1,29 @@
+# Methodological Strategy for LCA of Battery Recycling vs. Reuse
+
+## Handling Data Uncertainty and Technological Variability
+
+To address the significant data uncertainty in battery reuse scenarios and evolving recycling technologies, I would implement a multi-faceted approach. First, I would conduct a hybrid LCA combining process-based and economic input-output methods to fill data gaps (Majeau-Bettez et al., 2011). For the reuse scenario specifically, I would develop proxy processes based on similar technologies and validate these through sensitivity analysis.
+
+Given the technological variability, I would employ scenario analysis with at least three technological pathways for both recycling (e.g., pyrometallurgical, hydrometallurgical, and direct recycling) and reuse (e.g., stationary storage with different degradation profiles). This approach aligns with recommendations by Peters and Weil (2018) who demonstrated the importance of considering multiple recycling pathways in battery LCAs.
+
+Monte Carlo simulation would be implemented to propagate parameter uncertainties through the model, allowing quantification of result reliability (Mendoza Beltran et al., 2018). Additionally, I would conduct global sensitivity analysis to identify which parameters contribute most to outcome variability, helping prioritize future data collection efforts.
+
+## Boundary Setting and Functional Unit Selection
+
+The system boundaries would include battery manufacturing, use phase, collection, reuse preparation or recycling processes, and end-of-life management of residual materials. For recycling, I would include material recovery and avoided primary production. For reuse, I would include refurbishment processes and performance degradation over the second life.
+
+The functional unit would be "1 kWh of energy storage capacity delivered over the complete life cycle," accounting for different efficiency levels and lifespans between new, recycled, and reused batteries. This approach follows Bobba et al. (2018), who emphasized the importance of considering full service delivery in comparative battery assessments.
+
+## Justifying Methodological Assumptions to Stakeholders
+
+To communicate effectively with stakeholders unfamiliar with LCA methods, I would:
+
+1. Develop a visual representation of the product systems showing clear boundaries and highlighting where assumptions were made (Baumann and Tillman, 2004).
+
+2. Create a pedigree matrix for data quality assessment, visually indicating reliability levels for different process stages (Weidema and Wesnæs, 1996).
+
+3. Present results using both midpoint indicators (e.g., GWP, resource depletion) and endpoint indicators (e.g., human health impacts) to make environmental impacts more tangible (Hauschild et al., 2018).
+
+4. Clearly communicate that LCA results represent potential rather than actual impacts, and explain how uncertainty ranges should inform decision-making rather than single-point estimates.
+
+5. Contextualize results through normalization against relevant benchmarks like average household electricity consumption or emissions from conventional energy storage technologies (Pizzol et al., 2017).

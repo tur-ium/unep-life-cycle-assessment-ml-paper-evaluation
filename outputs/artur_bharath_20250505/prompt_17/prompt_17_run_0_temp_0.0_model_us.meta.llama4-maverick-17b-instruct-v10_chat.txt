@@ -1,0 +1,11 @@
+<|python_start|><|header_start|>assistant<|header_end|>
+
+```python
+[
+    {'justification': 'The item description "chicken breast fillet, fresh" directly matches the reference product "chicken breast"', 'reference_product': 'chicken breast', 'index': 12},
+    {'justification': 'The term "chicken" in the item description matches the reference product "chicken, fresh"', 'reference_product': 'chicken, fresh', 'index': 11},
+    {'justification': 'The term "chicken" in the item description matches the reference product "chicken, fresh, whole"', 'reference_product': 'chicken, fresh, whole', 'index': 13},
+    {'justification': 'The term "chicken" in the item description matches the reference product "chicken, boneless"', 'reference_product': 'chicken, boneless', 'index': 14},
+    {'justification': 'The term "chicken" in the item description matches the reference product "chicken meat, fresh"', 'reference_product': 'chicken meat, fresh', 'index': 15}
+]
+```

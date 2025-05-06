@@ -1,0 +1,9 @@
+The recommended hierarchy of dealing with multi-functionality according to ISO 15804:2012+A2:2019 is as follows:
+
+1. **Avoid allocation as far as possible** by subdividing the system boundary or expanding the system boundary.
+2. **Allocation on the basis of physical relationships** (e.g., mass, energy).
+3. **Allocation on the basis of revenue**.
+
+Therefore, the correct answer is:
+
+- **A: 1. Avoid allocation as far as possible, 2. Allocation on basis of physical properties, 3. Allocation on basis of revenue**

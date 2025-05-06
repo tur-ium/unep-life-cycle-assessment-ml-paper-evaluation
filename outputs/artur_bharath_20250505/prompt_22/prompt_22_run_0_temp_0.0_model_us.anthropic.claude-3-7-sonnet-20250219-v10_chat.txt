@@ -1,0 +1,22 @@
+# Environmental Comparison of Products A and B
+
+To determine which product is more environmentally friendly, I need to compare their impacts across multiple environmental indicators:
+
+## Comparison of Environmental Impacts
+
+| Impact Category | Product A | Product B | Difference |
+|----------------|-----------|-----------|-----------|
+| Carbon Footprint | 5 kg CO2 eq | 2 kg CO2 eq | Product B is 60% lower |
+| Water Footprint | 10 m³ deprived | 30 m³ deprived | Product A is 67% lower |
+| Marine Eutrophication | 3 kg N eq | 3 kg N eq | Equal impact |
+
+## Analysis
+
+This comparison presents a trade-off:
+- Product B has a significantly lower carbon footprint (climate change impact)
+- Product A has a substantially lower water footprint (water resource depletion)
+- Both products have identical marine eutrophication impacts
+
+Without knowing the specific context (such as where these products are used, whether water scarcity is a local concern, or which environmental impact is prioritized), it's difficult to make a definitive determination of which is "more environmentally friendly" overall.
+
+The better choice would depend on whether climate change mitigation or water conservation is the higher priority in the specific usage context.

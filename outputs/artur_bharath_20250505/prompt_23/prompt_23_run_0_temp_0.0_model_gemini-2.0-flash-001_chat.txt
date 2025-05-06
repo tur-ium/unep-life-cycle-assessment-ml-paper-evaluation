@@ -1,0 +1,32 @@
+According to the EF 3.1 impact assessment method, 1 kg of N2O has a significantly greater impact on climate change than 5 kg of CO2. This is due to the concept of **Global Warming Potential (GWP)**.
+
+**Global Warming Potential (GWP)**
+
+GWP is a relative measure of how much heat a greenhouse gas traps in the atmosphere compared to carbon dioxide (CO2). It's calculated over a specific timescale, usually 100 years.  CO2 is assigned a GWP of 1, and other gases are compared to it.
+
+**EF 3.1 and GWP Values**
+
+The EF 3.1 method uses GWP values from the IPCC (Intergovernmental Panel on Climate Change) reports.  While the exact IPCC report used in EF 3.1 might vary slightly depending on the specific implementation, it's generally based on the IPCC's 5th Assessment Report (AR5) or similar.
+
+According to the IPCC AR5, the 100-year GWP of:
+
+*   **CO2:** 1
+*   **N2O:** 265
+
+**Calculation and Comparison**
+
+To compare the climate change impact, we multiply the mass of each gas by its GWP:
+
+*   **5 kg CO2:** 5 kg * 1 GWP = 5 CO2-eq kg
+*   **1 kg N2O:** 1 kg * 265 GWP = 265 CO2-eq kg
+
+**Conclusion**
+
+Therefore, 1 kg of N2O (265 CO2-eq kg) has a much greater impact on climate change than 5 kg of CO2 (5 CO2-eq kg) according to the EF 3.1 method and the underlying IPCC GWP values.
+
+**Why N2O has a higher GWP:**
+
+*   **Infrared Absorption:** N2O absorbs infrared radiation (heat) much more effectively than CO2.  Its molecular structure allows it to vibrate in ways that capture more of the outgoing infrared radiation from the Earth.
+*   **Atmospheric Lifetime:** N2O has a much longer atmospheric lifetime than CO2.  It remains in the atmosphere for an average of 114 years, continuing to trap heat for a longer period.  While CO2 is abundant, it is also absorbed by the ocean and biosphere, reducing its atmospheric lifetime.
+
+In summary, even though we release much more CO2 overall, gases like N2O have a disproportionately large impact on climate change due to their high GWP. This highlights the importance of considering all greenhouse gases and their relative contributions when assessing environmental impacts.

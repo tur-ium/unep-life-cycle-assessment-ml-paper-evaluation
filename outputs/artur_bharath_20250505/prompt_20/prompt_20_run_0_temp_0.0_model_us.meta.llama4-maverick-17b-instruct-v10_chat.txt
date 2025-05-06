@@ -1,0 +1,7 @@
+>
+
+When conducting a Life Cycle Assessment (LCA) for oranges, dealing with the storage of carbon in the trees is crucial. The carbon stored in the trees is part of the biogenic carbon cycle. According to the LCA guidelines and the ILCD Handbook, biogenic carbon stored in products or systems should be considered. 
+
+For oranges, the trees absorb CO2 during their growth, storing carbon in the biomass (trunk, branches, roots, and fruits). When assessing the carbon footprint of oranges, it's essential to account for this carbon storage. The stored carbon in the trees should be considered as a negative emission or a deduction from the total greenhouse gas emissions associated with the production of oranges. However, the temporary nature of this storage should be acknowledged.
+
+A common approach is to consider the carbon stored in the trees as a temporary removal of CO2 from the atmosphere, which will be released back when the biomass decomposes or is burned. Therefore, the LCA should account for this temporary carbon storage and consider the timing and duration of the storage. This can be done by using dynamic LCA or by applying the "–CO2" or "carbon storage" factor for the amount of carbon stored in the biomass. This ensures a more accurate representation of the product's carbon footprint.

@@ -1,0 +1,5 @@
+```python
+[
+    {"justification": "The item description is empty, so there are no components to match with the reference products.", "reference_product": "", "index": ""}
+]
+```

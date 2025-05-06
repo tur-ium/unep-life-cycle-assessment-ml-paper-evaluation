@@ -1,0 +1,15 @@
+To conduct an LCA for a crop from a regenerative farm, collect the following data:  
+
+**Inputs**: Seeds, water usage, organic fertilizers (compost, manure), biopesticides, and energy sources (fuel, electricity).  
+**Practices**: Tillage frequency, crop rotation cycles, cover cropping, intercropping, and livestock integration.  
+**Soil Health**: Pre- and post-cultivation soil organic carbon levels, microbial activity, and erosion rates.  
+**Emissions**: Greenhouse gases (N₂O from soil, CO₂ from machinery, CH₄ from livestock if integrated).  
+**Outputs**: Crop yield, co-products, and residue management (e.g., composting).  
+**Land Use**: Historical land use, biodiversity indicators (pollinator habitats, species diversity), and habitat preservation efforts.  
+**Water**: Irrigation sources, efficiency metrics, and nutrient runoff/leaching.  
+**Carbon Sequestration**: Quantified soil carbon storage from regenerative practices (e.g., no-till, cover crops).  
+**Transportation**: Distances and methods for input delivery and product distribution.  
+
+Include comparisons to conventional practices to highlight reductions in synthetic inputs, enhanced soil carbon, and biodiversity benefits. Focus on closed-loop systems and indirect impacts (e.g., avoided fertilizer production emissions). Prioritize data that captures regenerative agriculture’s role in carbon drawdown and ecosystem resilience.  
+
+(Word count: 199)

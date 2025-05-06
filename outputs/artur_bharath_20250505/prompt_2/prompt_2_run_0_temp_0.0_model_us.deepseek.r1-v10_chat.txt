@@ -1,0 +1,2 @@
+**Answer: D**  
+**Explanation:** Life Cycle Assessment (LCA) evaluates environmental impacts of *products/systems* across their life stages. Option D focuses on climate change's effect on a *biological species' life cycle*, which is ecological research, not a product/system's environmental footprint. Others (A, B, C) involve product/organization-related environmental impact analysis, aligning with LCA.

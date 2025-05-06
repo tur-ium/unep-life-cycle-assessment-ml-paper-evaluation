@@ -1,0 +1,25 @@
+>
+
+## Step 1: Understand the context of the problem
+The problem is about dealing with multi-functionality in industrial processes according to ISO standards, specifically ISO 14044 and ISO 15804:2012+A2:2019. Multi-functionality refers to processes that produce more than one product or have recycling processes.
+
+## Step 2: Identify the methods for dealing with multi-functionality as per ISO 14044
+ISO 14044 suggests three methods for handling multi-functionality: allocation based on revenue, allocation based on physical relationships, or modifying the system boundary to avoid allocation.
+
+## Step 3: Understand the specific question about the hierarchy according to ISO 15804:2012+A2:2019
+The question asks for the recommended hierarchy for dealing with multi-functionality as per ISO 15804:2012+A2:2019, with the preferred option numbered (1), the second best (2), and the least preferred (3).
+
+## Step 4: Recall the hierarchy for dealing with multi-functionality
+According to the ISO standards related to Life Cycle Assessment (LCA), the preferred method to deal with multi-functionality is to avoid allocation if possible. This can be done by either subdividing the process or expanding the system boundary.
+
+## Step 5: Apply the knowledge to the given options
+The correct hierarchy should start with avoiding allocation as far as possible, which involves either subdividing or expanding the system boundary. If allocation cannot be avoided, the next step is to use a method based on physical properties or other relevant characteristics. Allocation based on economic value (revenue) is generally considered less preferable when a physical relationship is available.
+
+## Step 6: Match the knowledge with the given options
+- Option A: 1. Avoid allocation as far as possible, 2. Allocation on basis of physical properties, 3. Allocation on basis of revenue. This matches the general understanding that avoiding allocation is preferred, followed by physical allocation, and then economic allocation.
+- Option B, C, and D: These do not follow the preferred hierarchy as per the general understanding of LCA principles.
+
+## Step 7: Select the best answer based on the hierarchy
+The hierarchy that starts with avoiding allocation, followed by allocation based on physical properties, and then allocation based on revenue is the most appropriate according to LCA principles.
+
+The best answer is A.

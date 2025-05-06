@@ -1,0 +1,26 @@
+## Step 1: Understand the concept of multi-functionality in industrial processes
+Multi-functionality in industrial processes refers to situations where more than one product is produced, or there are recycling processes involved, making it necessary to allocate environmental impacts appropriately.
+
+## 2: Identify the methods for dealing with multi-functionality according to ISO 14044
+The three methods mentioned for dealing with multi-functionality are: allocation on the basis of revenue, allocation on the basis of physical relationships, and modifying the system boundary to avoid allocation.
+
+## 3: Recall the recommended hierarchy for dealing with multi-functionality
+According to ISO 15804:2012+A2:2019, the preferred method for dealing with multi-functionality is to avoid allocation as far as possible by adjusting the system boundaries. This implies that the hierarchy prioritizes avoiding allocation.
+
+## 4: Determine the correct hierarchy
+The correct hierarchy, as per the guidelines for dealing with multi-functionality, should prioritize avoiding allocation, then consider physical properties, and finally revenue. This means the correct order is: 
+1. Avoid allocation as far as possible (by subdividing or expanding the system boundary),
+2. Allocation on the basis of physical properties,
+3. Allocation on the basis of revenue.
+
+## 5: Match the hierarchy with the given options
+Based on the understanding from Step 4, the correct hierarchy is:
+1. Avoid allocation as far as possible,
+2. Allocation on basis of physical properties,
+3. Allocation on basis of revenue.
+
+## 6: Select the correct answer
+Comparing the hierarchy from Step 5 with the provided options:
+- A: 1. Avoid allocation as far as possible, 2. Allocation on basis of physical properties, 3. Allocation on basis of revenue matches our determined hierarchy.
+
+The best answer is A.

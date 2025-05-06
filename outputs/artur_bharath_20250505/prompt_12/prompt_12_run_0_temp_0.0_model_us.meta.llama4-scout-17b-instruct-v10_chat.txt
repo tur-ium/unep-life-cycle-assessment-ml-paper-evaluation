@@ -1,0 +1,20 @@
+## Step assistant<|header_end|>
+
+While ReCiPe 2016 and CMLCA (not CML-IA, which might be a typo) are both widely used life cycle impact assessment (LCIA) methods, they are primarily designed for environmental life cycle assessment (ELCA) rather than social life cycle assessment (SLCA).
+
+ReCiPe 2016, developed by Huijbregts et al. (2016), is an LCIA method that provides characterization factors for assessing environmental impacts, such as climate change, resource depletion, and human health effects. Similarly, CMLCA, developed by the Centrum voor Milieukunde (CML), is an LCIA method that focuses on environmental impacts.
+
+Social life cycle assessment (SLCA) is a method that evaluates the social impacts of a product or system throughout its life cycle, including aspects like labor rights, human rights, and community impacts. The social impacts assessed in SLCA are often distinct from the environmental impacts evaluated in ELCA.
+
+The reason you cannot directly use ReCiPe 2016 or CMLCA for SLCA is that:
+
+1. **Impact categories**: These methods are designed to assess environmental impacts, not social impacts. They do not have characterization factors or indicators that can capture social aspects like labor conditions, fair wages, or community development.
+2. **Methodological framework**: ELCA and SLCA have different methodological frameworks, data requirements, and impact assessment approaches. SLCA requires a more nuanced and qualitative approach to assess social impacts, which is not directly compatible with the quantitative, indicator-based approach used in ELCA.
+
+That being said, there are LCIA methods specifically designed for SLCA, such as:
+
+1. **UNEP/SETAC Guidelines for Social Life Cycle Assessment** (2010): These guidelines provide a framework for SLCA and offer a set of indicators and methods for assessing social impacts.
+2. **Social Hotspots Database (SHDB)**: This is a database that provides social impact indicators and can be used in conjunction with life cycle assessment (LCA) software.
+3. **Impact assessment methods for social LCA**: Researchers have proposed various impact assessment methods for SLCA, such as the **Social Impact Assessment (SIA) method** or the **Life Cycle Social Impact Assessment (LCSIA) method**.
+
+If you're interested in conducting a social life cycle assessment, I recommend exploring these resources and methods specifically designed for SLCA.

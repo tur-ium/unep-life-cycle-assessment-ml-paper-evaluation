@@ -1,0 +1,14 @@
+# Multi-Output Allocation Method for Slaughter Process
+
+For a slaughter process, economic allocation is typically the most appropriate multi-output allocation method. This approach distributes environmental impacts and resource use among multiple co-products (meat, hides, offal, etc.) based on their relative economic value.
+
+Economic allocation is preferred for slaughter processes because:
+
+1. It reflects the primary driver of the production system (economic value)
+2. It aligns with the reality that the main purpose of animal production is to generate economically valuable products
+3. It provides a stable allocation basis compared to physical properties, as market values tend to be more consistent than mass or energy content for slaughter co-products
+4. It appropriately assigns lower impacts to by-products with lower economic value
+
+While mass-based allocation could be used, it would inappropriately assign equal importance to high-value cuts and low-value by-products. System expansion (substitution) is often impractical due to the difficulty in identifying suitable substitutes for all slaughter co-products.
+
+Economic allocation ensures that environmental burdens are distributed in proportion to the economic motivation driving the production system.

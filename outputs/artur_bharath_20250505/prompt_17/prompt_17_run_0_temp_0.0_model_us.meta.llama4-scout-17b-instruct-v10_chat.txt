@@ -1,0 +1,4 @@
+ 
+[
+{'justification': 'The item description is empty, no match found.', 'reference_product': '', 'index': ''}
+]
