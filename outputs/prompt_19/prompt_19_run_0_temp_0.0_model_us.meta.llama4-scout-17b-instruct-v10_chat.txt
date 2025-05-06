@@ -1,7 +1,0 @@
-In a slaughter process, the multi-output allocation method of 'by-products allocation' or ' joint cost allocation'  should be used. 
-
-This method is suitable for the slaughter process because multiple products, such as meat, hides, bones, and offal, are generated from a single process. The by-products allocation method involves allocating joint costs to the various products based on their relative sales value or market price. 
-
-The reason for using this method is that it allows for a more accurate allocation of costs to each product, taking into account their relative economic value. This approach also helps to ensure that the costs of the slaughter process are properly matched with the revenues generated from the sale of each product.
-
-By using the by-products allocation method, the company can determine the profitability of each product and make informed decisions about pricing, production levels, and resource allocation. Additionally, this method is consistent with generally accepted accounting principles (GAAP) and provides a transparent and auditable way to allocate joint costs in a slaughter process.

@@ -32,4 +32,4 @@ def combine_sqlite_databases(db1_path, db2_path, output_db_path,table_name):
     conn_output.close()
 
 if __name__ == '__main__':
-    combine_sqlite_databases('records_artur_20250505.db', 'records_bedrock.db', 'records_artur_bharath.db', table_name='responses')
+    combine_sqlite_databases('records_artur_bharath.db', 'records_cajetan.db', 'records_may_all.db', table_name='responses')

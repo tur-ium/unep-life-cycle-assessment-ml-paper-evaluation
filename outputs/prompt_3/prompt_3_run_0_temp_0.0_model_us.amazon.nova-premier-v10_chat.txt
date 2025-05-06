@@ -1,7 +1,0 @@
-C: What is the impact of using a new synthesis route for a feedstock chemical on the carbon footprint of a plastic sheet?
-
-Life cycle assessment (LCA) as defined in the ISO 14044 standard is a technique used to assess the environmental impacts associated with all the stages of a product's life, from raw material extraction through materials processing, manufacture, distribution, use, repair and maintenance, and disposal or recycling. 
-
-Option C specifically asks about the environmental impact (carbon footprint) of a new synthesis route for a feedstock chemical used in making a plastic sheet. This question aligns perfectly with LCA, as it seeks to evaluate the environmental consequences across different stages of the product's life cycle.
-
-Option A is more about policy comparison rather than a product life cycle. Option B focuses on medical outcomes rather than environmental impacts. Option D is about biological life cycles and pest control, not product environmental assessment. Therefore, C is the best fit for an LCA approach.

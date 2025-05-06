@@ -1,6 +1,0 @@
-The correct answer is B.
-
-According to the ISO 14044 standard, the addresses of upstream suppliers (B) are not a key requirement that must be specified in an ISO-compliant Life Cycle Assessment (LCA) study. The other options are key requirements: 
-- The functional unit of the reference flow (A) defines the basis for comparison.
-- Allocation procedures (C) are needed when multiple products share a process.
-- The type of critical review (D) ensures the study's quality and credibility. <|eot_id|>

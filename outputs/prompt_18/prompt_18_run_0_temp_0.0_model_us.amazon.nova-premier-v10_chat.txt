@@ -1,9 +1,0 @@
-| Product/Component | Producing Process | Average Weight (g) | Emissions to Air (g CO₂e) | Emissions to Water (g) | Emissions to Soil (g) | Estimated Energy Use (MJ) | Estimated Water Use (L) |
-|-------------------|-------------------|--------------------|--------------------------|-----------------------|-----------------------|--------------------------|------------------------|
-| Handle            | Injection molding | 10 ± 0.5           | 50 ± 5                   | 0.1 ± 0.01            | 0.05 ± 0.005          | 0.2 ± 0.02              | 0.5 ± 0.05              |
-| Bristles          | Extrusion         | 2 ± 0.1            | 20 ± 2                   | 0.05 ± 0.005          | 0.02 ± 0.002          | 0.1 ± 0.01              | 0.2 ± 0.02              |
-| Packaging         | Thermoforming     | 5 ± 0.3            | 15 ± 1.5                 | 0.02 ± 0.002          | 0.01 ± 0.001          | 0.05 ± 0.005            | 0.1 ± 0.01              |
-
-This BoM details the toothbrush's components, their production processes, and environmental impacts, including weight, emissions, and resource use. Data uncertainties reflect variability in manufacturing.
-
-(Sources: Civancik-Uslu et al., 2019; Simon et al., 2016)

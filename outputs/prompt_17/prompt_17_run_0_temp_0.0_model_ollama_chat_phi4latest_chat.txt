@@ -1,9 +1,0 @@
-```python
-[
-    {
-        "justification": "The item description is empty, so no specific components can be identified. Therefore, no reference product matches the criteria based on the given item description.",
-        "reference_product": "",
-        "index": ""
-    }
-]
-```

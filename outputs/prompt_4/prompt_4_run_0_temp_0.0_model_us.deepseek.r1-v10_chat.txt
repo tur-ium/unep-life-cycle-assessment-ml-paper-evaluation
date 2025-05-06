@@ -1,3 +1,0 @@
-B. The addresses of upstream suppliers  
-
-**Explanation**: ISO 14044 requires defining the functional unit (A), allocation procedures (C), and critical review type (D). Supplier addresses (B) are not mandated; the focus is on material/energy flows, not geographic specifics.

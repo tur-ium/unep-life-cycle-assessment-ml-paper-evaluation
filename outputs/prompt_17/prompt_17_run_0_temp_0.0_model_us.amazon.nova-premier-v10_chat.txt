@@ -1,3 +1,0 @@
-[
-{{"justification": "", "reference_product": "", "index": ""}}
-]

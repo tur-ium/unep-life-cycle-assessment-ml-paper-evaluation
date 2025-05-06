@@ -1,8 +1,0 @@
-Which of the following is an example of a question that can be best answered using life cycle assessment as defined in the ISO 14044 standard?
-
-Give as answer either A, B, C, or D. Explain briefly (less than 250 words) your choice
-
-- A: Make a comparison of policies for the control of plastic pollution in urban areas of Nigeria
-- B: How does changing the material used for surgical implants affect the quality of life and survival rate of patients?
-- C: What is the impact of using a new synthesis route for a feedstock chemical on the carbon footprint of a plastic sheet?
-- D: What is the typical life cycle of a common aphid, and how does this affect control of aphid populations in commercial crops?

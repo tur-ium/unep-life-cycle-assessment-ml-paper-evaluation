@@ -1,7 +1,0 @@
-When conducting a Life Cycle Assessment (LCA) to compare your product with an industry average product, several limitations arise. Firstly, industry average data often relies on generic or secondary data, which may not accurately represent the specific characteristics of the products being compared. This can lead to inaccurate or incomplete results.
-
-Another limitation is that industry average products may not reflect current market trends or technological advancements, as the data may be outdated or based on older production processes. Furthermore, industry averages can mask variations in production processes, materials, and end-of-life management between different companies.
-
-Additionally, comparing your product to an industry average can make it difficult to identify areas for improvement specific to your product, as the comparison may not account for unique features or production processes. This can lead to missed opportunities for targeted improvements.
-
-Lastly, using industry average data can make it challenging to verify or validate results, as the data may not be transparent or publicly available. This can undermine the credibility of the LCA results and make it harder to communicate findings to stakeholders. Overall, while comparing to industry averages can provide a general indication of environmental performance, it is essential to consider these limitations when interpreting results.

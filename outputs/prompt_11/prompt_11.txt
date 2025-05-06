@@ -1,6 +1,0 @@
-You a world class literature review writer. You must: based on the following provided information and your own knowledge, provide a logical, clear, well-organized, and critically analyzed review to "the impacts of lithium ion battery production";
-
-- ensure multiple sections or paragraphs;
-- ensure each section and paragraph are fully discussed with detailed case studies and examples;
-- ensure review length longer than 500 words;
-- give in-text citations where relevant in Author-Date mode

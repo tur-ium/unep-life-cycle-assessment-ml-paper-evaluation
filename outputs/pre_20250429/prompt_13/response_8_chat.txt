@@ -1,5 +1,0 @@
-```python
-[
-    {"justification": "The item description is not provided, so no components can be matched with the reference products.", "reference_product": "", "index": ""}
-]
-```

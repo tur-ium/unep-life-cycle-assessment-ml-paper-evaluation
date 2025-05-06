@@ -1,6 +1,0 @@
-response_id,prompt_id,prompt_image,image_path,image_path2,#llm_model,#temperature,#date_run,#llm_provider,#prompt_run_by
-11,5,prompt.png,claude_3_haiku_response.png,,claude_3_haiku,0,2025-04-13,duck.ai,artur
-12,5,prompt.png,gpt_o3_mini_response.png,,gpt_o3_mini,0,2025-04-13,duck.ai,artur
-13,5,prompt.png,gpt_o4_mini_response.png,,gpt_o4_mini,0,2025-04-13,duck.ai,artur
-14,5,prompt.png,llama_3.3_70b_response.png,,llama_3.3_70b,0,2025-04-13,duck.ai,artur
-15,5,prompt.png,mistral_small_3_response.png,,mistral_small_3,0,2025-04-13,duck.ai,artur

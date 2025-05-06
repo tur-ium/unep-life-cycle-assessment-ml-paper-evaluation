@@ -1,6 +1,0 @@
-**D**
-
-Life Cycle Assessment (LCA) focuses on the environmental impacts of a *product or service* throughout its entire life cycle. While climate change (driven by anthropogenic causes) certainly *impacts* moth populations, analyzing the disruption to those populations directly isn't an LCA question. LCA assesses impacts *from* a system *to* the environment, not the impacts *on* a natural population as a primary focus. Options A, B, and C all relate to assessing the environmental burdens of products/services.
-
-
-

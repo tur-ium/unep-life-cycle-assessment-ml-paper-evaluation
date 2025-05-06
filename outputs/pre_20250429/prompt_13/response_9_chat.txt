@@ -1,9 +1,0 @@
-```python
-[
-    {"justification": "The item description contains the term 'maize grain', which is an exact match for the reference product.", "reference_product": "maize grain", "index": 7},
-    {"justification": "The item description contains the term 'maize grain', which is an exact match for the reference product.", "reference_product": "maize grain, organic", "index": 4},
-    {"justification": "The item description contains the term 'maize grain', which is an exact match for the reference product.", "reference_product": "maize grain, feed", "index": 9},
-    {"justification": "The item description contains the term 'maize grain', which is an exact match for the reference product.", "reference_product": "maize grain, feed, organic", "index": 15},
-    {"justification": "The item description contains the term 'maize seed', which is an exact match for the reference product.", "reference_product": "maize seed, at farm", "index": 11}
-]
-```
