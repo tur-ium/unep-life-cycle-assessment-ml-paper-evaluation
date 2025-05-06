@@ -1,6 +1,32 @@
 import sqlite3
 import pandas as pd
 
+import sqlite3
+from datetime import datetime
+
+def remove_duplicates(database_path):
+    # Connect to the SQLite database
+    conn = sqlite3.connect(database_path)
+    cursor = conn.cursor()
+
+    # Step 1: Identify duplicate rows and keep the latest one based on execution_datestamp
+    cursor.execute('''
+        DELETE FROM responses
+        WHERE id NOT IN (
+            SELECT id FROM (
+                SELECT id,model_name,prompt_id
+                FROM responses
+                ORDER BY model_name, prompt_id, execution_datestamp DESC
+            ) AS temp
+            GROUP BY model_name, prompt_id
+        )
+    ''')
+
+    # Commit the changes and close the connection
+    conn.commit()
+    conn.close()
+
+
 def combine_sqlite_databases(db1_path, db2_path, output_db_path,table_name):
     # Connect to the first database
     conn1 = sqlite3.connect(db1_path)
@@ -25,6 +51,7 @@ def combine_sqlite_databases(db1_path, db2_path, output_db_path,table_name):
     # Connect to the output database
     conn_output = sqlite3.connect(output_db_path)
 
+    # Drop duplicates
     # Write the combined dataframe to the output database
     combined_df.to_sql(table_name, conn_output, if_exists='replace', index=False)
 
@@ -32,4 +59,6 @@ def combine_sqlite_databases(db1_path, db2_path, output_db_path,table_name):
     conn_output.close()
 
 if __name__ == '__main__':
-    combine_sqlite_databases('records_artur_bharath.db', 'records_cajetan.db', 'records_may_all.db', table_name='responses')
+    output_db_path = 'records_may_all.db'
+    # combine_sqlite_databases('records_artur_bharath.db', 'records_cajetan.db', output_db_path, table_name='responses')
+    remove_duplicates(output_db_path)
