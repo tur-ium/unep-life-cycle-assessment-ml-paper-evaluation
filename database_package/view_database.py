@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 
 # Connect to the database
-conn = sqlite3.connect("records.db")
+conn = sqlite3.connect("records_cajetan.db")
 
 # Display database tables
 cursor = conn.cursor()
