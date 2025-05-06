@@ -1,0 +1,45 @@
+### Recommendation for Life Cycle Assessment Methodology
+
+#### 1. Pilot-Scale Demonstration Phase
+
+**Goal and Scope:**
+The primary goal is to understand the environmental impacts of hydrogen production at a small scale, focusing on identifying potential improvements before scaling up. The scope should include direct emissions, energy inputs, and resource use specific to the pilot setup.
+
+**Methodology Choice: Attributional LCA (ALCA)**
+- **Justification:** At this stage, the focus is on understanding the current performance of the technology without considering broader market or system changes. ALCA provides a snapshot of the environmental impacts associated with the hydrogen production process as it currently operates.
+- **Stakeholder Interests:** Stakeholders are likely interested in technical feasibility and immediate environmental benefits, which ALCA can effectively address by providing detailed insights into specific processes.
+
+**Data Collection:**
+Collect data on energy consumption, emissions, and resource use directly from the pilot operations. Use existing databases for background processes to ensure consistency.
+
+#### 2. Large-Scale Commercial Deployment in a Renewable-Dominated Grid
+
+**Goal and Scope:**
+The goal is to evaluate the broader environmental impacts of integrating hydrogen production into a renewable-dominated grid, focusing on long-term sustainability and resource efficiency.
+
+**Methodology Choice: Consequential LCA (CLCA)**
+- **Justification:** CLCA is suitable for assessing the potential market and system-wide effects of scaling up hydrogen production. It considers how increased demand for renewables might affect their supply chains and overall environmental impacts.
+- **Stakeholder Interests:** Stakeholders, including policymakers and investors, are interested in understanding the broader implications on resource use and emissions reductions, which CLCA can provide by modeling potential changes in the energy system.
+
+**Data Collection:**
+Gather data on renewable energy availability, grid integration scenarios, and potential shifts in energy markets. Use scenario analysis to explore different deployment scales and their impacts.
+
+#### 3. Large-Scale Deployment in a Fossil-Based Grid
+
+**Goal and Scope:**
+The goal is to assess the impact of hydrogen production on fossil resource use and emissions within a predominantly fossil-based grid, aiming to identify pathways for reducing reliance on fossil fuels.
+
+**Methodology Choice: Consequential LCA (CLCA)**
+- **Justification:** CLCA is appropriate here as it can model how increased hydrogen production might influence fossil fuel markets, potentially leading to changes in resource use and emissions.
+- **Stakeholder Interests:** Stakeholders are likely concerned with the transition to cleaner energy sources and reducing greenhouse gas emissions. CLCA helps evaluate how hydrogen integration could drive shifts away from fossil fuels.
+
+**Data Collection:**
+Collect data on current grid composition, potential for renewable integration, and market dynamics of fossil fuels. Use dynamic modeling to assess long-term impacts on resource scarcity and emissions.
+
+### Conclusion
+
+Both ALCA and CLCA offer valuable insights depending on the scenario. ALCA is ideal for understanding specific process impacts at a pilot scale, while CLCA provides a broader perspective necessary for evaluating large-scale deployments in different grid contexts. By aligning the methodology with stakeholder interests and potential consequences, the energy company can make informed decisions about hydrogen production's environmental impacts.
+
+**Citations:**
+- Heijungs, R., & Suh, S. (2002). Life Cycle Assessment: Quantitative Approaches to Sustainability.
+- Weidema, B. P. (ed.). (2013). The International Reference Life Cycle Data System (ILCD) Handbook – General Guide for Life Cycle Assessment – Detailed Guidance.

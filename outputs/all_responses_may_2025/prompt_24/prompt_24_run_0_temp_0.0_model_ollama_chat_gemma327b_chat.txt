@@ -1,0 +1,28 @@
+Okay, here's a breakdown of data needed for an LCA of a crop from a regenerative farm, focusing on key differences from conventional systems:
+
+**Farm-Level (Crucial for Regen Ag):**
+
+*   **Inputs:** Seed type/source, compost/manure amounts & origin, cover crop seed, biological pest control, minimal synthetic inputs (if any - quantify!).
+*   **Field Operations:** Tillage type/frequency (key!), planting, harvesting methods, irrigation (source & amount).
+*   **Soil Data:** Baseline & ongoing soil organic carbon (SOC), soil health metrics (biological activity, water infiltration). *This is huge for regen ag benefits!*
+*   **Yield:** Accurate crop yield per area.
+*   **GHG Emissions:** N2O emissions (from soil - ideally measured, or modeled), fuel use for machinery.
+*   **Energy Use:** Electricity for irrigation/facilities.
+
+**Upstream (Standard LCA):**
+
+*   Production of all inputs (fertilizers, seeds, etc.).
+*   Transportation of inputs *to* the farm.
+
+**Downstream (Standard LCA):**
+
+*   Transportation of crop *from* farm.
+*   Processing, packaging, distribution.
+*   End-of-life (waste/disposal).
+
+
+
+**Important:** Data quality is vital. Prioritize primary data (direct from the farm) whenever possible. Focus on changes in SOC as a key impact category for regenerative systems.
+
+
+

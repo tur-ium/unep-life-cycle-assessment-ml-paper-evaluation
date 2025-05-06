@@ -1,0 +1,15 @@
+In Life Cycle Assessment (LCA) studies involving agricultural products like oranges, dealing with carbon stored in trees is crucial due to its impact on greenhouse gas (GHG) accounting. Here's how you should approach it:
+
+1. **System Boundary Definition**: Clearly define the system boundaries of your LCA study. Decide whether to include or exclude biogenic carbon storage and release processes. This decision will depend on the goal and scope of your study.
+
+2. **Biogenic Carbon Accounting**: If including biogenic carbon, account for both the carbon sequestered in trees during growth and the carbon released upon harvest and decomposition. This approach aligns with the principle that biogenic emissions are considered neutral over a full life cycle (i.e., CO2 absorbed during growth offsets CO2 released when the product is consumed or decomposes).
+
+3. **Temporal Considerations**: Consider the time frame of your study. If focusing on short-term impacts, you might emphasize immediate carbon fluxes. For long-term assessments, consider how changes in land use and forest management practices affect carbon storage over decades.
+
+4. **Data Collection**: Gather data on tree growth rates, biomass accumulation, and typical harvest cycles for orange trees. This information is essential to estimate the amount of carbon stored and released accurately.
+
+5. **Impact Assessment Methodology**: Choose an LCA impact assessment method that appropriately handles biogenic carbon. Some methods, like ReCiPe or IPCC guidelines, provide specific recommendations on accounting for biogenic carbon.
+
+6. **Sensitivity Analysis**: Conduct sensitivity analyses to understand how variations in assumptions about carbon storage and release affect your results. This can help identify key uncertainties and improve the robustness of your conclusions.
+
+By carefully considering these aspects, you ensure that your LCA study accurately reflects the environmental impacts associated with carbon dynamics in orange production.

@@ -1,0 +1,16 @@
+Okay, I'm ready to process the bill of materials items and match them to the provided lookup strings.  I'll provide the output in the requested markdown table format.
+
+Here's the breakdown of how I'll approach this:
+
+1.  **Identify the product name:** Extract the core product name from the bill of materials item.
+2.  **Determine the region:** If a region is explicitly mentioned in the bill of materials item, use it. Otherwise, default to 'GLO' or 'RoW' if appropriate.
+3.  **Identify the activity:** Determine the manufacturing activity associated with the item.
+4.  **Construct the lookup string:** Combine the product name, region, activity, and the suffix "Cut-off, U" to create the lookup string.
+5.  **Match against the database:** Compare the constructed lookup string against the provided list of models.
+6.  **Return the best match:** If a match is found, return the matching lookup string and an explanation. If no match is found, return "null" and an explanation.
+
+Now, let's apply this to the examples and then I'll be ready for a larger list.
+
+**Example 1: 'raw bauxite ore'**
+
+| best\_lookup\_string                               | explanation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

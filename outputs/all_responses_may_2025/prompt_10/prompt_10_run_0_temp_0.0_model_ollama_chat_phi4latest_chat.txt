@@ -1,0 +1,46 @@
+### Goal Definition
+
+The goal of this life cycle assessment (LCA) is to evaluate the environmental impacts associated with three potential land-use scenarios in a small rural community: converting agricultural land into a solar farm, maintaining traditional agriculture, and implementing an agrivoltaic system that combines both solar energy production and agriculture. The LCA aims to provide comprehensive data on greenhouse gas emissions, resource use, and other relevant environmental indicators for each scenario. This information will support the community in making an informed decision about which pathway aligns best with their environmental, economic, and social goals.
+
+### Scope Definition
+
+#### Functional Unit
+The functional unit for this assessment is defined as "the environmental impact per hectare of land over a 25-year period." This time frame allows for capturing both short-term and long-term impacts associated with each scenario.
+
+#### System Boundaries
+1. **Solar Farm Scenario:**
+   - Land conversion from agriculture to solar panels.
+   - Manufacturing, transportation, installation, operation, maintenance, and decommissioning of solar panels.
+   - Energy production and grid integration.
+
+2. **Traditional Agriculture Scenario:**
+   - Current agricultural practices including crop cultivation or livestock rearing.
+   - Inputs such as fertilizers, pesticides, water usage, and machinery.
+   - Harvesting, processing, transportation, and waste management.
+
+3. **Agrivoltaic System Scenario:**
+   - Installation of solar panels over agricultural land.
+   - Combined energy production and agricultural activities.
+   - Shared infrastructure for both solar and agriculture operations.
+   - Maintenance and operational considerations for dual-use systems.
+
+#### Impact Categories
+- Greenhouse gas emissions (CO2, CH4, N2O).
+- Energy use and efficiency.
+- Water consumption and quality impacts.
+- Land use changes and biodiversity effects.
+- Economic implications such as job creation and tax revenue potential.
+
+#### Data Requirements
+- Local data on agricultural practices and yields.
+- Specifications of solar panel technology to be used.
+- Information on agrivoltaic system designs and their performance metrics.
+- Socio-economic data relevant to the community's priorities (e.g., employment rates, economic benefits).
+
+### Justification
+
+The goal is designed to provide a balanced view that considers environmental impacts while acknowledging the socio-economic dimensions important to the community. By focusing on greenhouse gas emissions and other key impact categories, the LCA aligns with the developer’s emphasis on climate change mitigation.
+
+The scope includes three distinct scenarios to capture the full range of options available to the community. The functional unit is chosen to reflect both spatial (per hectare) and temporal (25 years) dimensions, ensuring that long-term impacts are considered. System boundaries are defined to encompass all relevant stages from production to end-of-life for each scenario, providing a comprehensive assessment.
+
+By including economic implications in the impact categories, the LCA addresses community concerns about job creation and tax revenue, making it more relevant and actionable for decision-makers. This holistic approach ensures that the LCA results can be used effectively to guide discussions and decisions within the community.

@@ -1,0 +1,31 @@
+## Recommendation: LCA Methodology for Hydrogen Production Assessment
+
+The energy company faces a crucial methodological choice: attributional (ALCA) vs. consequential (CLCA) Life Cycle Assessment. Given the goal of assessing *consequential* impacts of a novel process, **CLCA is the preferred approach**, though a phased implementation leveraging ALCA initially is recommended.
+
+**Phase 1: Pilot-Scale Demonstration (ALCA focused)**
+
+* **Goal & Scope:** Primarily focused on process optimization and identifying ‘hotspots’. Stakeholder interest is internal – understanding technical performance and initial environmental burdens.
+* **Methodology:** ALCA is sufficient. Document inputs/outputs *as they are* during the pilot. Focus on data accuracy for direct emissions.
+* **Data Collection:** Primary data collection is vital. Focus on electricity use, water consumption, and catalyst/membrane materials.
+* **Rationale:** At this stage, market effects are minimal. ALCA provides a baseline for process improvement before scaling.
+
+**Phase 2 & 3: Large-Scale Deployment (CLCA focused)**
+
+For both renewable & fossil-dominated grid scenarios, a **CLCA** is essential. The question focuses on *changes* caused by the hydrogen production – specifically, impacts on resource use and global warming *due to* the introduction of this new production pathway. 
+
+* **Goal & Scope:** Assess the system-wide consequences of hydrogen production on electricity generation mix, fossil fuel extraction, mineral resource depletion, and GHG emissions. Stakeholders include grid operators, policymakers, and investors.
+* **Methodology:** CLCA requires modelling the *marginal* changes in the system. This means predicting how electricity generation will shift *because* of the hydrogen demand.  For the renewable grid, model the impact on renewable energy expansion. For the fossil grid, model the change in fossil fuel extraction and power plant operation.  Include rebound effects (e.g., increased electricity demand due to cheaper storage).
+* **Data Collection:** Requires system-level data: electricity grid mix, marginal electricity generation technologies, resource availability, and extraction rates.  Use market modelling to predict system changes.
+
+**Justification:** CLCA acknowledges that hydrogen production isn’t isolated. It considers the broader system impacts, providing a more realistic assessment of sustainability.  Attributional LCA, while useful for benchmarking, would only show the direct emissions of the process, masking crucial consequences (Ekins, 2011).  CLCA allows the company to demonstrate genuine environmental benefits (or identify potential drawbacks) to stakeholders, supporting informed decision-making and investment (Brentrup et al., 2010).
+
+
+
+**References:**
+
+Brentrup, F., Hagemöller, O., & Schmidt, J. H. (2010). Life cycle assessment of energy systems—a review. *Renewable and Sustainable Energy Reviews*, *14*(2), 543–556.
+
+Ekins, P. (2011). Attributional versus consequential life cycle assessment: a critical review. *Journal of Industrial Ecology*, *15*(4), 589–601.
+
+
+

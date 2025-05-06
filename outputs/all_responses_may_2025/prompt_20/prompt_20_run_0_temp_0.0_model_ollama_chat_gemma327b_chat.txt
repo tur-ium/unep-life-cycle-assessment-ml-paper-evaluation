@@ -1,0 +1,14 @@
+Storing carbon in orange trees is **crucial** to include in the LCA, but complex. It's a significant carbon sink often *omitted* leading to underestimation of benefits. 
+
+Here's how to deal with it:
+
+* **Include orchard establishment:** Model carbon sequestration during tree growth, factoring in growth rates, lifespan, and planting density.
+* **Annual Biomass Estimation:** Estimate annual biomass increase (wood, leaves, roots) using allometric equations specific to orange trees.
+* **Carbon Fraction & Allocation:** Apply a standard carbon fraction (around 50%) to biomass to calculate annual carbon sequestration. Allocate this sequestration across the functional unit (e.g., 1kg oranges).
+* **Consider Decay/Harvest:** Account for carbon released through pruning, tree mortality, and eventual orchard removal.
+* **Long-Term Storage:** Recognize this is *long-term* carbon storage, contributing to climate change mitigation.
+
+**Why it matters:** Omitting tree carbon storage presents an incomplete picture. Oranges can be *carbon negative* when considering this benefit, making them a more sustainable choice than alternatives. Accurate LCA requires acknowledging this biogenic carbon storage.
+
+
+

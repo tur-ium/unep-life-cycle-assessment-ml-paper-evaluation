@@ -1,0 +1,8 @@
+**B. The addresses of upstream suppliers**
+
+While knowing your supply chain is *important* for data collection, ISO 14044 doesn't require specifying the *addresses* of all upstream suppliers. The standard focuses on the data *quality* and *representativeness* needed, not specific supplier locations. 
+
+A, C, and D *are* all explicitly required elements within the ISO 14044 standard for a compliant LCA study.
+
+
+
