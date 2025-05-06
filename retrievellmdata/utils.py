@@ -51,6 +51,10 @@ def save_text_as_img_markdown(md_text:str,output_path:str|Path,font_family:str="
         pdf.add_font("dejavusans", fname=r"C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\media\fonts\dejavu-sans\DejaVuSans.ttf")
         pdf.add_font("dejavusans",style="B",
                      fname=r"C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\media\fonts\dejavu-sans\DejaVuSans-Bold.ttf")
+        pdf.add_font("dejavusans", style="I",
+                     fname=r"C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\media\fonts\dejavu-sans\DejaVuSans-Oblique.ttf")
+        pdf.add_font("dejavusans", style="BI",
+                     fname=r"C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\media\fonts\dejavu-sans\DejaVuSans-BoldOblique.ttf")
         pdf.set_font("dejavusans", style='', size=font_size)
         pdf.set_text_color(0,0,0)
         pdf.write_html(html,font_family=font_family)
