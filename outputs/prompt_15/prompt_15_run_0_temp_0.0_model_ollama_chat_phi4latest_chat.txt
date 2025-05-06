@@ -1,0 +1,63 @@
+To match items in a bill of materials to the best matching description from the provided list, we need to analyze each item and determine its corresponding lookup string based on the given context. Here's how you can approach this:
+
+1. **Identify the Product Name**: Determine the main product or material described.
+2. **Determine the Region**: Identify if a specific region is mentioned or implied. If not, use 'GLO' for Global or 'RoW' for Rest of the World.
+3. **Identify the Manufacturing Activity**: Match the activity associated with producing the product.
+4. **Construct the Lookup String**: Use the format `<product name> {<region>} | <activity name> | Cut-off, U`.
+
+Let's apply this to some examples:
+
+### Example 1: 'raw bauxite ore'
+- **Product Name**: Bauxite
+- **Region**: Not specified, so use 'GLO'.
+- **Activity**: Bauxite mine operation
+
+**Best Lookup String**: `bauxite {GLO}| bauxite mine operation | Cut-off, U`
+
+### Example 2: 'shelled cashews'
+- **Product Name**: Cashew
+- **Region**: Not specified, so consider both 'IN' and 'RoW'.
+- **Activity**: Cashew production
+
+**Best Lookup String**: `cashew {IN}| cashew production | Cut-off, U` (assuming India is a primary source)
+
+### Example 3: 'citric acid'
+- **Product Name**: Citric Acid
+- **Region**: Not specified, so consider all regions.
+- **Activity**: Production
+
+**Best Lookup String**: `Citric acid {CN}| production | Cut-off, U` (assuming China as a common region for citric acid)
+
+### Example 4: 'energy feed'
+- **Product Name**: Energy Feed
+- **Region**: Not specified, so consider all regions.
+- **Activity**: Citric Acid Production
+
+**Best Lookup String**: `energy feed, gross {CN}| citric acid production | Cut-off, U` (assuming China as a common region)
+
+### Example 5: 'maize starch'
+- **Product Name**: Maize Starch
+- **Region**: Not specified, so consider all regions.
+- **Activity**: Citric Acid Production
+
+**Best Lookup String**: `Maize starch {CN}| citric acid production | Cut-off, U` (assuming China as a common region)
+
+### Example 6: 'protein feed'
+- **Product Name**: Protein Feed
+- **Region**: Not specified, so consider all regions.
+- **Activity**: Citric Acid Production
+
+**Best Lookup String**: `protein feed, 100% crude {CN}| citric acid production | Cut-off, U` (assuming China as a common region)
+
+Here's the tabular format for these examples:
+
+| Best Lookup String                                      | Explanation                                                                 |
+|---------------------------------------------------------|-----------------------------------------------------------------------------|
+| bauxite {GLO}| bauxite mine operation | Cut-off, U                                    | Raw bauxite ore is globally sourced from bauxite mines. |
+| cashew {IN}| cashew production | Cut-off, U                                     | Shelled cashews are primarily produced in India.        |
+| Citric acid {CN}| production | Cut-off, U                                      | Citric acid is commonly produced in China.               |
+| energy feed, gross {CN}| citric acid production | Cut-off, U                  | Energy feed for citric acid production is sourced from China. |
+| Maize starch {CN}| citric acid production | Cut-off, U                   | Maize starch used in citric acid production comes from China. |
+| protein feed, 100% crude {CN}| citric acid production | Cut-off, U    | Protein feed for citric acid production is sourced from China. |
+
+If no suitable match is found, the `Best Lookup String` would be `null`.

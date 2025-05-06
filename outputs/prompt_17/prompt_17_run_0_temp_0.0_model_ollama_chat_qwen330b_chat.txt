@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this problem. The user provided an item description and a list of reference products, but in this case, both are empty. Hmm, that's a bit confusing. Wait, the input section says "Information on item: {}" and "Reference products: {}". So there's no actual data to work with here. 
+
+First, I need to check the instructions again. The user mentioned that if none of the reference products are a match, I should return a single entry with empty strings for reference_product and index. But the instructions also say not to return that entry if there's at least one match. However, in this case, since the reference products list is empty, there can't be any matches.
+
+Wait, the input is empty. So the item description is empty, and the reference products list is empty. That means there's nothing to process. According to the instructions, if there are no reference products, then I should return the entry with empty strings. But the user also said that if there's at least one match, don't return that entry. But here, there are no reference products, so no matches possible.
+
+So the correct output here would be the single entry with empty reference_product and index. But I need to make sure that the code doesn't try to process any data. The example output shows that when there's no match, you return that entry. But in this case, the reference products list is empty, so there's nothing to match. Therefore, the answer should be the list with the empty entry.
+
+But wait, the user's example input had a real item description and reference products. Here, the input is empty. So the code should handle that. The instructions say to return one entry with empty strings if none of the reference products are a match. But in this case, there are no reference products. So it's a bit of a edge case. However, according to the instructions, even if there are no reference products, we should return that entry. So the output should be a list with one dictionary containing empty strings for reference_product and index.
+
+I need to make sure that the output is a Python list of dictionaries. So the final answer would be [ {'justification': '', 'reference_product': '', 'index': ''} ].
+
+But wait, the instructions say: "If none of reference products is a match, return one entry with 'reference_product': '', 'index': ''. DO NOT return this entry once there is at least one match." Since there are no reference products, it's considered that none are a match. Therefore, the output is the empty entry.
+</think>
+
+[{'justification': '', 'reference_product': '', 'index': ''}]

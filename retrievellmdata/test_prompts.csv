@@ -1,0 +1,28 @@
+LCA stage,Task_type,Problem_type,Prompt,Answer,Explanation,Extra remarks
+Interpretation,Fact answering in LCA,Multiple choice question answering,"This question is about materials used to make plates.
+
+Plates are made from ceramics, paper or poly(propene).
+
+(a) Paper plates are biodegradable and recyclable. Which stage of a life cycle assessment (LCA) would contain this information?
+
+Give as answer either A, B, C, or D. Explain briefly (less than 100 words) your choice
+
+- A: Disposal at the end of useful life
+- B: Extracting and processing raw materials
+- C: Manufacturing and packaging
+- D: Use and operation during lifetime",A,Answer: A. The fact that the paper plate is biodegradable and recyclable is most relevant to the end-of-use and disposal stage in the life cycle of the product,
+Goal and scope definition,Goal and scope definition,Long-form text generation,"An energy company plans to assess the consequential life cycle impact of a novel hydrogen production process using electrolysis but faces methodological uncertainty between attributional and consequential life cycle assessment approaches. The energy company would like to find what the quantitative impacts of hydrogen production for use in energy storage in an electricity grid are on fossil resource use, mineral resource scarcity and global warming, compared to a baseline described in each of the three scenarios listed below.
+
+Synthesize a structured recommendation (less than 400 words) guiding the selection of the appropriate goal and scope, as well as data collection methodology for the following scenarios:
+- Pilot-scale demonstration phase.
+- Large-scale commercial deployment in an electricity grid dominated by renewable energy.
+- Large-scale deployment in a grid dominated by fossil-based electricity. 
+
+Clearly justify each methodological choice based on potential consequences and stakeholder interests. Explain how an attributional or consequential life cycle assessment could help answer the question faced by the energy company. Explain your answer, giving citations in author-year format",,,
+Inventory,Filling data gaps,Long-form text generation,"You must conduct an LCA to compare environmental impacts of battery recycling versus battery reuse in energy storage applications. No direct LCI data is publicly available for reuse scenarios, and recycling technologies are rapidly evolving. Outline (in ~400 words) your methodological strategy, explicitly addressing:
+
+- How you handle data uncertainty and technological variability.
+- How you set boundaries and choose an appropriate functional unit.
+- How you justify methodological assumptions to stakeholders unfamiliar with LCA methods
+
+Explain your answer, giving citations in author-year format",,,

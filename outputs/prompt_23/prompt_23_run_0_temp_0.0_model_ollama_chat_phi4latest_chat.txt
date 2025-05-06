@@ -1,0 +1,23 @@
+To determine which emission has a greater impact on climate change between 5 kg of CO₂ and 1 kg of N₂O using the EF (Eco-Indicator 99) 3.1 method, we need to consider their Global Warming Potential (GWP). The GWP is a measure that compares the amount of heat trapped by a certain mass of a greenhouse gas in the atmosphere to the amount of heat trapped by a similar mass of carbon dioxide over a specific period, typically 100 years.
+
+According to the Intergovernmental Panel on Climate Change (IPCC) Fifth Assessment Report:
+
+- The GWP for CO₂ is defined as 1.
+- The GWP for N₂O is approximately 298 over a 100-year time horizon.
+
+This means that 1 kg of N₂O has the same impact on global warming as 298 kg of CO₂ over 100 years.
+
+Now, let's calculate the climate change impact for each emission:
+
+1. **5 kg of CO₂:**
+   - Since the GWP for CO₂ is 1, the impact is simply 5 kg CO₂-equivalent.
+
+2. **1 kg of N₂O:**
+   - Using the GWP of 298, the impact is \(1 \text{ kg} \times 298 = 298 \text{ kg CO}_2\)-equivalent.
+
+Comparing the two:
+
+- 5 kg of CO₂ has an impact equivalent to 5 kg CO₂-equivalent.
+- 1 kg of N₂O has an impact equivalent to 298 kg CO₂-equivalent.
+
+Therefore, 1 kg of N₂O has a significantly greater impact on climate change than 5 kg of CO₂.

@@ -157,7 +157,7 @@ def run_prompt_from_dir(root_input_prompt_dir: str, prompt_id: int, model: str, 
     model_name_part = model.split('/')[-1]
     provider_name = model.split('/')[0] #
     required_api_key = os.getenv(f'{provider_name.upper()}_API_KEY')
-    if required_api_key is None:
+    if required_api_key is None and provider_name.lower() != 'ollama_chat':
         raise ValueError(f'Required api key {required_api_key} is null')
 
     logging.info('Loading prompt from')

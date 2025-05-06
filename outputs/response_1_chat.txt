@@ -1,0 +1,21 @@
+ For the assessment of the novel hydrogen production process using solar electrolysis, it is crucial to adopt a consequential life cycle assessment (LCA) approach in all three scenarios due to its ability to consider the indirect impacts and potential changes in the system caused by the new technology [1]. Here's a structured recommendation for each scenario:
+
+1. Pilot-scale demonstration phase:
+   - Goal: Assess the environmental performance of the pilot-scale demonstration compared to business-as-usual (BAU) scenarios, focusing on identifying potential improvements and hotspots.
+   - Scope: Include all stages of the life cycle, from raw material extraction to end-of-life management, considering both upstream and downstream impacts.
+   - Data collection methodology: Collect data based on actual measurements during the pilot operation, supplemented with literature values for BAU scenarios where necessary.
+
+2. Large-scale commercial deployment in an electricity grid dominated by renewable energy:
+   - Goal: Evaluate the environmental performance of the technology when deployed at a large scale under optimal conditions (renewable energy-dominated grid).
+   - Scope: Include all life cycle stages, considering both upstream and downstream impacts.
+   - Data collection methodology: Collect data from real-world case studies or simulations based on the expected operational conditions of the technology in a renewable energy-dominated grid.
+
+3. Large-scale deployment in a grid dominated by fossil-based electricity:
+   - Goal: Assess the environmental performance of the technology when deployed at a large scale under less favorable conditions (fossil-based electricity grid).
+   - Scope: Include all life cycle stages, considering both upstream and downstream impacts.
+   - Data collection methodology: Collect data from real-world case studies or simulations based on the expected operational conditions of the technology in a fossil-based electricity grid.
+
+Justification for each choice is as follows: The consequential LCA approach allows for the evaluation of potential changes in the system caused by the new technology, which is crucial when assessing novel processes like solar electrolysis [1]. Additionally, considering all life cycle stages ensures a comprehensive understanding of the environmental impacts associated with the process. Lastly, using data from real-world case studies or simulations based on expected operational conditions provides a more accurate representation of the system under investigation.
+
+References:
+[1] Heijungs R., Guinee J. (2015). Life Cycle Assessment: Principles and Practice. 3rd ed. Wiley-Blackwell.

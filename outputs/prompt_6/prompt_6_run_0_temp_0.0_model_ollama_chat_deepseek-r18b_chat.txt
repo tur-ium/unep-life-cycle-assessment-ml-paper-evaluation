@@ -1,0 +1,11 @@
+<think>
+Okay, so I need to figure out what the functional unit is in the context of a product system for life cycle assessment (LCA). Hmm, I remember that LCA involves looking at the environmental impact of products from start to finish, considering things like raw material extraction, production, usage, and disposal.
+
+Wait, the user mentioned "functional unit" specifically. I think functional units are related to how a product functions or is used in a system. Maybe it's about the purpose the product serves? So, for example, if we're talking about a car, its functional unit might be how it's used for transportation.
+
+I also recall that in LCA, you need to define the system boundaries and what you're studying. The functional unit probably helps in defining these boundaries by focusing on the function rather than just the product itself. That makes sense because products can have multiple functions or be part of larger systems.
+
+So, putting it all together, a functional unit in LCA for a product system is likely the specific function or role that the product plays within a broader context. It's about identifying what the product does and how it's used, which helps in assessing its environmental impact effectively.
+</think>
+
+In life cycle assessment (LCA), the functional unit refers to the specific function or role of a product within a system. It defines the purpose or usage of the product, aiding in determining its environmental impact across its lifecycle.
