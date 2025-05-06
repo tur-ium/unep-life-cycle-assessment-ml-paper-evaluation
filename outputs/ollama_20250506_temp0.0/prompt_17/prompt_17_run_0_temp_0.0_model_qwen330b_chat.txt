@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this problem. The user provided an item description and a list of reference products, but in this case, both are empty. Hmm, that's a bit confusing. Wait, the input section says "Information on item: {}" and "Reference products: {}". So there's no actual data to work with here. 
+
+First, I need to check the instructions again. The user mentioned that if none of the reference products are a match, I should return one entry with empty strings for reference_product and index. But the instructions also say not to return that entry if there's at least one match. However, in this case, since the reference products list is empty, there can't be any matches.
+
+Wait, the user might have made a mistake in the input. But according to the given input, the reference products are an empty list. So, there's nothing to process here. The instructions say that if there are no reference products, return the empty entry. But the example output shows that when there are matches, they are listed. But in this case, since there are no reference products, the code should return the default entry with empty strings.
+
+But let me double-check the instructions. The user says: "If none of reference products is a match, return one entry with 'reference_product': '', 'index': ''. DO NOT return this entry once there is at least one match." So if the reference products list is empty, then there are no matches, so we have to return that single entry.
+
+However, the user's input has "Reference products: {}", which might mean an empty list. So the correct output here would be a list with one dictionary containing empty strings for reference_product and index. But according to the example, when there are matches, they are listed. But in this case, there are no reference products, so no matches. Therefore, the output should be the default entry.
+
+But wait, the user's input might not be correctly formatted. Maybe the curly braces are meant to represent a list, but in Python, {} is a dictionary. However, the example input shows that the reference products are a list of dictionaries. So perhaps the input here is incorrect, but as per the given data, the reference products are empty. 
+
+So, following the instructions, the output should be a list with one entry where reference_product and index are empty strings. But the user's example shows that when there are matches, they are listed. But in this case, there are no reference products, so no matches. Therefore, the correct output is the default entry.
+</think>
+
+[{'justification': '', 'reference_product': '', 'index': ''}]

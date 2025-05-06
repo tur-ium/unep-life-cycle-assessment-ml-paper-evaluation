@@ -1,0 +1,11 @@
+<think>
+Okay, the user is asking for a definition of the functional unit in a life cycle assessment (LCA). Let me start by recalling what I know about LCA. The functional unit is a key concept here. It's the basis for comparing different products or systems. But I need to make sure I get the exact definition right.
+
+So, the functional unit is the quantified performance of a product system that serves as a reference for comparing alternatives. It's the unit of measurement that allows for a fair comparison. For example, if you're comparing two types of packaging, the functional unit might be "one liter of liquid packaged." That way, both products are evaluated based on the same function.
+
+Wait, the user wants a short answer, under 100 words. I need to be concise. Let me check if I have all the elements: definition, purpose, example. Also, make sure it's clear that it's the basis for comparison. Avoid jargon but still be precise. Maybe something like: "The functional unit is the quantified performance of a product system, serving as a reference for comparing alternatives in LCA. It defines the scope and ensures consistent evaluation, such as 'one liter of packaged liquid' for packaging comparisons."
+
+Let me count the words. That's 35 words. Maybe add a bit more. "It quantifies the product's intended function, enabling standardized impact assessments and comparisons." Now it's 45 words. Still under 100. That should work. Make sure it's accurate and covers the key points without being too technical.
+</think>
+
+The functional unit is the quantified performance of a product system, serving as a reference for comparing alternatives in life cycle assessment (LCA). It defines the scope and ensures consistent evaluation, such as "one liter of packaged liquid" for packaging comparisons.
