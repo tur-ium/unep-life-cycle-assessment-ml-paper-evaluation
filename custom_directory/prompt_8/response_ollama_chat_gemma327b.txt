@@ -1,0 +1,35 @@
+## LCA Methodology: Battery Reuse vs. Recycling for Energy Storage
+
+This LCA will compare the environmental impacts of extending lithium-ion battery life through *reuse* in second-life energy storage systems (ESS) versus *recycling* at end-of-life. Given the data gaps and dynamic landscape, a robust and transparent methodology is crucial.
+
+**1. Boundary Definition & Functional Unit:**
+
+The system boundary will be “cradle-to-grave”, encompassing raw material extraction, battery manufacturing, transport, use phase (initial application *and* second-life/recycling), and end-of-life processing.  We will exclude impacts from electricity *used* by the ESS, focusing solely on the battery lifecycle itself. The **functional unit** will be *1 kWh of energy storage capacity provided over 10 years*. This allows for a direct comparison, accounting for differing lifespans and degradation rates in both scenarios.  We will model multiple battery chemistries (NMC, LFP) as impacts vary significantly.
+
+**2. Handling Data Uncertainty & Technological Variability:**
+
+Direct LCI data for battery reuse is scarce. We will employ a hybrid approach:
+
+* **Recycling:** Utilize existing, publicly available LCI data for current recycling technologies (e.g., hydrometallurgy, pyrometallurgy) from databases like Ecoinvent (Wernet et al., 2016).  Acknowledging rapid technological advancements, we will conduct a *sensitivity analysis* modelling several emerging recycling technologies (direct recycling, solvent extraction) with varying efficiencies and energy demands.  This will demonstrate the impact of technological change on results.
+* **Reuse:**  We will build a *proxy LCI* for reuse based on modelling the degradation of battery performance over its second life. This will leverage data on State of Health (SOH) decline from literature (e.g., Ellingsen et al., 2014) and expert elicitation to estimate energy consumption for monitoring, reconditioning (if needed), and transport.  A Monte Carlo simulation will be used to account for variability in SOH decline and transport distances.
+* **Uncertainty:**  All data inputs will be accompanied by uncertainty ranges.  Results will be presented with confidence intervals, highlighting the range of potential impacts.
+
+**3. Justification for Stakeholders:**
+
+We will clearly communicate the following to stakeholders:
+
+* **LCA as a comparative tool:** LCA doesn’t provide absolute “truth”, but rather a structured comparison of environmental burdens.
+* **Assumptions are necessary:**  Acknowledging data gaps, we will transparently document all assumptions (e.g., SOH modelling, transport distances) and justify them based on best available evidence.
+* **Sensitivity analysis is key:**  Demonstrating the impact of key assumptions and technological variability through sensitivity analysis builds confidence in the robustness of the results.
+* **Focus on relative differences:**  We will emphasize the *relative* environmental benefits or drawbacks of reuse versus recycling, rather than absolute impact values.
+
+
+
+**References:**
+
+Ellingsen, L. A. W., Hung, D., & Singh, R. (2014). Second life of lithium-ion batteries for grid energy storage. *Renewable and Sustainable Energy Reviews, 32*, 194–204.
+
+Wernet, M. P., et al. (2016). The Ecoinvent database version 3.6. *Environmental Science & Technology, 50*(17), 9373–9375.
+
+
+
