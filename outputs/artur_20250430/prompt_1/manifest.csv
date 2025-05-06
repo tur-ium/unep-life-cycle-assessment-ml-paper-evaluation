@@ -1,0 +1,4 @@
+response_id,prompt_id,prompt_image,response_image_1,response_image_2,#llm_model,#temperature,#date_run,#llm_provider,#prompt_run_by
+2,1,prompt.png,prompt_1_run_0_temp_0.0_model_gemini-2.0-flash-lite-001_chat.txt,,gemini-2.0-flash-lite-001,0.0,2025-04-30 11:02:56,gemini,Artur
+8,1,prompt.png,prompt_1_run_0_temp_0.0_model_gpt-4.1-nano_chat.txt,,gpt-4.1-nano,0.0,2025-04-30 11:21:18,openai,Artur
+3,1,prompt.png,prompt_1_run_0_temp_0.0_model_mistral-large-latest_chat.txt,,mistral-large-latest,0.0,2025-04-30 11:14:23,mistral,Artur
