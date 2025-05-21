@@ -308,7 +308,3 @@ if __name__ == '__main__':
         worksheet.insert_image('K1', str(output_img_path.absolute()))
 
     # TODO: store the comments on citations, and analyse
-    ########################################################
-    # Analyse Q2
-    ########################################################
-    filtered_q2 = combined_final.T2.value_counts()
