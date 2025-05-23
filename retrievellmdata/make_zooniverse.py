@@ -149,7 +149,7 @@ def make_zooniverse_subject_set_per_prompt(db_name: str, root_prompt_dir: str | 
         assert all([isinstance(id, int) for id in skip_prompt_ids])
     zooniverse_output_dir = Path(zooniverse_output_dir) if not isinstance(zooniverse_output_dir,
                                                                           Path) else zooniverse_output_dir
-    zooniverse_output_dir.mkdir(parents=True)
+    zooniverse_output_dir.mkdir(parents=True,exist_ok=True)
 
     warning_rows = []  # List[response_id,prompt_id,reason]
 
@@ -209,7 +209,11 @@ def make_zooniverse_subject_set_per_prompt(db_name: str, root_prompt_dir: str | 
         with open(prompt_txt_filepath, 'r', encoding='utf-8') as f:
             prompt_txt = f.read()
             prompt_txt = f'## Question:\n\n {prompt_txt}'
-            save_text_as_img_markdown(prompt_txt, output_path=zooniverse_output_dir / prompt_image_filename,
+            prompt_output_filepath = zooniverse_output_dir / f'prompt_{prompt_id}' / prompt_image_filename
+            if not prompt_output_filepath.parent.exists():
+                prompt_output_filepath.parent.mkdir(exist_ok=True)
+
+            save_text_as_img_markdown(prompt_txt, output_path=prompt_output_filepath,
                                       poppler_path=poppler_path)
 
         response_filename2 = ''
@@ -220,8 +224,6 @@ def make_zooniverse_subject_set_per_prompt(db_name: str, root_prompt_dir: str | 
             md_text = f.read()
             base_response_filename = file_name.replace(file.suffix, ".png")
             output_response_txt_path = zooniverse_output_dir / f'prompt_{prompt_id}' / base_response_filename
-            if not output_response_txt_path.parent.exists():
-                output_response_txt_path.parent.mkdir(exist_ok=True)
             rendered_response_filenames = save_text_as_img_markdown(md_text,
                                                                     output_path=output_response_txt_path,
                                                                     poppler_path=poppler_path)
@@ -231,19 +233,19 @@ def make_zooniverse_subject_set_per_prompt(db_name: str, root_prompt_dir: str | 
                 warning_rows.append([response_id, prompt_id, warning_msg])
                 continue
             if len(rendered_response_filenames) > 0:
-                response_filename1 = rendered_response_filenames[0]
+                response_filename1 = rendered_response_filenames[0].name
             if len(rendered_response_filenames) > 1:
-                response_filename2 = rendered_response_filenames[1]
+                response_filename2 = rendered_response_filenames[1].name
             if len(rendered_response_filenames) > 2:
-                response_filename2 = rendered_response_filenames[2]
+                response_filename2 = rendered_response_filenames[2].name
             if len(rendered_response_filenames) > 3:
-                response_filename2 = rendered_response_filenames[3]
+                response_filename2 = rendered_response_filenames[3].name
             if len(rendered_response_filenames) > 4:
-                response_filename2 = rendered_response_filenames[4]
+                response_filename2 = rendered_response_filenames[4].name
             else:
-                response_filename1 = rendered_response_filenames[0]
+                response_filename1 = rendered_response_filenames[0].name
         if prompt_id not in rows_in_manifest:
-            rows_in_manifest[prompt_id] = [rows_in_manifest]
+            rows_in_manifest[prompt_id] = [manifest_header]
         rows_in_manifest[prompt_id].append(
             [response_id, prompt_id, prompt_image_filename, response_filename1, response_filename2, response_filename3,
              response_filename4, response_filename5, model_name, temperature, execution_date, llm_provider,
@@ -278,11 +280,11 @@ if __name__ == '__main__':
     logger.addHandler(console_handler)
     logger.addHandler(file_handler)
 
-    input_root_dir = r'C:\Users\Artur\Documents\Projects (local)\GLAD AI\llm testing\Zooniverse project\outputs\artur_bharath'
-    output_dir = '../outputs/artur_bharath'
+    input_root_dir = r'../outputs/all_responses_may_2025'
+    output_dir = '../outputs/zooniverse_subject_set_may_all_v3'
     dotenv.load_dotenv('../.env')
     poppler_path = os.getenv('POPPLER_PATH')
     skip_prompt_ids = [
         17, # This prompt is too long to render in one page, therefore not including, as confusing to a reviewer
     ]
-    make_zooniverse_subject_set_per_prompt(r"../records_artur_bharath.db",root_prompt_dir=input_root_dir, zooniverse_output_dir=output_dir,skip_prompt_ids=[17])
+    make_zooniverse_subject_set_per_prompt(r"../records_may_all.db",root_prompt_dir=input_root_dir, zooniverse_output_dir=output_dir,skip_prompt_ids=[17])

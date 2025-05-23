@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/survey_responses" />
     </content>
     <orderEntry type="jdk" jdkName="uv (Zooniverse project)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
