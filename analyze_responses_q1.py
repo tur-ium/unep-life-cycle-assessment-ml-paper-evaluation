@@ -12,6 +12,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from analysis_helpers import get_count_completed_tasks, explode_tasks
+
 # PARAMETERS
 classifications_csv_path = 'survey_responses/may-survey-classifications_2025-05-19.csv'
 output_dir = 'survey_responses/analysis/may'
@@ -110,25 +112,6 @@ def analayse_q2():
     """
     pass
 
-def get_count_completed_tasks(tasks):
-    try:
-        tasks_list = json.loads(tasks)
-        count_completed_tasks = sum(1 for task in tasks_list if task['value'] is not None and task['value'] != '')
-        highest_completed_task_number = 0
-        for i in reversed(range(len(tasks_list))):
-            if tasks_list[i]['value'] is not None and tasks_list[i]['value'] != '':
-                highest_completed_task_number = i
-                break
-        return pd.Series([count_completed_tasks, highest_completed_task_number])
-    except (json.JSONDecodeError, TypeError):
-        return pd.Series([None,None])
-
-def explode_tasks(tasks):
-    try:
-        tasks_list = json.loads(tasks)
-        return pd.DataFrame(tasks_list)
-    except (json.JSONDecodeError, TypeError):
-        return pd.DataFrame()
 
 # Function to count the length of the list in the 'T1' column
 def count_citations_task_1(value):
