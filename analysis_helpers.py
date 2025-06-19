@@ -6,6 +6,24 @@ from typing import Optional, List
 
 import pandas as pd
 
+model_name_abbreviations = {
+    'gemini/gemini-2.0-flash-001': 'gemini-2.0-flash',
+    'openai/gpt-4.1': 'openai-gpt-4.1',
+    'us.meta.llama4-scout-17b-instruct-v1:0': 'llama4-scout',
+    'ollama_chat/qwen3:30b':'qwen3',
+    'us.amazon.nova-premier-v1:0':'nova-premier-v1',
+    'ollama_chat/phi4:latest':'microsoft-phi4',
+    'us.meta.llama4-maverick-17b-instruct-v1:0':'llama4-maverick',
+    'mistral/mistral-large-2411':'mistral-large',
+    'us.deepseek.r1-v1:0':'deepseek-r1',
+    'us.anthropic.claude-3-7-sonnet-20250219-v1:0':'claude-3.7-sonnet',
+    'ollama_chat/gemma3:27b':'google-gemma3'
+    }
+
+def shorten_model_names(model_name):
+    if model_name not in model_name_abbreviations:
+        raise ValueError(f'No known abbreviation for `{model_name}`. Please add to the model_name_abbreviations')
+    return model_name_abbreviations[model_name]
 
 def load_raw(classifications_csv_path, subjects_path, prompts_database_path, workflow_id,
              exclude_models: Optional[List[str]] = None, exclude_prompt_ids: Optional[List[int]] = None):
@@ -60,6 +78,8 @@ def load_raw(classifications_csv_path, subjects_path, prompts_database_path, wor
 
     # Merge with prompts
     final_df = combined_df.merge(prompts_df, on='prompt_id')
+
+    final_df['#llm_model'] = final_df['#llm_model'].map(shorten_model_names)
 
     # Check if the number of rows in the merged dataframe differs from the number of rows in the left dataframe
     if final_df.shape[0] != combined_df.shape[0]:

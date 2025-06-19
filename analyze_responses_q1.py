@@ -12,7 +12,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from analysis_helpers import get_count_completed_tasks, explode_tasks
+from analysis_helpers import get_count_completed_tasks, explode_tasks, load_raw
 
 # PARAMETERS
 classifications_csv_path = 'survey_responses/may-survey-classifications_2025-05-19.csv'
@@ -20,6 +20,9 @@ output_dir = 'survey_responses/analysis/may'
 ml_responses_database_path = 'records_bedrock.db'
 subjects_path = 'survey_responses/review-llm-responses-on-lca-tasks-subjects.csv'
 workflow_id = 28845
+
+exclude_prompts = [17] # Prompt 17 was too long to render properly and prompted confusion amongst reviewers
+exclude_models=['ollama_chat/deepseek-r1:8b'] # Deepseek-r1 was run with two inference platforms. We retain the
 
 
 def plot_responses_over_time(classifications_df: pd.DataFrame,output_dir: Path):
@@ -99,19 +102,6 @@ def get_q1_count_citations(prompts_df,ml_responses_df,classifications_df):
     classifications_df.annotations = classifications_df.annotations.apply(json.loads)
     # How many citations are there per model per task that requires citations?
 
-def analayse_q2():
-    """
-    How scientifically accurate is this response - on a scale from 1-4?
-        1. 1 = Poor accuracy / scientific accuracy. The answer is incorrect or fails to provide any reasonable evidence
-        2. 2 = Average, this is the level one might expect of a non-expert or someone with limited experience of LCA. It is generally scientifically correct, but may omit relevant points
-        3. 3 = Good, this is level one might expect of a LCA expert. It is scientifically correct, and makes strong points. However, it may not be the most comprehensive or accurate response
-        4. 4 = Exceptional response, on-par or above the level one might expect of an LCA expert. Shows exceptional accuracy and understanding of the topic.
-        Evaluate this independent of whether the output is well formatted or is the best explanation
-        You can optionally justify your answer in the next task
-    :return:
-    """
-    pass
-
 
 # Function to count the length of the list in the 'T1' column
 def count_citations_task_1(value):
@@ -152,9 +142,9 @@ def plot_hallucination_rate(df,output_img_path):
         y="Hallucination rate",
         size="Usable data points",
         sizes=(100, 1000),  # Scale the bubble size for visibility
-        hue="Usable data points",
+        #hue="Usable data points",
         palette="Purples",  # Use a purple color palette
-        alpha=0.6,
+        #alpha=0.6,
         edgecolor="w",
         linewidth=2
     )
@@ -197,47 +187,11 @@ if __name__ == '__main__':
     metadata_df = subjects_df['metadata'].apply(json.loads).apply(pd.Series)
     subjects_df = pd.concat([subjects_df, metadata_df], axis=1)
 
-    # TODO: Prompts and responses in one database
-    # TODO: filter out questions that were withdrawn
     prompts_database_path = 'records_cajetan.db'
-    conn = sqlite3.connect(prompts_database_path)
-    prompts_df = pd.read_sql('''select * from prompts''', conn)
     ml_responses_database_path = 'records_may_all.db'
-    conn = sqlite3.connect(ml_responses_database_path)
-    ml_responses_df = pd.read_sql('select * from responses', conn)
-
-    ## Plot responses over time
-    # plot_responses_over_time(classifications_df,output_dir)
-
-    # Count complete answers
-    classifications_df[['count_completed_tasks', 'final_completed_task_no']] = classifications_df.annotations.apply(
-        get_count_completed_tasks)
-    print('Count completed tasks (note some tasks are optional)')
-    print(classifications_df.count_completed_tasks.value_counts())
-    print('Final completed task number')
-    print(classifications_df.final_completed_task_no.value_counts())
-
-    # Combine with the subject data, to get the llm name, the prompt text, etc
-    # Explode the annotations column
-    exploded_dfs = classifications_df['annotations'].apply(explode_tasks)
-    exploded_df = pd.concat(exploded_dfs.values, keys=exploded_dfs.index,
-                            names=['original_index', 'task_index']).reset_index(level='task_index', drop=True)
-    # Pivot the DataFrame to have one column per task
-    pivoted_df = exploded_df.pivot(columns='task', values='value').reset_index()
-    # Re-insert the classification_ids
-    pivoted_df['subject_id'] = classifications_df.loc[pivoted_df['original_index'], 'subject_ids'].values
-    # Merge and set dtype of prompt_id
-    combined_df = pivoted_df.merge(subjects_df,on='subject_id',how='inner')
-    combined_df.prompt_id = combined_df.prompt_id.astype(int)
 
     # Merge with prompts
-    combined_final = combined_df.merge(prompts_df, on='prompt_id')
-
-    # Check if the number of rows in the merged dataframe differs from the number of rows in the left dataframe
-    if combined_final.shape[0] != combined_df.shape[0]:
-        logging.error(
-            f"The number of rows in the merged dataframe ({combined_final.shape[0]}) when merging combined_df on prompts_df differs from the number of rows in the left dataframe ({combined_df.shape[0]}).")
-        exit()
+    combined_final = load_raw(classifications_csv_path, subjects_path, prompts_database_path, workflow_id, exclude_models)
 
     ##############################################################
     # Analyse Q1 - Citations
@@ -267,7 +221,7 @@ if __name__ == '__main__':
 
     # Summarize citations per model
     # Summarize the results by type of citation, aggregating on the column '#llm_model'
-    summary_by_model_dict = combined_df.groupby('#llm_model', group_keys=False).apply(lambda x: {
+    summary_by_model_dict = combined_final.groupby('#llm_model', group_keys=False).apply(lambda x: {
         f'T1_{tool_number_to_citation_type.get(tool, "unknown")}': x['T1'].apply(count_tool_items).apply(
             lambda y: y.get(tool, 0)).sum()
         for tool in tool_number_to_citation_type
