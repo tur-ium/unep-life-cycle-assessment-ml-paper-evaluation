@@ -1,0 +1,11 @@
+llm_model,params_b
+claude-3.7-sonnet,None
+deepseek-r1,671
+gemini-2.0-flash,None
+google-gemma3,27
+llama4-maverick,400
+llama4-scout,109
+microsoft-phi4,4
+mistral-large,123
+nova-premier-v1,None
+openai-gpt-4.1,None
