@@ -113,7 +113,6 @@ def make_zooniverse_subject_set_per_db(db_name: str, root_prompt_dir: str | Path
         response_filename5 = ''
         with open(file, 'r', encoding='utf-8') as f:
             md_text = f.read()
-            # TODO: if the response text is longer, split it up
             base_response_filename = file_name.replace(file.suffix, ".png")
             rendered_response_filenames = save_text_as_img_markdown(md_text, output_path=zooniverse_output_dir / base_response_filename,
                                       poppler_path=poppler_path)
