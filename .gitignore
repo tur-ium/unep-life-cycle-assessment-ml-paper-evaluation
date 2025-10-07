@@ -1,6 +1,7 @@
 # project-specifics
 .DS_Store
 /outputs/*
+.idea/
 
 
 # Byte-compiled / optimized / DLL files

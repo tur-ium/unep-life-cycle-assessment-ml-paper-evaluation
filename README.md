@@ -5,6 +5,15 @@ with a focus on factual knowledge answering.
 
 This repository accompanies the paper __Expert benchmark of LLMs for LCA tasks__ by Artur Donaldson, Bharathan Balaji, Cajetan Oriekezie, Manish Kumar and Laure Patouillard.
 
+# Structure
+1. `1_input_prompts`: The input prompts used
+2. `retrieval_llm_data` and `retrievellmdata_ollama`: Scripts to retrieve responses from LLMs
+3. `2_retrieved_responses`: Retrieved responses
+4. `3_survey_creation`: Scripts to create a survey for expert evaluation
+5. `4_survey_responses`: Anonymized survey responses collected via the Zooniverse platform
+6. `5_analysis`: Analysis of survey responses
+7. `tests`: Tests used in development
+
 # Setup
 1. Install requirements using `uv sync`
 2. If creating your own survey via Zooniverse, 
