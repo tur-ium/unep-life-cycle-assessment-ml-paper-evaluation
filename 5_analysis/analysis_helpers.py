@@ -33,7 +33,8 @@ open_models = {
     'llama4-scout',
     'mistral-large',
     'microsoft-phi4',
-    'qwen3'
+    'qwen3',
+    'deepseek-r1'
 }
 
 citation_prompts = [2, 3, 7, 8, 9, 11, 13, 14, 18]
