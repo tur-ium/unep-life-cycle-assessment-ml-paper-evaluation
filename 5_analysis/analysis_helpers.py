@@ -120,7 +120,7 @@ def _filter_by_prompt_ids(subjects_df, exclude_prompt_ids):
 
 def _filter_logged_in_users(classifications_df):
     """Filter classifications to exclude non-logged-in users."""
-    not_logged_in_classifications = classifications_df.user_name.str.match('not-logged-in')
+    not_logged_in_classifications = classifications_df.user_id.isna()
     if not_logged_in_classifications.any():
         logging.warning(
             "%d classifications were performed by users who were not logged in. "
